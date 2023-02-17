@@ -1,0 +1,45 @@
+.App{
+  background-color: #4B5DDF;
+  height: 100vh;
+}
+.blackspot-1{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  width: 150px;
+  height: 150px;
+  margin-left: 2vw;
+  margin-top: 50vh;
+  background-color: black;
+}
+.blackspot-2{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  width: 150px;
+  height: 150px;
+  margin-left: 79vw;
+  margin-top: 75vh;
+  background-color: black;
+}
+
+.blackspot-3{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  width: 150px;
+  height: 150px;
+  margin-left: 10vw;
+  margin-top: 15vh;
+  background-color: black;
+}
+.blackspot-4{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  width: 150px;
+  height: 150px;
+  margin-left: 88vw;
+  margin-top: 10vh;
+  background-color: black;
+}
