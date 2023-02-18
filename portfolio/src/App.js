@@ -2,8 +2,7 @@ import React from 'react';
 import './App.css';
 import HeaderDiv from './Header';
 import HomeTitle from './HomeTitle';
-
-
+import Introductiondiv from './Introductiondiv';
 
 function App() {
   return (
@@ -19,8 +18,10 @@ function App() {
       <div className="blackspot-parent-2"><div className="blackspot-2"></div></div>
       <div className="blackspot-parent-3"><div className="blackspot-3"></div></div>
       <div className="blackspot-parent-4"><div className="blackspot-4"></div></div>
-      <HeaderDiv></HeaderDiv> 
-      <HomeTitle></HomeTitle>
+      <HeaderDiv/> 
+      <HomeTitle/>
+      <Introductiondiv/>
+      
     </div>
   );
 }

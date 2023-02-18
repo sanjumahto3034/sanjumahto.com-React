@@ -1,12 +1,14 @@
 .App{
   /* background-color: #4B5DDF; */
   /* background-color: #008000; */
-  height: 100vh;
+  /* height: 100vh; */
   background: linear-gradient(-45deg, #ee7752, #008000, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 50s ease infinite;
 }
-
+body{
+  overflow-x: hidden;
+}
 
 @keyframes gradient {
 	0% {
