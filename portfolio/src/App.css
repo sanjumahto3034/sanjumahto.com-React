@@ -5,7 +5,6 @@
   background: linear-gradient(-45deg, #ee7752, #008000, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 50s ease infinite;
-
 }
 
 
@@ -24,6 +23,7 @@
   width: 150px;
   height: 150px;
   transform: 0.7s;
+
 }
 
 .blackspot-parent-1{
@@ -32,7 +32,7 @@
   margin-top: 50vh;
   transition: 0.7s;
   z-index:3;
-
+  
 }
 .blackspot-parent-1 :hover{
   margin-left: 10px;
@@ -40,7 +40,7 @@
 }
 .blackspot-parent-2{
   position: absolute;
-  margin-left: 75vw;
+  margin-left: 70vw;
   margin-top: 75vh;
   z-index:5;
 }
@@ -62,9 +62,10 @@
 }
 .blackspot-parent-4{
   position: absolute;
-  margin-left: 88vw;
+  margin-left: 80vw;
   margin-top: 10vh;
   z-index:3;
+  
 }
 .blackspot-parent-4 :hover{
   margin-left: -10px;
@@ -193,4 +194,18 @@
 }
 .horizontal-line-2{
   margin-top: 12vh;
+}
+@media (max-width: 480px){
+  .blackspot-parent-2{
+    scale: 0.5;
+    margin-left: 5vh;
+  }
+  .blackspot-parent-1{
+    margin-left: 20vh;
+    margin-top: 60vh;
+  }
+  .blackspot-parent-4{
+    scale: 0.5;
+    margin-left: 30vh;
+  }
 }

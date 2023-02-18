@@ -97,10 +97,11 @@
 }
 
 @media (max-width: 480px){
-    .title-div-middle-text{
-        font-size: 0rem;
+    .title-div-middle{
+        scale: 0;
+    
     }
-    .title-get-in-touch-button{
+    .title-div-end{
         scale: 0;
     }
 }
