@@ -11,13 +11,15 @@
     align-items: center;
     justify-content: center;
     animation: bottop-top 01s;
+    width: 60vw;
     z-index: 4;
 
 }
 .homepage-text{
+    z-index: 6;
     font-family: 'Roboto', sans-serif; 
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     animation: left-come 1s;
 }
 @keyframes left-come{
@@ -45,5 +47,13 @@
     100%{
         margin-top: 0;
         opacity: 1;
+    }
+}
+
+
+@media (max-width: 480px){
+    .homepage-background{
+        margin-top: 20vh;
+       
     }
 }
