@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import HeaderDiv from './Header';
 import HomeTitle from './HomeTitle';
@@ -7,7 +8,9 @@ import HomeTitle from './HomeTitle';
 function App() {
   return (
     <div className="App">
+    <div className="blackspot-parent">
       <div className="blackspot-1"></div>
+    </div>
       <div className="blackspot-2"></div>
       <div className="blackspot-3"></div>
       <div className="blackspot-4"></div>

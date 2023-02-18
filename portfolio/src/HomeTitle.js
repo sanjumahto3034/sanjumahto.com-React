@@ -1,6 +1,6 @@
+import React from 'react';
 import './HomeTitle.css';
 import contrllerimage from "./res/contrller.png";
-
 function HomeTitle(){
   return(
       <div className="homepage-background">

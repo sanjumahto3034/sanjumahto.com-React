@@ -10,11 +10,41 @@
 .controller-image{
     align-items: center;
     justify-content: center;
+    animation: bottop-top 01s;
+    z-index: 4;
+
 }
 .homepage-text{
     font-family: 'Roboto', sans-serif; 
     color: white;
     font-size: 3.5rem;
+    animation: left-come 01s;
+}
+@keyframes left-come{
+    0%{
+        margin-right: 15vw;
+        opacity: 0;
+    }
+    50%{
+        /* scale: 0.5; */
+    }
+    100%{
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+@keyframes bottop-top{
+    0%{
+        margin-top: 10vw;
+        opacity: 0;
+    }
+    50%{
+        /* scale: 0.5; */
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 .draw-horizontal-line{
     background-color: white;

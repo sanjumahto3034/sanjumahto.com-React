@@ -2,15 +2,20 @@
   background-color: #4B5DDF;
   height: 100vh;
 }
-.blackspot-1{
+.blackspot-parent{
   position: absolute;
+  margin-left: 20vw;
+  margin-top: 50vh;
+}
+.blackspot-1{
   border-radius: 50%;
-  opacity: 0.1;
   width: 150px;
   height: 150px;
-  margin-left: 2vw;
-  margin-top: 50vh;
+  opacity: 0.1;
   background-color: black;
+  transition: 0.3s;
+  animation: bottop-top-without-opactiy 01s;
+  z-index:3;
 }
 .blackspot-2{
   position: absolute;
@@ -21,6 +26,9 @@
   margin-left: 79vw;
   margin-top: 75vh;
   background-color: black;
+  animation: bottop-top-without-opactiy 01s;
+  z-index:3;
+
 }
 
 .blackspot-3{
@@ -32,6 +40,9 @@
   margin-left: 10vw;
   margin-top: 15vh;
   background-color: black;
+  animation: bottop-top-without-opactiy 01s;
+  z-index:3;
+
 }
 .blackspot-4{
   position: absolute;
@@ -42,4 +53,55 @@
   margin-left: 88vw;
   margin-top: 10vh;
   background-color: black;
+  animation: bottop-top-without-opactiy 01s;
+  z-index:3;
+
+  
+}
+
+.blackspot-1  :hover {
+  /* animation: sanju 0.6s; */
+  transition: 0.6s;
+  opacity: 0.2;
+  margin-left: 0;
+  margin-top: -10px;
+}
+.blackspot-2  :hover {
+  /* animation: sanju 0.6s; */
+  transition: 0.6s;
+  opacity: 0.2;
+  margin-left: 0;
+  margin-top: -10px;
+}
+.blackspot-3  :hover {
+  /* animation: sanju 0.6s; */
+  transition: 0.6s;
+  opacity: 0.2;
+  margin-left: 0;
+  margin-top: -10px;
+}
+@keyframes sanju{
+  0%{
+      margin-right: 15vw;
+      opacity: 0;
+  }
+  50%{
+      /* scale: 0.5; */
+  }
+  100%{
+      margin-right: 0;
+      opacity: 1;
+  }
+}
+
+@keyframes bottop-top-without-opactiy{
+  0%{
+      /* margin-top: 10px; */
+  }
+  50%{
+      /* scale: 0.5; */
+  }
+  100%{
+      /* margin-top: 0; */
+  }
 }
