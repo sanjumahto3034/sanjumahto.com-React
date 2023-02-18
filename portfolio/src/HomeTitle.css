@@ -18,7 +18,7 @@
     font-family: 'Roboto', sans-serif; 
     color: white;
     font-size: 3.5rem;
-    animation: left-come 01s;
+    animation: left-come 1s;
 }
 @keyframes left-come{
     0%{
@@ -38,18 +38,12 @@
         margin-top: 10vw;
         opacity: 0;
     }
-    50%{
-        /* scale: 0.5; */
+    25%{
+        margin-top: 10vw;
+        opacity: 0;
     }
     100%{
         margin-top: 0;
         opacity: 1;
     }
 }
-.draw-horizontal-line{
-    background-color: white;
-    width: 100vw;
-    height: 1px;
-    opacity: 0.2;
-    margin-bottom: 2vh;
-  }

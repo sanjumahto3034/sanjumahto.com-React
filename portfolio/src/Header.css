@@ -82,3 +82,17 @@
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
 }
+.red-underline{
+    width: 0px;
+    height: 1px;
+    background-color: #E30022;
+    transition:  10s;
+    /* scale: 0.5; */
+}
+.title-div-middle-text:hover .red-underline{
+    transition:  25s;
+    cursor: pointer;
+    width: auto;
+    scale: 1;
+
+}
