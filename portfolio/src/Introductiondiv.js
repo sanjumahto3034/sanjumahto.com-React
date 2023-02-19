@@ -1,5 +1,7 @@
 import React from 'react';
 import './Introductiondiv.css';
+import contrllerYellow from "./res/controlerYellow.png";
+import boardGame from "./res/boardgame.png";
 
 
 function introductionDiv(){
@@ -24,7 +26,7 @@ function introductionDiv(){
                 <div className="introduction-detail-div">
                     <div className="introduction-detail-inner-div">
                         <div className="introduction-detail-inner-div-left">
-                            <div className="introduction-detail-image"></div>
+                            <img className="introduction-detail-image" src={contrllerYellow} alt="Controller.png"></img>
                         </div>
                         <div className="introduction-detail-inner-div-right">
                             <div className="introduction-detail-title">Computer game</div>
@@ -33,7 +35,7 @@ function introductionDiv(){
                     </div>
                        <div className="introduction-detail-inner-div">
                         <div className="introduction-detail-inner-div-left">
-                            <div className="introduction-detail-image"></div>
+                            <img className="introduction-detail-image" src ={boardGame} alt="BoardGame.png"></img>
                         </div>
                         <div className="introduction-detail-inner-div-right">
                             <div className="introduction-detail-title">Board game</div>

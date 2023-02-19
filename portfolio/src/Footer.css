@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+
+.footer-background{
+    margin-top: 10vh;
+    background-color: black;
+    width: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.footer-right-text{
+    color: white;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8rem;
+}

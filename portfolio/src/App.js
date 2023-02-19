@@ -3,6 +3,8 @@ import './App.css';
 import HeaderDiv from './Header';
 import HomeTitle from './HomeTitle';
 import Introductiondiv from './Introductiondiv';
+import Footer from './Footer';
+
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
       <HeaderDiv/> 
       <HomeTitle/>
       <Introductiondiv/>
-      
+      <Footer/>
     </div>
   );
 }

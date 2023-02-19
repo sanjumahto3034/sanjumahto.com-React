@@ -18,14 +18,14 @@
 }
 .homepage-text{
     z-index: 6;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Lilita One', cursive;
     color: white;
     font-size: 3rem;
     animation: left-come 1s;
 }
 @keyframes left-come{
     0%{
-        margin-right: 15vw;
+        /* margin-right: 15vw; */
         opacity: 0;
     }
     50%{

@@ -23,6 +23,18 @@
 }
 .introduction-name-div{
     /* margin-right: 30vw; */
+    animation : 1s introduction-left-right;
+}
+
+@keyframes introduction-left-right {
+    0%{
+        margin-left: -20vh;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0vh;
+        opacity: 1;
+    }
 }
 .introduction-bar{
     width: 3vw;
@@ -60,9 +72,6 @@
 .introduction-detail-image{
     width: 100px;
     height: 100px;
-    background-color: white;
-    
-
 }
 .introduction-detail-inner-div-right{
     margin-left: 2vw;
