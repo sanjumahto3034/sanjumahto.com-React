@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: Raleway-Thin;
+  src: url(./res/fonts/Raleway/static/Raleway-Thin.ttf);
+}
+@font-face {
+  font-family: Raleway-ExtraLight;
+  src: url(./res/fonts/Raleway/static/Raleway-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Light;
+  src: url(./res/fonts/Raleway/static/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(./res/fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Medium;
+  src: url(./res/fonts/Raleway/static/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url(./res/fonts/Raleway/static/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(./res/fonts/Raleway/static/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: Raleway-ExtraBold;
+  src: url(./res/fonts/Raleway/static/Raleway-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Raleway-Black;
+  src: url(./res/fonts/Raleway/static/Raleway-Black.ttf);
+}
+
+
+
+@font-face {
+  font-family: Ubuntu-SemiBold;
+  src: url(./res/fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url(./res/fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Ubuntu-ExtraBold;
+  src: url(./res/fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Black;
+  src: url(./res/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}

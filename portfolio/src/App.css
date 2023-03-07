@@ -1,10 +1,12 @@
 .App{
   /* background-color: #4B5DDF; */
-  /* background-color: #008000; */
+  /* background-color: #FFFFFF; */
   /* height: 100vh; */
-  background: linear-gradient(-45deg, #ee7752, #008000, #23a6d5, #23d5ab);
+  /* background: linear-gradient(-45deg, #ee7752, #008000, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 50s ease infinite;
+	animation: gradient 50s ease infinite; */
+  display: flex;
+  flex-direction: column;
 }
 body{
   overflow-x: hidden;

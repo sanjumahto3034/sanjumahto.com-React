@@ -5,11 +5,28 @@ import HomeTitle from './HomeTitle';
 import Introductiondiv from './Introductiondiv';
 import Footer from './Footer';
 
+import TitleDiv from './TitleDiv';
+import HomePageDiv from './HomePageDiv';
+import WhatIDo from './WhatIDo';
+
 
 function App() {
   return (
     <div className="App">
-      <div className="verticle-line-1"></div>
+      <TitleDiv/>
+      <HomePageDiv/>
+      <WhatIDo/>
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="verticle-line-1"></div>
       <div className="verticle-line-2"></div>
       <div className="verticle-line-3"></div>
       <div className="verticle-line-4"></div>
@@ -19,11 +36,11 @@ function App() {
       <div className="blackspot-parent-1"><div className="blackspot-1"></div></div>
       <div className="blackspot-parent-2"><div className="blackspot-2"></div></div>
       <div className="blackspot-parent-3"><div className="blackspot-3"></div></div>
-      <div className="blackspot-parent-4"><div className="blackspot-4"></div></div>
-      <HeaderDiv/> 
-      <HomeTitle/>
+      <div className="blackspot-parent-4"><div className="blackspot-4"></div></div> */}
+      {/* {/* <HeaderDiv/>  */}
+      {/* <HomeTitle/>
       <Introductiondiv/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }

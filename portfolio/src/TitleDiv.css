@@ -1,0 +1,59 @@
+.TitleDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.logoDiv{
+    display: flex;
+    flex-direction: row;
+}
+.logoName{
+    color: #460C68;
+    margin-left: 10px;
+    font-family: Raleway-Bold;
+    margin-top: 5px;
+}
+.AppLogo{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 32px;
+    height: 32px;
+}
+
+.BtnDiv {
+    margin-left: 67vw;
+    display: flex;
+    flex: row;
+}
+@media (max-width: 480px){
+    .BtnDiv{
+        scale: 0;
+    }
+}
+.all-game-btn{
+    font-family: Raleway-ExtraBold;
+    font-size: .8rem;
+    display: grid;
+    align-items: center;
+    margin-right: 4vw;
+    width: auto;
+    height: auto;
+}
+.lets-talk-btn{
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    font-family: Raleway-ExtraBold;
+    background-color: #460C68;
+    color: white;
+    font-size: .8rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: auto;
+    height: auto;
+}
+
+
