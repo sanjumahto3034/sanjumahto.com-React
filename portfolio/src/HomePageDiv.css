@@ -17,6 +17,11 @@
 .description-name{
     color: #460C68;
     font-family: Raleway-Bold;
+    word-wrap: break-word;
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     font-size: 4rem;
 }
 .extraButton{

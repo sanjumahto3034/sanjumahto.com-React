@@ -7,7 +7,7 @@ function WhatIDo(){
         <div className="WhatIDo">
             <div className="first-div">
                 <div className="first-div-main">
-                    <div className="title-first-div">Working<p/>Experience</div>
+                    <div className="title-first-div">Working<br/>Experience</div>
                     <div className="description-first-div">I'm Sanju Mahto, Unity and Cocos Game Programmer at Assert Infotech. Have a experience more than a 6-Months.</div>
                     <div className="description-first-div">I have work on many other self projects based on Unity and Cocos.</div>
                     <div className="description-first-div">The language I use to write program that is C++, C#, JavaScript, TypeScript</div>
@@ -15,6 +15,7 @@ function WhatIDo(){
                     <div className="bottom-border-learn"></div>
                 </div>
             </div>
+
 
             <div className="second-div">
                 <div className="second-div-main">
