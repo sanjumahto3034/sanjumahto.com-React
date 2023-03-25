@@ -1,6 +1,6 @@
 .WhatIDo {
-    margin-top: 40vh;
-    margin-bottom: 30vh;
+    padding-top: 40vh;
+    padding-bottom: 30vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -160,7 +160,10 @@
 }
 @media (max-width: 480px) {
     .WhatIDo {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         scale: 1;
     }
     .first-div {
@@ -171,7 +174,9 @@
     .bottom-border-learn {
         width: 18vw;
     }
-
+    .title-first-div {
+        font-size: 3.5rem;
+    }
 
     .second-div-main{
         margin-left: 0vw;
