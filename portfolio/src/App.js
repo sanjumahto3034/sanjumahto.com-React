@@ -9,12 +9,16 @@ import TitleDiv from './TitleDiv';
 import HomePageDiv from './HomePageDiv';
 import WhatIDo from './WhatIDo';
 
+import WhoIWorkWith from './WhoIWorkWith';
+
 
 function App() {
   return (
     <div className="App">
       <TitleDiv/>
       <HomePageDiv/>
+      
+      <WhoIWorkWith/>
       <WhatIDo/>
 
 
