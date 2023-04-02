@@ -10,6 +10,7 @@ import HomePageDiv from './HomePageDiv';
 import WhatIDo from './WhatIDo';
 
 import WhoIWorkWith from './WhoIWorkWith';
+import Resume from './Resume/Resume';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       
       <WhoIWorkWith/>
       <WhatIDo/>
+      <Resume/> 
+      <Footer/> 
 
 
 
@@ -43,8 +46,7 @@ function App() {
       <div className="blackspot-parent-4"><div className="blackspot-4"></div></div> */}
       {/* {/* <HeaderDiv/>  */}
       {/* <HomeTitle/>
-      <Introductiondiv/>
-      <Footer/> */}
+      <Introductiondiv/>*/}
     </div>
   );
 }

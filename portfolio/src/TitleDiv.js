@@ -13,6 +13,7 @@ function TitleDiv(){
 
             <div className='BtnDiv'>
                 <div className='all-game-btn'>All Games</div>
+                <div className='all-game-btn'>Resume</div>
                 <div className='lets-talk-btn'>Let's Talk</div>
 
             </div>

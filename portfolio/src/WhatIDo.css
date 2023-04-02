@@ -1,7 +1,6 @@
 .WhatIDo {
-    padding-top: 40vh;
+    padding-top: 20vh;
     padding-bottom: 30vh;
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -36,13 +35,7 @@
 }
 
 .title-first-div {
-    /* display: flex; */
-/* align-self: center; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* margin-bottom: 4vh; */
     font-size: 4rem;
-    /* line-height: 0%; */
     color: white;
     font-family: Raleway-ExtraBold;
 }
@@ -71,7 +64,6 @@
 /* ------------ Second Div --------------- */
 
 .second-div{
-    /* outline: 2px solid red; */
     height: inherit;
     display: flex;
     justify-self: flex-start;
@@ -82,18 +74,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* justify-content: flex-end; */
     justify-content: space-between;
     height: 100%;
     
-    /* border: 2px solid black; */
 }
 .display-engine{
     margin-bottom: 1vh;
     background-color: #00000010;
     border-radius: 10px;
     width: 30vw;
-    /* height: 16vh; */
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;

@@ -42,7 +42,7 @@
 }
 .headerDescription{
     font-family: Roboto-Bold;
-    width: 30vw;
+    /* width: 30vw; */
 }
 .ludo-image{
     /* outline: 2px solid red; */
@@ -60,10 +60,7 @@
     padding-right: 1%;
     width: 70vw;    
 }
-.columnContainer{
-    /* padding-left: 0vw; */
-    /* width: 100vw; */
-}
+
 .headerText{
     font-size: 1rem;
 }

@@ -1,20 +1,25 @@
 .TitleDiv{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95vw;
     margin-top: 2vh;
-    margin-left: 3vw;
+    /* justify-content: center; */
 }
 
 .logoDiv{
+    /* float: left; */
     display: flex;
     flex-direction: row;
 }
 .logoName{
+
     color: #460C68;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    padding-left: 10px;
     font-family: Raleway-Bold;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 .AppLogo{
     padding-left: 1vw;
@@ -24,9 +29,11 @@
 }
 
 .BtnDiv {
-    margin-left: 67vw;
+    float:right;
+    /* margin-left: 67vw; */
     display: flex;
     flex: row;
+    justify-content: end;
 }
 @media (max-width: 480px){
     .BtnDiv{
@@ -38,7 +45,7 @@
     font-size: .8rem;
     display: grid;
     align-items: center;
-    margin-right: 4vw;
+    padding-right: 4vw;
     width: auto;
     height: auto;
 }

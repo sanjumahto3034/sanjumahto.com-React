@@ -5,7 +5,7 @@ import './Footer.css';
 function Footer(){
     return(
         <div className="footer-background">
-            <div className="footer-right-text">@bonyfer studio - All Right Reserved</div>
+            <div className="footer-right-text">@bonyfer studio (2023) - All Right Reserved </div>
         </div>
     );
 }
