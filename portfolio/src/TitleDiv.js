@@ -13,8 +13,8 @@ function TitleDiv(){
 
             <div className='BtnDiv'>
                 <div className='all-game-btn'>All Games</div>
-                <div className='all-game-btn'>Resume</div>
-                <button className='lets-talk-btn' onClick={letsTalkBtnClicked}>Let's Talk</button>
+                <a className='all-game-btn' href='/demo'>Resume</a>
+                <button className='lets-talk-btn' onClick={letsTalkBtnClicked} >Let's Talk</button>
 
             </div>
             
