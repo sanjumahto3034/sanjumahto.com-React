@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Resume() {
-
+  console.log("HEHEHEHE");
   useEffect(()=>{
   },[]);
 

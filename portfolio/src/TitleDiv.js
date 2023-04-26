@@ -14,14 +14,20 @@ function TitleDiv(){
             <div className='BtnDiv'>
                 <div className='all-game-btn'>All Games</div>
                 <div className='all-game-btn'>Resume</div>
-                <div className='lets-talk-btn'>Let's Talk</div>
+                <button className='lets-talk-btn' onClick={letsTalkBtnClicked}>Let's Talk</button>
 
             </div>
             
         </div>
     );
 
+
 };
+
+function letsTalkBtnClicked(){
+    console.log("[ TitleDiv ] lets-talk-btn");
+    // document.getElementsByClassName("all-game-btn").namedItem
+}
 
 
 export default TitleDiv;
