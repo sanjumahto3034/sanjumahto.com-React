@@ -1,10 +1,11 @@
 import React from "react";
-// import "./DemoPage.css";
+import "./DemoPage.css";
+import { Link } from "react-router-dom";
 
 function DemoPage(){
     
     return(
-        <button onClick={demoBtnClick}>ClickMe</button>
+        <Link onClick={demoBtnClick} to="/">ClickMe</Link>
     );
 }
 

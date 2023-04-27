@@ -1,6 +1,7 @@
 import React from 'react';
 import './TitleDiv.css';
 import appLogo from './res/logo.png'
+import { Link } from 'react-router-dom';
 
 
 function TitleDiv(){
@@ -13,7 +14,7 @@ function TitleDiv(){
 
             <div className='BtnDiv'>
                 <div className='all-game-btn'>All Games</div>
-                <a className='all-game-btn' href='/demo'>Resume</a>
+                <Link className='all-game-btn' to='/demo'>Resume</Link>
                 <button className='lets-talk-btn' onClick={letsTalkBtnClicked} >Let's Talk</button>
 
             </div>
