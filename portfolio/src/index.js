@@ -6,6 +6,7 @@ import Resume from './Resume/Resume';
 import TitleDiv from './TitleDiv';
 import NewsPage from './NewsPage/NewsHome';
 import DemoPage from './DemoPage/DemoPage';
+import LetsTalk from './LetsTalkPage/LetsTalk';
 
 import reportWebVitals from './reportWebVitals';
 import './res/fonts/Raleway/static/Raleway-Thin.ttf';
@@ -21,20 +22,21 @@ import './res/fonts/Ubuntu/Ubuntu-Bold.ttf';
 import './res/fonts/Ubuntu/Ubuntu-Light.ttf';
 import './res/fonts/Ubuntu/Ubuntu-Medium.ttf';
 import './res/fonts/Ubuntu/Ubuntu-Regular.ttf';
+
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
+import SideBar from './SideBarPage/SideBar';
 
 const routePages = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element:<div><TitleDiv/><App/></div>,
   },
   {
     path:"resume",
-    element:<Resume/>
+    element:<div className='index-resume-div'> <TitleDiv/><Resume/></div>
   },
   {
     path: "title",
@@ -47,12 +49,17 @@ const routePages = createBrowserRouter([
   {
     path:"demo",
     element:<DemoPage/>
+  },
+  {
+    path:"letstalk",
+    element:<div><TitleDiv/><LetsTalk/></div>,
   }
 ]);
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    
     <RouterProvider router={routePages} />
   </React.StrictMode>
 );

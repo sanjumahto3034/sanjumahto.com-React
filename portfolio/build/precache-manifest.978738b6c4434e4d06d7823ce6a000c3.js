@@ -1,27 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "9da877c5c02210d5bb65",
-    "url": "/static/css/main.8f70ef1f.chunk.css"
+    "revision": "b3ec66c747dfd4d72e66",
+    "url": "/static/css/main.49a7a303.chunk.css"
   },
   {
-    "revision": "9da877c5c02210d5bb65",
-    "url": "/static/js/main.236106e0.chunk.js"
+    "revision": "b3ec66c747dfd4d72e66",
+    "url": "/static/js/main.b633d0af.chunk.js"
   },
   {
-    "revision": "d59faf37d1d2c4eed8af",
-    "url": "/static/js/runtime~main.4b37fa0e.js"
+    "revision": "bd248d5511f55c2f23e2",
+    "url": "/static/js/runtime~main.b7e18cb7.js"
   },
   {
-    "revision": "bab09af9c8416af5473d",
+    "revision": "d64f2615db3a87ce4090",
     "url": "/static/css/2.e6fb462d.chunk.css"
   },
   {
-    "revision": "bab09af9c8416af5473d",
-    "url": "/static/js/2.37a45978.chunk.js"
+    "revision": "d64f2615db3a87ce4090",
+    "url": "/static/js/2.a10961f3.chunk.js"
   },
   {
-    "revision": "e1e2aff8c2b619f2a9f6",
-    "url": "/static/js/3.75ab077f.chunk.js"
+    "revision": "9f5fd5f3c476bb86b433",
+    "url": "/static/js/3.6ccac940.chunk.js"
+  },
+  {
+    "revision": "9527bcd062c0d7fc5024ff658c40224f",
+    "url": "/static/media/white_remote.9527bcd0.png"
   },
   {
     "revision": "10024c0aae4e9bafcbba2f960f4f3c34",
@@ -52,32 +56,24 @@ self.__precacheManifest = [
     "url": "/static/media/Ubuntu-Bold.896a6021.ttf"
   },
   {
-    "revision": "c9d68f61bf89fde6a24da697bc45d6f9",
-    "url": "/static/media/Ubuntu-Light.c9d68f61.ttf"
-  },
-  {
     "revision": "d3c3b35e6d478ed149f02fad880dd359",
     "url": "/static/media/Ubuntu-Medium.d3c3b35e.ttf"
   },
   {
-    "revision": "84ea7c5c9d2fa40c070ccb901046117d",
-    "url": "/static/media/Ubuntu-Regular.84ea7c5c.ttf"
-  },
-  {
-    "revision": "db8e7354e2585143a4f7ef6f71bfe0ca",
-    "url": "/static/media/Raleway-Thin.db8e7354.ttf"
+    "revision": "c9d68f61bf89fde6a24da697bc45d6f9",
+    "url": "/static/media/Ubuntu-Light.c9d68f61.ttf"
   },
   {
     "revision": "550ad10fece0b35b0325d38192701592",
     "url": "/static/media/Raleway-ExtraLight.550ad10f.ttf"
   },
   {
-    "revision": "ed645c2b20d22612c4985bc4e4b4a7ff",
-    "url": "/static/media/Raleway-Light.ed645c2b.ttf"
-  },
-  {
     "revision": "20d41940068e45b114d32b48d684ef39",
     "url": "/static/media/Raleway-Regular.20d41940.ttf"
+  },
+  {
+    "revision": "87641f9900d717d6bfbf108b8755868e",
+    "url": "/static/media/Raleway-SemiBold.87641f99.ttf"
   },
   {
     "revision": "b952c3c81ba34b54c66c748ea1e828a7",
@@ -88,19 +84,27 @@ self.__precacheManifest = [
     "url": "/static/media/Raleway-ExtraBold.27f7ef17.ttf"
   },
   {
-    "revision": "88079335418f389bfb2d86bc4f1ced64",
-    "url": "/static/media/Raleway-Bold.88079335.ttf"
+    "revision": "ed645c2b20d22612c4985bc4e4b4a7ff",
+    "url": "/static/media/Raleway-Light.ed645c2b.ttf"
   },
   {
-    "revision": "87641f9900d717d6bfbf108b8755868e",
-    "url": "/static/media/Raleway-SemiBold.87641f99.ttf"
+    "revision": "84ea7c5c9d2fa40c070ccb901046117d",
+    "url": "/static/media/Ubuntu-Regular.84ea7c5c.ttf"
   },
   {
     "revision": "35e0e2e7a5b03275ba569a214edbab77",
     "url": "/static/media/Raleway-Black.35e0e2e7.ttf"
   },
   {
-    "revision": "c12ec617f52f653395c932a9c9143737",
+    "revision": "88079335418f389bfb2d86bc4f1ced64",
+    "url": "/static/media/Raleway-Bold.88079335.ttf"
+  },
+  {
+    "revision": "db8e7354e2585143a4f7ef6f71bfe0ca",
+    "url": "/static/media/Raleway-Thin.db8e7354.ttf"
+  },
+  {
+    "revision": "9f72048c5f2bd0afac78dacab4bbffe2",
     "url": "/index.html"
   }
 ];

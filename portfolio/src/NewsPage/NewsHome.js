@@ -10,7 +10,6 @@ var counter = 0;
 
 function handleClick() {
   counter++;
-//   setButtonText("Button");
   document.getElementById("clickDiv").innerHTML = "Clicked " + counter;
   console.log("[ React Js ] Clicked " + counter);
 }

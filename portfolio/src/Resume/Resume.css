@@ -1,5 +1,6 @@
 .Resume-div-main{
-    width: 70vw;
+    width: 80vw;
+
     /* height: 100vh; */
     /* height: auto; */
     background-color: #1e1c27;
@@ -57,6 +58,8 @@
 .Resume-div-second-container-main{
     display: flex;
     flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 .Resume-div-second-container-1{
     width: 35vw;

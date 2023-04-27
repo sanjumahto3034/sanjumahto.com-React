@@ -14,7 +14,7 @@ function WhoIWorkWith() {
         <div className="headerDefine">Senior Game</div>
         <div className="headerDefine">Programmer at</div>
         <div className="headerDefine">Assert Infotech</div>
-        <div className="headerDescription">Working in Assert Infotech from more than 6-months. And work on many projects. ie, Ludo, Pokar & 2D Simulation Game</div>
+        <div className="headerDescription">Working in Assert Infotech from more than 9-months. And work on many projects. ie, Ludo, Poker & 2D Simulation Game</div>
       </div>
 
       

@@ -21,9 +21,9 @@ function HomePageDiv() {
         <div className="description-name" data-aos-delay="600" data-aos ="fade-right" data-aos-duration="1000">& Programmer</div>
         <div className="extraButton" ata-aos-delay="1700" data-aos ="fade-up">
           <div className="square" ><div className="arrow-text" data-aos-duration="1000">&#8594;</div></div>
-          <div className="circle-block" ><img className="github" src = {gitHub} alt = "github.png"></img></div>
-          <div className="circle-block" ><img className="github" src = {instagram} alt = "github.png"></img></div>
-          <div className="circle-block" ><img className="github" src = {linkined} alt = "github.png"></img></div>
+          <a className="circle-block" href="https://www.github.com/sanjumahto3034"><img className="github" src = {gitHub} alt = "github.png"></img></a>
+          <a className="circle-block" href="https://www.instagram.com/sanjumahto3034/"><img className="github" src = {instagram} alt = "github.png"></img></a>
+          <a className="circle-block" href="https://www.linkedin.com/in/sanjumahto30340/"><img className="github" src = {linkined} alt = "github.png"></img></a>
         </div>
         <div className="line-draw"></div>
       </div>

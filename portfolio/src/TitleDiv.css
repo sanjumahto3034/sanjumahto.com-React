@@ -4,12 +4,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 95vw;
-    margin-top: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     /* justify-content: center; */
 }
 
 .logoDiv{
     /* float: left; */
+    text-decoration: none;
     display: flex;
     flex-direction: row;
 }
@@ -29,17 +31,18 @@
 }
 
 .BtnDiv {
+
     float:right;
     /* margin-left: 67vw; */
     display: flex;
     flex: row;
     justify-content: end;
 }
-@media (max-width: 480px){
+/* @media (max-width: 480px){ */
     .BtnDiv{
         scale: 0;
     }
-}
+/* } */
 .all-game-btn{
     font-family: Raleway-ExtraBold;
     font-size: .8rem;
@@ -49,6 +52,7 @@
     width: auto;
     height: auto;
     text-decoration: none;
+    color: black;
 }
 .lets-talk-btn{
     border-radius: 5px;
@@ -62,6 +66,7 @@
     padding-right: 1vw;
     width: auto;
     height: auto;
+    text-decoration: none;
 }
 
 
