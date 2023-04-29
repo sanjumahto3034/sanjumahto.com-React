@@ -10,7 +10,7 @@ function WhoIWorkWith() {
   return (
     <div className="WhoIWorkWithMain" data-aos-delay="200" data-aos ="fade-in"  data-aos-duration="1000">
       <div className="columnContainer"  data-aos-delay="200" data-aos ="fade-right"  data-aos-duration="1000">
-        <div className="headerText">----Who I Work With</div>
+        <div className="headerText">-Who I Work With</div>
         <div className="headerDefine">Senior Game</div>
         <div className="headerDefine">Programmer at</div>
         <div className="headerDefine">Assert Infotech</div>

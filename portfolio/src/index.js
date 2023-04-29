@@ -32,11 +32,12 @@ import SideBar from './SideBarPage/SideBar';
 const routePages = createBrowserRouter([
   {
     path: "/",
-    element:<div><TitleDiv/><App/></div>,
+    element:<div><TitleDiv/><App/></div>, //TODO: For Extra Test of Extra Spacing In Mobile UI...
+    // element:<div><App/></div>,
   },
   {
     path:"resume",
-    element:<div className='index-resume-div'> <TitleDiv/><Resume/></div>
+    element:<div className='index-resume-div'><TitleDiv/><Resume/></div>
   },
   {
     path: "title",

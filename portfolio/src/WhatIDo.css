@@ -1,4 +1,5 @@
 .WhatIDo {
+    width: 100vw;
     padding-top: 20vh;
     padding-bottom: 30vh;
     display: grid;
@@ -11,6 +12,7 @@
     /* scale: 1.2; */
     /* height: 50vh; */
     /* outline: 3px solid cyan; */
+    overflow: hidden;
 }
 
 .first-div-main {
@@ -175,4 +177,21 @@
         width: 90vw;
         height: 12vh;
     }
+}
+.WhatIDo-circle-patch-1{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color:  white;
+    position: absolute;
+    right: 5vh;
+}
+.WhatIDo-circle-patch-2{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:  white;
+    position: absolute;
+    right: 20vh;
+    bottom: 3vh;
 }

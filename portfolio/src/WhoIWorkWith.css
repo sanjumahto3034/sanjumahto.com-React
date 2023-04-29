@@ -1,17 +1,17 @@
 .WhoIWorkWithMain{
-    background-color: #5939c6;
-    /* width: 80vw; */
-    
+    background-color: #460C68;
     margin-top: 30vh;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 10vw;
+    padding-right: 10vw;
     padding-top: 5%;
     padding-bottom: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
     /* padding-left: 7vw;
     padding-right: 2vw; */
     /* overflow: hidden; */
@@ -58,7 +58,6 @@
     align-items: center;
     padding-left: 1%;
     padding-right: 1%;
-    width: 70vw;    
 }
 
 .headerText{

@@ -9,8 +9,11 @@ function WhatIDo(){
     },[]);
     return(
         <div className="WhatIDo">
+        
             <div className="first-div"  data-aos = "fade-right" data-aos-duration="1000">
                 <div className="first-div-main">
+                    {/* <div className="WhatIDo-circle-patch-1"></div> */}
+                    {/* <div className="WhatIDo-circle-patch-2"></div> */}
                     <div className="title-first-div" >Working<br/>Experience</div>
                     <div className="description-first-div">I'm Sanju Mahto, Unity and Cocos Game Programmer at Assert Infotech. Have a experience more than a 9-Months.</div>
                     <div className="description-first-div">I have work on many other self projects based on Unity and Cocos.</div>

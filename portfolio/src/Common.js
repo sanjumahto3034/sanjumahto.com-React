@@ -1,0 +1,4 @@
+const MIN_DEVICE_WIDTH = 480;
+const PINK_COLOR ="#E90064";
+const PINK_PURPLE ="#460C68";
+const PINK_LIGHT_PURPLE ="#5939c6";

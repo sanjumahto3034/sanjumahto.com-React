@@ -1,21 +1,31 @@
-.TitleDiv{
-    /* display: flex;
-    flex-direction: row; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 95vw;
+.TitleDiv {
+    /* display: flex; */
+    /* align-items: center; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* align-items: center; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* width: 95vw; */
+    width: 90vw;
+    height: 10vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    /* justify-content: center; */
+    position: absolute;
+
 }
 
-.logoDiv{
+.logoDiv {
     /* float: left; */
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    position: absolute;
+    left: 0;
+    padding-left: 4vw;
+    padding-top: 2vh;
 }
-.logoName{
+
+.logoName {
 
     color: #460C68;
     /* margin-left: 10px; */
@@ -23,27 +33,25 @@
     font-family: Raleway-Bold;
     padding-top: 5px;
 }
-.AppLogo{
+
+.AppLogo {
     padding-left: 1vw;
     padding-right: 1vw;
     width: 32px;
-    height: 32px;
+    /* height: 32px; */
 }
-
-.BtnDiv {
-
-    float:right;
-    /* margin-left: 67vw; */
+.title-div-desktop{
     display: flex;
-    flex: row;
-    justify-content: end;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    padding-top: 2vh;
+
 }
-/* @media (max-width: 480px){ */
-    .BtnDiv{
-        scale: 0;
-    }
-/* } */
-.all-game-btn{
+.title-div-btn{
+ 
+}
+.title-div-btn-text{
     font-family: Raleway-ExtraBold;
     font-size: .8rem;
     display: grid;
@@ -54,19 +62,68 @@
     text-decoration: none;
     color: black;
 }
-.lets-talk-btn{
-    border-radius: 5px;
+
+/* Mobile UI */
+.title-div-mobile-show-btn{
+    padding-top: 2vh;
+    position: absolute;
+    right: 0;
+}
+.title-div-mobile-ui-div{
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    background-color: #181818;
+    position: absolute;
+    left: 0;
+    scale: 1;
+    opacity: 255;
+}
+.title-div-btn-text-in{
+    font-family: Raleway-ExtraBold;
+    font-size: 1rem;
     display: grid;
     align-items: center;
-    font-family: Raleway-ExtraBold;
-    background-color: #460C68;
-    color: white;
-    font-size: .8rem;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    width: auto;
-    height: auto;
-    text-decoration: none;
+    padding-right: 4vw;
+    color: #460C68;
+    /* text-decoration: none; */
 }
+.title-div-mobile-ui-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 480px){
+    .title-div-mobile-ui-btn{
+        background-color: #FFFFFF;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        /* border-radius: 20px; */
+        padding-bottom: 2.5vh;
+        padding-top: 2.5vh;
+        margin-top: 10vh;
+    }
+    .title-div-desktop{
+        scale: 0;
+    }
+    .TitleDiv {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 
-
+}
+.hideSideBar{
+    scale: 0;
+    width: 0px;
+    opacity: 0;
+}
+@media (min-width:480px) {
+    .title-div-mobile-ui-div{
+        opacity: 0;
+    }
+    .title-div-mobile-show-btn{
+        scale: 0;
+        width: 0px;
+    }
+}

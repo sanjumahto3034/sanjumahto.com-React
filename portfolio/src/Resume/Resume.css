@@ -1,5 +1,5 @@
 .Resume-div-main{
-    width: 80vw;
+    width: 90vw;
 
     /* height: 100vh; */
     /* height: auto; */
@@ -10,6 +10,8 @@
     flex-direction: column;
     align-items: center;
     padding: 5%;
+    overflow: hidden;
+
 }
 .Resume-title-div{
     display: flex;
@@ -46,7 +48,7 @@
 
 }
 .Resume-div-divideLine{
-    width: 80vw;
+    width: 90vw;
     height: 0.5px;
     opacity: 0.3;
     background-color: white;
@@ -62,13 +64,13 @@
     /* justify-content: center; */
 }
 .Resume-div-second-container-1{
-    width: 35vw;
+    width: 40vw;
 }
 .Resume-div-second-container-2{
 
 }
 .Resume-div-second-container-3{
-    width: 35vw;
+    width: 40vw;
 }
 .Resume-div-second-container-title{
     font-family: Raleway-Bold;

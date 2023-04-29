@@ -82,10 +82,13 @@ function Resume() {
 
 
     <div className="Resume-div-second-container-title" data-aos-delay="200" data-aos ="fade-right" data-aos-duration="1000">Skills
-        <div className="Resume-div-details-title">Fast Learning</div>
+        <div className="Resume-div-details-title">Fast Learner</div>
         <div className="Resume-div-details-description">Intermediate</div>
 
         <div className="Resume-div-details-title">Problem Solving</div>
+        <div className="Resume-div-details-description">Intermediate</div>
+
+        <div className="Resume-div-details-title">Code Analysis</div>
         <div className="Resume-div-details-description">Intermediate</div>
 
     </div> 
@@ -107,8 +110,25 @@ function Resume() {
 
         <div className="Resume-div-details-title">JavaScript/TypeScript</div>
         <div className="Resume-div-details-description">Intermediate</div>
-
     </div> 
+
+
+    <div className="Resume-div-second-container-title" data-aos-delay="200" data-aos ="fade-right" data-aos-duration="1000">Game Engine
+        <div className="Resume-div-details-title">Unity 3D</div>
+        <div className="Resume-div-details-description">Intermediate</div>
+
+        <div className="Resume-div-details-title">Unreal Engine</div>
+        <div className="Resume-div-details-description">Beginner</div>
+
+        <div className="Resume-div-details-title">Cocos Creator</div>
+        <div className="Resume-div-details-description">Intermediate</div>
+
+        <div className="Resume-div-details-title">CocosX2D</div>
+        <div className="Resume-div-details-description">Intermediate</div>
+    </div> 
+
+
+
 
     <div className="Resume-div-second-container-title" data-aos-delay="200" data-aos ="fade-left" data-aos-duration="1000">Work Experience
 
@@ -142,15 +162,6 @@ function Resume() {
       </div>
 
     </div> 
-
-
-
-
-
-
-
-
-
 
 
 
