@@ -7,6 +7,7 @@ import TitleDiv from './TitleDiv';
 import NewsPage from './NewsPage/NewsHome';
 import DemoPage from './DemoPage/DemoPage';
 import LetsTalk from './LetsTalkPage/LetsTalk';
+import AllGames from './AllGamesPage/AllGames';
 
 import reportWebVitals from './reportWebVitals';
 import './res/fonts/Raleway/static/Raleway-Thin.ttf';
@@ -32,12 +33,12 @@ import SideBar from './SideBarPage/SideBar';
 const routePages = createBrowserRouter([
   {
     path: "/",
-    element:<div><TitleDiv/><App/></div>, //TODO: For Extra Test of Extra Spacing In Mobile UI...
+    element:<div className='index-center-align'><TitleDiv/><App/></div>, //TODO: For Extra Test of Extra Spacing In Mobile UI...
     // element:<div><App/></div>,
   },
   {
     path:"resume",
-    element:<div className='index-resume-div'><TitleDiv/><Resume/></div>
+    element:<div className='index-center-align'><TitleDiv/><Resume/></div>
   },
   {
     path: "title",
@@ -54,6 +55,11 @@ const routePages = createBrowserRouter([
   {
     path:"letstalk",
     element:<div><TitleDiv/><LetsTalk/></div>,
+  },
+  {
+    path:"/games",
+    // element:<div className='index-resume-div'><TitleDiv/><AllGames/></div>
+    element:<div className='index-center-align'><TitleDiv/><AllGames/></div>
   }
 ]);
 
