@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'
 function HomePageDiv() {
   useEffect(()=>{
     AOS.init({
-      // easing: "ease-in-sine"
+      easing: "ease-in-sine"
     })
  },[]);
   return (

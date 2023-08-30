@@ -15,7 +15,7 @@ function WhatIDo(){
                     {/* <div className="WhatIDo-circle-patch-1"></div> */}
                     {/* <div className="WhatIDo-circle-patch-2"></div> */}
                     <div className="title-first-div" >Working<br/>Experience</div>
-                    <div className="description-first-div">I'm Sanju Mahto, Unity and Cocos Game Programmer at Assert Infotech. Have a experience more than a 9-Months.</div>
+                    <div className="description-first-div">I'm Sanju Mahto, Unity Game Developer, Designer & Programmer At EmizenTech Pvt. Ltd.. Have a experience more than a {calculateMonthsDifference("2023-06-05")}-Months.</div>
                     <div className="description-first-div">I have work on many other self projects based on Unity and Cocos.</div>
                     <div className="description-first-div">The language I use to write program that is C++, C#, JavaScript, TypeScript</div>
                     <div className="learn-more">Learn More  &#8594;</div>
@@ -59,4 +59,15 @@ function WhatIDo(){
     );
 };
 
+function calculateMonthsDifference(startDate) {
+    const currentDate = new Date();
+    const start = new Date(startDate);
+  
+    const yearsDiff = currentDate.getFullYear() - start.getFullYear();
+    const monthsDiff = currentDate.getMonth() - start.getMonth();
+  
+    const totalMonths = yearsDiff * 12 + monthsDiff;
+  
+    return totalMonths;
+  }
 export default WhatIDo;
