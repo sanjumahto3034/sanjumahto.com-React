@@ -1,8 +1,5 @@
 .Resume-div-main{
     width: 90vw;
-
-    /* height: 100vh; */
-    /* height: auto; */
     background-color: #1e1c27;
     border-radius: 10px;
     margin-bottom: 10vh;
@@ -11,7 +8,6 @@
     align-items: center;
     padding: 5%;
     overflow: hidden;
-    margin-top: 10vh;
 
 }
 .Resume-title-div{
@@ -59,13 +55,17 @@
 
 
 .Resume-div-second-container-main{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     /* align-items: center; */
     /* justify-content: center; */
 }
 .Resume-div-second-container-1{
-    width: 40vw;
+    /* width: 40vw; */
+    /* outline: 1px solid rebeccapurple; */
+    /* justify-content: space-around; */
 }
 .Resume-div-second-container-2{
 

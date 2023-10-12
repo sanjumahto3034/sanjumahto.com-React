@@ -154,7 +154,7 @@ function Resume() {
           </div>
         </div>
 
-        <div className="Resume-div-second-container-2"></div>
+        {/* <div className="Resume-div-second-container-2"></div> */}
 
         <div className="Resume-div-second-container-3">
           <div

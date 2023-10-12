@@ -1,37 +1,28 @@
-import React from 'react';
-import './App.css';
-import HeaderDiv from './Header';
-import HomeTitle from './HomeTitle';
-import Introductiondiv from './Introductiondiv';
-import Footer from './Footer';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import HeaderDiv from "./Header";
+import HomeTitle from "./HomeTitle";
+import Introductiondiv from "./Introductiondiv";
+import Footer from "./Footer";
 
-import TitleDiv from './TitleDiv';
-import HomePageDiv from './HomePageDiv';
-import WhatIDo from './WhatIDo';
+import TitleDiv from "./TitleDiv";
+import HomePageDiv from "./HomePageDiv";
+import WhatIDo from "./WhatIDo";
 
-import WhoIWorkWith from './WhoIWorkWith';
-import Resume from './Resume/Resume';
+import WhoIWorkWith from "./WhoIWorkWith";
+import Resume from "./Resume/Resume";
 
 
 function App() {
   return (
     <div className="App">
-      {/* <TitleDiv/> */}
-      <HomePageDiv/>
-      
-      <WhoIWorkWith/>
-      <WhatIDo/>
-      <Resume/> 
-      <Footer/> 
-
-
-
-
-
-
-
-
-
+    
+      <TitleDiv />
+      <HomePageDiv />
+      <WhoIWorkWith />
+      <WhatIDo />
+      <Resume />
+      <Footer />
 
       {/* <div className="verticle-line-1"></div>
       <div className="verticle-line-2"></div>

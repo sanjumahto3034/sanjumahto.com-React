@@ -24,7 +24,8 @@ function WhoIWorkWith() {
         <div className="headerDefine">& Programmer at</div>
         <div className="headerDefine">EmizenTech Pvt. Ltd.</div>
         <div className="headerDescription">
-          Working in EmizenTech from more than {calculateMonthsDifference("2023-06-05")}-months. And 2D Games on Ludo
+          Working in EmizenTech from more than{" "}
+          {calculateMonthsDifference("2023-06-05")}-months. And 2D Games on Ludo
           And AR Applications.
         </div>
       </div>
@@ -34,7 +35,7 @@ function WhoIWorkWith() {
         src={ludoImage}
         alt="ludo.png"
         data-aos-delay="200"
-        data-aos="fade-left"
+        data-aos="fade-right"
         data-aos-duration="1000"
       ></img>
     </div>

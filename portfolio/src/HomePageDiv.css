@@ -1,23 +1,22 @@
-.HomePageDiv{
+.HomePageDiv {
     padding-top: 20vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    /* margin-top: 20vh; */
-    /* margin-left: 5vw; */
     display: flex;
     flex-direction: row;
 }
-.firstContainer{
+
+.firstContainer {
     display: flex;
     flex-direction: column;
 }
-.person-name{
+
+.person-name {
     color: #E90064;
     font-family: Raleway-ExtraBold;
     font-size: 2rem;
-    margin-bottom: 1vh;
+    margin-bottom: 10px;
 }
-.description-name{
+
+.description-name {
     color: #460C68;
     font-family: Raleway-Bold;
     word-wrap: break-word;
@@ -25,91 +24,115 @@
     white-space: nowrap;
     flex-direction: row;
     flex-wrap: nowrap;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
-.extraButton{
-    margin-top: 3vh;
+
+.extraButton {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* background-color: #460C68; */
-    width: 300px;
     height: 70px;
 }
-.square{
+
+.square {
     display: grid;
     align-items: center;
     font-size: 2rem;
-    margin-left: 1vw;
     background-color: #E90064;
     -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
     width: 50px;
     height: 50px;
 }
-.arrow-text{
-    margin-left: 7px;
-    margin-bottom:10px;
+
+.arrow-text {
+    padding: 7px;
+    /* padding:10px; */
     font-family: Raleway-ExtraBold;
     color: white;
 }
-.circle-block{
+
+.circle-block {
     display: grid;
     align-items: center;
     justify-content: center;
-    margin-left: 1vw;
+    margin-left: 10px;
     border-radius: 50%;
     background-color: #460C68;
     width: 50px;
     height: 50px;
 }
-.github{
+
+.github {
     width: 30px;
     height: 30px;
 }
-.line-draw{
-    margin-left: 1vw;
+
+.line-draw {
+    /* margin-left: 1vw; */
     background-color: #460C68;
     opacity: 20%;
     width: 250px;
     height: 2px;
 }
 
-.SecondContainer{
+.SecondContainer {
     margin-left: 20vw;
 }
-.computerImage{
+
+.computerImage {
     width: 40vw;
 }
-.bottom-line{
+
+.bottom-line {
     position: absolute;
-    width: 90vw;
+    /* width: 90vw; */
     height: 0.4px;
     opacity: 20%;
     background-color: #460C68;
     margin-top: 70vh;
 }
-@media (max-width: 720px){
-    .HomePageDiv{
+
+@media (max-width: 720px) {
+    .HomePageDiv {
         padding-top: 10vh;
         flex-direction: column-reverse;
     }
-    .circle-block{
+
+    .circle-block {
         margin-left: 5vw;
     }
-    .description-name{
-        font-size: 3rem;
-    }
-    .person-name{
+
+    .description-name {
         font-size: 2rem;
     }
-    .computerImage{
-        width: 80vw;
+
+    .person-name {
+        font-size: 2rem;
     }
-    .SecondContainer{
+
+    .computerImage {
+        width: 70vw;
+    }
+
+    .SecondContainer {
         margin-left: 0vw;
     }
-    .bottom-line{
+
+    .bottom-line {
         margin-top: 100vh;
     }
+}
+
+
+
+.Illustrator-class {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.illustrator-image {
+    width: 100%;
 }
