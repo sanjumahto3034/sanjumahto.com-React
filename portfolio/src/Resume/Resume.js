@@ -15,7 +15,7 @@ function Resume() {
       className="Resume-div-main"
       data-aos-delay="200"
       data-aos="fade-in"
-      data-aos-duration="1000"
+      data-aos-duration="0"
     >
       <div className="Resume-title-div">
         <img
@@ -23,31 +23,31 @@ function Resume() {
           src={profile_picture}
           alt="ProfilePicture.png"
           data-aos-delay="200"
-          data-aos="fade-right"
-          data-aos-duration="1000"
+          data-aos="fade-up"
+          data-aos-duration="0"
         ></img>
         <div className="Resume-profile-Description-main">
           <div
             className="Resume-Description-Name"
             data-aos-delay="200"
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Sanju Mahto
           </div>
           <div
             className="Resume-Description-Post"
             data-aos-delay="200"
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Front-End Game Programmer
           </div>
           <div
             className="Resume-Description-About"
             data-aos-delay="200"
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Hello, I'm Sanju. I'm a Game developer expert with{" "}
             {calculateMonthsDifference("2022-06-25")} of experience in the Game
@@ -65,8 +65,8 @@ function Resume() {
           <div
             className="Resume-div-second-container-title"
             data-aos-delay="200"
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Contact Info
             <div className="Resume-div-second-container-1-contact-div-contact-info">
@@ -105,8 +105,8 @@ function Resume() {
           <div
             className="Resume-div-second-container-title"
             data-aos-delay="200"
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Education
             <div className="Resume-div-details-title">10th</div>
@@ -126,8 +126,8 @@ function Resume() {
           <div
             className="Resume-div-second-container-title"
             data-aos-delay="200"
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Interest
             <div className="Resume-div-details-title">Gaming Enthusiast</div>
@@ -141,8 +141,8 @@ function Resume() {
           <div
             className="Resume-div-second-container-title"
             data-aos-delay="200"
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Skills
             <div className="Resume-div-details-title">Fast Learner</div>
@@ -160,8 +160,8 @@ function Resume() {
           <div
             className="Resume-div-second-container-title"
             data-aos-delay="200"
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Languages
             <div className="Resume-div-details-title">JS/TS</div>
@@ -179,8 +179,8 @@ function Resume() {
           <div
             className="Resume-div-second-container-title"
             data-aos-delay="200"
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Game Engine
             <div className="Resume-div-details-title">Unity 3D</div>
@@ -196,8 +196,8 @@ function Resume() {
           <div
             className="Resume-div-second-container-title"
             data-aos-delay="200"
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="0"
           >
             Work Experience
             <div className="Resume-div-work-experience-content">

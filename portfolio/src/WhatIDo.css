@@ -149,7 +149,7 @@
     transition: 0.2s;
     filter: brightness(1) invert(1);
 }
-@media (max-width: 480px) {
+@media (max-width: 980px) {
     .WhatIDo {
         display: flex;
         flex-direction: column;

@@ -10,7 +10,7 @@ function WhatIDo(){
     return(
         <div className="WhatIDo">
         
-            <div className="first-div"  data-aos = "fade-right" data-aos-duration="1000">
+            <div className="first-div"  data-aos = "fade-up" data-aos-duration="1000">
                 <div className="first-div-main">
                     {/* <div className="WhatIDo-circle-patch-1"></div> */}
                     {/* <div className="WhatIDo-circle-patch-2"></div> */}
@@ -24,9 +24,9 @@ function WhatIDo(){
             </div>
 
 
-            <div className="second-div" data-aos = "fade-left">
+            <div className="second-div" data-aos = "fade-up">
                 <div className="second-div-main">
-                        <div className="display-engine" data-aos-delay="200" data-aos ="fade-left" data-aos-duration="1000">
+                        <div className="display-engine" data-aos-delay="200" data-aos ="fade-up" data-aos-duration="1000">
                             <div className="engine-logo"><img className="engine-logo-png" src = {linkined} alt="unity.png"></img></div>
                             <div className="engine-section">
                                 <div className="engine-title">Unity 3D</div>
@@ -35,7 +35,7 @@ function WhatIDo(){
                         </div>
 
 
-                        <div className="display-engine" data-aos-delay="300" data-aos ="fade-left" data-aos-duration="700">
+                        <div className="display-engine" data-aos-delay="300" data-aos ="fade-up" data-aos-duration="700">
                             <div className="engine-logo"><img className="engine-logo-png" src = {linkined} alt="unity.png"></img></div>
                             <div className="engine-section">
                                 <div className="engine-title">Cocos Creator</div>
@@ -45,7 +45,7 @@ function WhatIDo(){
 
 
 
-                        <div className="display-engine" data-aos-delay="400" data-aos ="fade-left" data-aos-duration="600">
+                        <div className="display-engine" data-aos-delay="400" data-aos ="fade-up" data-aos-duration="600">
                             <div className="engine-logo"><img className="engine-logo-png" src = {linkined} alt="unity.png"></img></div>
                             <div className="engine-section">
                                 <div className="engine-title">Unreal Engine</div>

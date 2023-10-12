@@ -76,7 +76,7 @@
     background-color: black;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
     .title-div-desktop {
         display: none;
     }

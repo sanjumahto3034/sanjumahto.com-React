@@ -16,7 +16,7 @@ function WhoIWorkWith() {
       <div
         className="columnContainer"
         data-aos-delay="200"
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-duration="1000"
       >
         <div className="headerText">-Who I Work With</div>
@@ -35,7 +35,7 @@ function WhoIWorkWith() {
         src={ludoImage}
         alt="ludo.png"
         data-aos-delay="200"
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-duration="1000"
       ></img>
     </div>
