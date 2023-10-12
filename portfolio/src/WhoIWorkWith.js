@@ -11,13 +11,13 @@ function WhoIWorkWith() {
       className="WhoIWorkWithMain"
       data-aos-delay="200"
       data-aos="fade-in"
-      data-aos-duration="1000"
+      data-aos-duration="0"
     >
       <div
         className="columnContainer"
         data-aos-delay="200"
         data-aos="fade-up"
-        data-aos-duration="1000"
+        data-aos-duration="0"
       >
         <div className="headerText">-Who I Work With</div>
         <div className="headerDefine">Game Developer, Designer</div>
@@ -36,7 +36,7 @@ function WhoIWorkWith() {
         alt="ludo.png"
         data-aos-delay="200"
         data-aos="fade-up"
-        data-aos-duration="1000"
+        data-aos-duration="0"
       ></img>
     </div>
   );
