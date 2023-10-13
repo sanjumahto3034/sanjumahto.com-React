@@ -2,6 +2,7 @@
     padding-top: 20vh;
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .firstContainer {
