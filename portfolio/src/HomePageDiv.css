@@ -1,5 +1,5 @@
 .HomePageDiv {
-    padding-top: 20vh;
+    padding-top: 30vh;
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -11,14 +11,16 @@
 }
 
 .person-name {
-    color: #E90064;
+    /* color: #E90064; */
+    color: cyan;
     font-family: Raleway-ExtraBold;
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .description-name {
-    color: #460C68;
+    /* color: #460C68; */
+    color: #FFFFFF;
     font-family: Raleway-Bold;
     word-wrap: break-word;
     display: flex;
@@ -61,6 +63,7 @@
     margin-left: 10px;
     border-radius: 50%;
     background-color: #460C68;
+    background-color: cyan;
     width: 50px;
     height: 50px;
 }
@@ -84,6 +87,7 @@
 
 .computerImage {
     width: 40vw;
+    visibility: none;
 }
 
 .bottom-line {
@@ -128,12 +132,3 @@
 
 
 
-.Illustrator-class {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
-
-.illustrator-image {
-    width: 100%;
-}

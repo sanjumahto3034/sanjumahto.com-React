@@ -26,8 +26,8 @@ function TitleDiv() {
       titleDiv.style.paddingRight = "50px";
       titleDiv.style.paddingLeft = "50px";
     } else {
-      titleDiv.style.width = "90vw"; // Restore the original width when user scrolls to the top
-      titleDiv.style.borderRadius = "70px"; // Restore the original border radius
+      titleDiv.style.width = "90vw"; // Restore the original width when user scrolls to the top.
+      titleDiv.style.borderRadius = "70px"; // Restore the original border radius.
       titleDiv.style.marginTop = "30px";
       titleDiv.style.paddingRight = "30px";
       titleDiv.style.paddingLeft = "30px";

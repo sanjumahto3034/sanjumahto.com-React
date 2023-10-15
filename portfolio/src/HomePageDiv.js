@@ -1,41 +1,26 @@
 import React, { useEffect, useState } from "react";
-import illustrator from "./res/illustrator_bg.jpg";
 import "./HomePageDiv.css";
 import computerImage from "./res/homePageGame.png";
+import astronaut_with_balloon_image from "./res/HomePageIcon/astronoat_with_balloon.png";
 import gitHub from "./res/github.png";
 import instagram from "./res/instagram.png";
 import linkined from "./res/linkined.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const MouseTracker = () => {
-  const [coords, setCoords] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleWindowMouseMove = (event) => {
-      setCoords({
-        x: event.clientX,
-        y: event.clientY,
-      });
-    };
-    window.addEventListener("mousemove", handleWindowMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleWindowMouseMove);
-    };
-  }, []);
-
-  return (
-    <div className="Illustrator-class">
-      {/* <img
-        className="illustrator-image"
-        src={illustrator}
-        alt="illustrator.png"
-      ></img> */}
-    </div>
-  );
-};
 function HomePageDiv() {
+  window.addEventListener("scroll", function () {
+    const titleDiv = document.querySelector(".TitleDiv");
+    if (window.scrollY > 200) {
+    } else {
+    }
+  });
+  window.addEventListener("mousemove", (e) => {
+    var x = e.clientX;
+    var y = e.clientY;
+    const computerImageDiv = document.querySelector(".computerImage");
+    computerImageDiv.style.transform = "translate(" + (x / 100) * 4 + "px," + (y / 100) * 4 + "px)";
+  });
   useEffect(() => {
     AOS.init({
       easing: "ease-in-sine",
@@ -43,7 +28,6 @@ function HomePageDiv() {
   }, []);
   return (
     <div className="HomePageDiv">
-      <MouseTracker />
       <div className="firstContainer">
         <div
           className="person-name"
@@ -105,13 +89,19 @@ function HomePageDiv() {
       </div>
 
       <div className="SecondContainer">
-        <img
+        {/* <img
           className="computerImage"
           src={computerImage}
           alt="computer.png"
           ata-aos-delay="100"
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-duration="0"
+        ></img>    */}
+
+        <img
+          className="computerImage"
+          src={astronaut_with_balloon_image}
+          alt="computer.png"
         ></img>
       </div>
 

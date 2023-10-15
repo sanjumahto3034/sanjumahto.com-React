@@ -4,6 +4,7 @@ import HeaderDiv from "./Header";
 import HomeTitle from "./HomeTitle";
 import Introductiondiv from "./Introductiondiv";
 import Footer from "./Footer";
+import illustrator from "./res/wallpaperflare.com_wallpaper.jpg";
 
 import TitleDiv from "./TitleDiv";
 import HomePageDiv from "./HomePageDiv";
@@ -11,12 +12,13 @@ import WhatIDo from "./WhatIDo";
 
 import WhoIWorkWith from "./WhoIWorkWith";
 import Resume from "./Resume/Resume";
+import HomePageMouseHoverIllustrator from "./HomePageMouseHoverIllustrator";
 
 
 function App() {
   return (
     <div className="App">
-    
+      <HomePageMouseHoverIllustrator />
       <TitleDiv />
       <HomePageDiv />
       <WhoIWorkWith />

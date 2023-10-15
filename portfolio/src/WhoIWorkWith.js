@@ -14,11 +14,15 @@ function WhoIWorkWith() {
     value = window.scrollY / 400;
     SetScrollValue(value);
     titleDiv.style.scale = value + "";
-    // if (window.scrollY > 0.1) {
-    // } else {
-    // }
-  });
 
+  });
+  window.addEventListener("mousemove", (e) => {
+    var x = e.clientX;
+    var y = e.clientY;
+    const titleDiv = document.querySelector(".WhoIWorkWithMain-image-bg");
+    titleDiv.style.transform =
+      "translate(" + (x / 100) * 11 + "px," + (y / 100) * 11 + "px)";
+  });
   return (
     <div
       className="WhoIWorkWithMain"
