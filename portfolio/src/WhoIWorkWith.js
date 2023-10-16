@@ -14,7 +14,6 @@ function WhoIWorkWith() {
     value = window.scrollY / 400;
     SetScrollValue(value);
     titleDiv.style.scale = value + "";
-
   });
   window.addEventListener("mousemove", (e) => {
     var x = e.clientX;
@@ -24,38 +23,41 @@ function WhoIWorkWith() {
       "translate(" + (x / 100) * 11 + "px," + (y / 100) * 11 + "px)";
   });
   return (
-    <div
-      className="WhoIWorkWithMain"
-      data-aos-delay="200"
-      data-aos="fade-in"
-      data-aos-duration="0"
-    >
-      <img className="WhoIWorkWithMain-image-bg" src={game_image}></img>
+    <div className="WhoIWorkWith-static">
       <div
-        className="columnContainer"
+        className="WhoIWorkWithMain"
         data-aos-delay="200"
-        data-aos="fade-up"
+        data-aos="fade-in"
         data-aos-duration="0"
       >
-        <div className="headerText">-Who I Work With.</div>
-        <div className="headerDefine">Game Developer, Designer</div>
-        <div className="headerDefine">& Programmer at</div>
-        <div className="headerDefine">EmizenTech Pvt. Ltd.</div>
-        <div className="headerDescription">
-          I have been working at EmizenTech for over four{" "}
-          {calculateMonthsDifference("2023-06-05")}-months, primarily focusing
-          on developing 2D,3D and Augmented Reality (AR) games and applications.
+        <img className="WhoIWorkWithMain-image-bg" src={game_image}></img>
+        <div
+          className="columnContainer"
+          data-aos-delay="200"
+          data-aos="fade-up"
+          data-aos-duration="0"
+        >
+          <div className="headerText">-Who I Work With.</div>
+          <div className="headerDefine">Game Developer, Designer</div>
+          <div className="headerDefine">& Programmer at</div>
+          <div className="headerDefine">EmizenTech Pvt. Ltd.</div>
+          <div className="headerDescription">
+            I have been working at EmizenTech for over four{" "}
+            {calculateMonthsDifference("2023-06-05")}-months, primarily focusing
+            on developing 2D,3D and Augmented Reality (AR) games and
+            applications.
+          </div>
         </div>
-      </div>
 
-      <img
-        className="ludo-image"
-        src={ludoImage}
-        alt="ludo.png"
-        data-aos-delay="200"
-        data-aos="fade-up"
-        data-aos-duration="0"
-      ></img>
+        <img
+          className="ludo-image"
+          src={ludoImage}
+          alt="ludo.png"
+          data-aos-delay="200"
+          data-aos="fade-up"
+          data-aos-duration="0"
+        ></img>
+      </div>
     </div>
   );
 }

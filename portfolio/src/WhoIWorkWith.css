@@ -1,3 +1,5 @@
+@import url("./StaticColor.css");
+
 .WhoIWorkWithMain {
     /* background-color: #460C68; */
     margin-top: 104px;
@@ -17,7 +19,11 @@
     padding-right: 2vw; */
     /* overflow: hidden; */
 }
-
+.WhoIWorkWith-static{
+    background-color: var(--page-color-1);
+    width: 100vw;
+    height: 100vh;
+}
 .columnContainer {
     /* outline: 2px solid black; */
     color: white;

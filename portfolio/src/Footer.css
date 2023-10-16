@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
 /* font-family: 'Work Sans', sans-serif; */
-
+@import url("./StaticColor.css");
 .footer-background{
-    background-color: black;
+    background-color: var(--secondary-color);
     width: 100%;
     padding-top: 2vh;
     padding-bottom: 2vh;

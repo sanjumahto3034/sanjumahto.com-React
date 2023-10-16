@@ -1,6 +1,8 @@
+@import url("../StaticColor.css");
 .Resume-div-main{
     width: 90vw;
-    background-color: #1e1c27;
+    /* background-color: #1e1c27; */
+    background-color: var(--secondary-color);
     border-radius: 10px;
     margin-bottom: 10vh;
     margin-top: 15vh;
