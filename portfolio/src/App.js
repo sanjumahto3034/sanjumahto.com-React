@@ -12,6 +12,7 @@ import WhatIDo from "./WhatIDo";
 import WhoIWorkWith from "./WhoIWorkWith";
 import Resume from "./Resume/Resume";
 import StaticColorBackground from "./StaticColorBackground";
+import EngineLogo from "./EngineLogo";
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <TitleDiv />
       <HomePageDiv />
       <WhoIWorkWith />
-      <WhatIDo />
+      {/* <WhatIDo /> */}
+      {/* <EngineLogo/> */}
       <Resume />
       <Footer />
 

@@ -1,0 +1,19 @@
+@import url("./StaticColor.css");
+
+.engine-logo-main {
+    background-color: var(--primary-color);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.engine-logo {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 150px;
+    height: 150px;
+}

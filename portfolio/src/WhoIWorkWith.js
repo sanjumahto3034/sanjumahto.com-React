@@ -10,17 +10,21 @@ function WhoIWorkWith() {
   const [ScrollValue, SetScrollValue] = useState(1);
   var value = 1;
   window.addEventListener("scroll", function () {
-    const titleDiv = document.querySelector(".WhoIWorkWithMain-image-bg");
-    value = window.scrollY / 400;
-    SetScrollValue(value);
-    titleDiv.style.scale = value + "";
+    const battle_bg = document.querySelector(".WhoIWorkWithMain-image-bg");
+    if (battle_bg) {
+      value = window.scrollY / 400;
+      SetScrollValue(value);
+      battle_bg.style.scale = value + "";
+    }
   });
   window.addEventListener("mousemove", (e) => {
     var x = e.clientX;
     var y = e.clientY;
-    const titleDiv = document.querySelector(".WhoIWorkWithMain-image-bg");
-    titleDiv.style.transform =
-      "translate(" + (x / 100) * 11 + "px," + (y / 100) * 11 + "px)";
+    const battle_bg = document.querySelector(".WhoIWorkWithMain-image-bg");
+    if (battle_bg) {
+      battle_bg.style.transform =
+        "translate(" + (x / 100) * 11 + "px," + (y / 100) * 11 + "px)";
+    }
   });
   return (
     <div className="WhoIWorkWith-static">
@@ -30,14 +34,14 @@ function WhoIWorkWith() {
         data-aos="fade-in"
         data-aos-duration="0"
       >
-        <img className="WhoIWorkWithMain-image-bg" src={game_image}></img>
+        {/* <img className="WhoIWorkWithMain-image-bg" src={game_image}></img> */}
         <div
           className="columnContainer"
           data-aos-delay="200"
           data-aos="fade-up"
           data-aos-duration="0"
         >
-          <div className="headerText">-Who I Work With.</div>
+          <div className="headerText">~ Who I Work With.</div>
           <div className="headerDefine">Game Developer, Designer</div>
           <div className="headerDefine">& Programmer at</div>
           <div className="headerDefine">EmizenTech Pvt. Ltd.</div>

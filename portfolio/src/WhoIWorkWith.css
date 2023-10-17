@@ -1,49 +1,36 @@
 @import url("./StaticColor.css");
 
 .WhoIWorkWithMain {
-    /* background-color: #460C68; */
-    margin-top: 104px;
-    border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    overflow: hidden;
-    /* padding-left: 7vw;
-    padding-right: 2vw; */
-    /* overflow: hidden; */
+    box-shadow: rgba(255, 0, 98, 0.25) 0px 54px 55px, rgba(255, 0, 98, 0.12) 0px -12px 30px, rgba(255, 0, 98, 0.12) 0px 4px 6px, rgba(255, 0, 98, 0.17) 0px 12px 13px, rgba(255, 0, 98, 0.09) 0px -3px 5px;
 }
-.WhoIWorkWith-static{
+
+.WhoIWorkWith-static {
     background-color: var(--page-color-1);
     width: 100vw;
-    height: 100vh;
 }
+
 .columnContainer {
-    /* outline: 2px solid black; */
     color: white;
-    /* padding-left: 7vw; */
     display: flex;
     flex-direction: column;
-    /* width: 50vw; */
-    /* padding-top: 10vh; */
     padding: 7%;
 }
 
 .headerText {
-    color: white;
+    /* color: white; */
     font-family: Raleway-ExtraBold;
+    /* font-family: monospace; */
+    color: var(--primary-color);
     font-size: 1rem;
 }
 
 .headerDefine {
     font-family: Raleway-ExtraBold;
-    font-size: 4rem;
+    font-size: 3.5rem;
     white-space: nowrap;
     /* word-break: keep-all; */
     /* word-wrap: no; */
@@ -53,6 +40,7 @@
 .headerDescription {
     font-family: Roboto-Thin;
     padding-top: 10px;
+    font-family: monospace;
     /* width: 30vw; */
 }
 
@@ -60,7 +48,6 @@
     /* outline: 2px solid red; */
     padding: 1%;
     width: 300px;
-    height: 300px;
 
 }
 

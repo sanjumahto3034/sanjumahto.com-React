@@ -12,8 +12,6 @@ function WhatIDo(){
         
             <div className="first-div"  data-aos = "fade-up" data-aos-duration="1000">
                 <div className="first-div-main">
-                    {/* <div className="WhatIDo-circle-patch-1"></div> */}
-                    {/* <div className="WhatIDo-circle-patch-2"></div> */}
                     <div className="title-first-div" >Working<br/>Experience</div>
                     <div className="description-first-div">I'm Sanju Mahto, Unity Game Developer, Designer & Programmer At EmizenTech Pvt. Ltd.. Have a experience more than a {calculateMonthsDifference("2023-06-05")}-Months.</div>
                     <div className="description-first-div">I have work on many other self projects based on Unity and Cocos.</div>

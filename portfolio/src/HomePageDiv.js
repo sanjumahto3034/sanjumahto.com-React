@@ -19,7 +19,10 @@ function HomePageDiv() {
     var x = e.clientX;
     var y = e.clientY;
     const computerImageDiv = document.querySelector(".computerImage");
-    computerImageDiv.style.transform = "translate(" + (x / 100) * 4 + "px," + (y / 100) * 4 + "px)";
+    if (computerImageDiv) {
+      computerImageDiv.style.transform =
+        "translate(" + (x / 100) * 4 + "px," + (y / 100) * 4 + "px)";
+    }
   });
   useEffect(() => {
     AOS.init({
