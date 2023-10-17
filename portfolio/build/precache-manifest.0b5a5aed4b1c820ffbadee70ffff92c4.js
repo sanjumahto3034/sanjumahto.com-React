@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "14673ff0af30161f295a",
-    "url": "/static/css/main.fb2a70c1.chunk.css"
+    "revision": "8b1a6a27018a9fd652cb",
+    "url": "/static/css/main.d67be528.chunk.css"
   },
   {
-    "revision": "14673ff0af30161f295a",
-    "url": "/static/js/main.9c0bd6fc.chunk.js"
+    "revision": "8b1a6a27018a9fd652cb",
+    "url": "/static/js/main.b109f3c1.chunk.js"
   },
   {
-    "revision": "3de2b6743d13f2a96385",
-    "url": "/static/js/runtime~main.9fc71880.js"
+    "revision": "dcabe1308a376f050c3e",
+    "url": "/static/js/runtime~main.9799ac6f.js"
   },
   {
-    "revision": "78a58509124817a7dbe8",
+    "revision": "c2b4a56c386236e25d4a",
     "url": "/static/css/2.ab3df94c.chunk.css"
   },
   {
-    "revision": "78a58509124817a7dbe8",
-    "url": "/static/js/2.35b2df2a.chunk.js"
+    "revision": "c2b4a56c386236e25d4a",
+    "url": "/static/js/2.9445a31f.chunk.js"
   },
   {
-    "revision": "e369271064879ca58395",
-    "url": "/static/js/3.2daa992f.chunk.js"
+    "revision": "93b7003b8b3fe8bac328",
+    "url": "/static/js/3.c17d3b5c.chunk.js"
   },
   {
     "revision": "13274bad300a268e6ffadfc709f12a63",
@@ -56,71 +56,71 @@ self.__precacheManifest = [
     "url": "/static/media/ludo.38158f2c.png"
   },
   {
-    "revision": "b4ac55676ac41d96f1e98cced68aa1fa",
-    "url": "/static/media/game_page.b4ac5567.jpg"
-  },
-  {
     "revision": "9f59d59d18bdc9b3efebc8af56a9b3ea",
     "url": "/static/media/profile_picture.9f59d59d.png"
-  },
-  {
-    "revision": "896a60219f6157eab096825a0c9348a8",
-    "url": "/static/media/Ubuntu-Bold.896a6021.ttf"
-  },
-  {
-    "revision": "d3c3b35e6d478ed149f02fad880dd359",
-    "url": "/static/media/Ubuntu-Medium.d3c3b35e.ttf"
   },
   {
     "revision": "c9d68f61bf89fde6a24da697bc45d6f9",
     "url": "/static/media/Ubuntu-Light.c9d68f61.ttf"
   },
   {
+    "revision": "d3c3b35e6d478ed149f02fad880dd359",
+    "url": "/static/media/Ubuntu-Medium.d3c3b35e.ttf"
+  },
+  {
     "revision": "db8e7354e2585143a4f7ef6f71bfe0ca",
     "url": "/static/media/Raleway-Thin.db8e7354.ttf"
-  },
-  {
-    "revision": "550ad10fece0b35b0325d38192701592",
-    "url": "/static/media/Raleway-ExtraLight.550ad10f.ttf"
-  },
-  {
-    "revision": "20d41940068e45b114d32b48d684ef39",
-    "url": "/static/media/Raleway-Regular.20d41940.ttf"
-  },
-  {
-    "revision": "84ea7c5c9d2fa40c070ccb901046117d",
-    "url": "/static/media/Ubuntu-Regular.84ea7c5c.ttf"
   },
   {
     "revision": "ed645c2b20d22612c4985bc4e4b4a7ff",
     "url": "/static/media/Raleway-Light.ed645c2b.ttf"
   },
   {
-    "revision": "b952c3c81ba34b54c66c748ea1e828a7",
-    "url": "/static/media/Raleway-Medium.b952c3c8.ttf"
-  },
-  {
-    "revision": "88079335418f389bfb2d86bc4f1ced64",
-    "url": "/static/media/Raleway-Bold.88079335.ttf"
+    "revision": "550ad10fece0b35b0325d38192701592",
+    "url": "/static/media/Raleway-ExtraLight.550ad10f.ttf"
   },
   {
     "revision": "35e0e2e7a5b03275ba569a214edbab77",
     "url": "/static/media/Raleway-Black.35e0e2e7.ttf"
   },
   {
-    "revision": "87641f9900d717d6bfbf108b8755868e",
-    "url": "/static/media/Raleway-SemiBold.87641f99.ttf"
+    "revision": "20d41940068e45b114d32b48d684ef39",
+    "url": "/static/media/Raleway-Regular.20d41940.ttf"
   },
   {
     "revision": "27f7ef17de3691b5cdb9f1ee1ee5cc6a",
     "url": "/static/media/Raleway-ExtraBold.27f7ef17.ttf"
   },
   {
+    "revision": "b952c3c81ba34b54c66c748ea1e828a7",
+    "url": "/static/media/Raleway-Medium.b952c3c8.ttf"
+  },
+  {
+    "revision": "87641f9900d717d6bfbf108b8755868e",
+    "url": "/static/media/Raleway-SemiBold.87641f99.ttf"
+  },
+  {
+    "revision": "88079335418f389bfb2d86bc4f1ced64",
+    "url": "/static/media/Raleway-Bold.88079335.ttf"
+  },
+  {
+    "revision": "896a60219f6157eab096825a0c9348a8",
+    "url": "/static/media/Ubuntu-Bold.896a6021.ttf"
+  },
+  {
+    "revision": "84ea7c5c9d2fa40c070ccb901046117d",
+    "url": "/static/media/Ubuntu-Regular.84ea7c5c.ttf"
+  },
+  {
     "revision": "724aebd0bcff9b04941af316f96a803c",
     "url": "/static/media/homePageGame.724aebd0.png"
   },
   {
-    "revision": "9654b2eb5a074a931438b61ffb1b7ca1",
+    "revision": "b4ac55676ac41d96f1e98cced68aa1fa",
+    "url": "/static/media/game_page.b4ac5567.jpg"
+  },
+  {
+    "revision": "7f5216fa8d405658f9a4217cc92cfcc4",
     "url": "/index.html"
   }
 ];
