@@ -1,29 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import HeaderDiv from "./Header";
-import HomeTitle from "./HomeTitle";
-import Introductiondiv from "./Introductiondiv";
-import Footer from "./Footer";
-
-import TitleDiv from "./TitleDiv";
-import HomePageDiv from "./HomePageDiv";
-import WhatIDo from "./WhatIDo";
-
-import WhoIWorkWith from "./WhoIWorkWith";
-import Resume from "./Resume/Resume";
-import StaticColorBackground from "./StaticColorBackground";
-import EngineLogo from "./EngineLogo";
+import Header from "./Modules/Header";
+import HomePage from "./Modules/HomePage";
 
 
 function App() {
   return (
     <div className="App">
-      <StaticColorBackground/>
-      <TitleDiv />
-      <HomePageDiv />
-      <WhoIWorkWith />
-      <Resume />
-      <Footer />
+    <Header></Header>
+    <HomePage></HomePage>
     </div>
   );
 }

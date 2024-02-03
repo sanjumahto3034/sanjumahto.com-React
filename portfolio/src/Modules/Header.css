@@ -1,0 +1,41 @@
+.header_main {
+    background-color: #0b0c14;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.char_name {
+    color: white;
+    transition: 0.3s;
+}
+
+.char_name:hover {
+    color: #E30022;
+    transition: 0.3s;
+    cursor: none;
+}
+
+.site_name {
+    font-family: Raleway-Bold;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: 100px;
+}
+
+.site_route_buttons {
+    font-weight: 900;
+    color: white;
+    display: flex;
+    gap: 50px;
+    font-family: Raleway-Regular;
+    margin-right: 100px;
+}
+
+.red_letter {
+    color: #E30022;
+}
