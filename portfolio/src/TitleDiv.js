@@ -47,9 +47,9 @@ function TitleDiv() {
         <Link className="title-div-btn" to="/resume">
           <div className="title-div-btn-text">Resume</div>
         </Link>
-        <div className="title-div-btn" onClick={underDevelopment}>
+        <Link className="title-div-btn" to="/talk">
           <div className="title-div-btn-text">Let's Talk</div>
-        </div>
+        </Link>
       </div>
       {/* <div className='title-div-mobile-show-btn' onClick={showSideBar}>MORE</div> */}
       {/* <div className={divStyle}>
