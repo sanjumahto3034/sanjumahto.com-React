@@ -1,0 +1,136 @@
+.where_i_worked {
+    background-color: var(--primary-color);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.where_i_worked_right {
+    width: 500px;
+    margin-left: 250px;
+    padding: 30px;
+    /* height: 500px; */
+}
+
+.where_i_worked_left {
+    width: 400px;
+    height: 440px;
+    margin-right: 250px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--secondary-color-secondary-light);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+.where_i_worked_right_buttons_parent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.where_i_worked_right_button {
+    width: auto;
+    background-color: var(--primary-color-second);
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid var(--secondary-color-secondary-light);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.where_i_worked_right_button:hover {
+    width: auto;
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.where_i_work_company_name {
+    color: var(--text-color-primary);
+    font-family: Raleway-Bold;
+}
+
+.where_i_work_company_duration {
+    color: var(--text-color-primary);
+    margin-top: 10px;
+    font-family: Raleway-Light;
+}
+
+
+/* Right Side */
+
+
+.where_i_worked_left_company_name {
+    color: var(--text-color-primary);
+    font-family: Raleway-ExtraBold;
+    font-size: 2.5rem;
+}
+
+.where_i_worked_left_company_duration {
+    color: var(--text-color-primary);
+    font-family: Raleway-Bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.where_i_worked_left_company_duration_in_description {
+    color: var(--text-color-primary);
+    font-family: Raleway-Light;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Animation */
+.where_i_worked_left {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.where_i_worked_left.fade-out {
+    opacity: 0;
+}
+
+@media (min-width:1200px) {
+    .where_i_worked_left {}
+
+    .where_i_worked_right {}
+}
+
+
+
+@media (max-width:800px) {
+    .where_i_worked {
+        flex-direction: column;
+    }
+
+    .where_i_worked_left {
+        width: 75%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .where_i_worked_right {
+        width: 90%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .where_i_worked_left_company_duration{
+        font-size: 1rem;
+    }
+}

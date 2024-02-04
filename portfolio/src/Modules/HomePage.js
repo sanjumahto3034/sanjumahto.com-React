@@ -13,6 +13,10 @@ function HomePage() {
   var characters_description_1 = description_1.split("");
   var characters_description_2 = description_2.split("");
 
+  OnMouseMove(".profile_bg_layer_2");
+  OnMouseMove(".profile_bg_layer_3");
+  OnMouseMove(".profile_bg_layer_4");
+  OnMouseMove(".profile_image");
   return (
     <div className="home_page_main">
       <div className="home_page_left">
@@ -36,6 +40,7 @@ function HomePage() {
             </span>
           ))}{" "}
         </div>
+
         <div className="home_page_description">
           {characters_description_2.map((char, index) => (
             <span key={index} className="char_name">
@@ -43,6 +48,7 @@ function HomePage() {
             </span>
           ))}
         </div>
+
         <div className="contact_me_button">Contact Me</div>
       </div>
 
@@ -66,6 +72,7 @@ function HomePage() {
     </div>
   );
 }
+
 const OnClickFacebook = () => {
   window.open(
     "https://www.facebook.com/sanjumahto3034",
@@ -87,4 +94,23 @@ const OnClickGitHub = () => {
     "noopener,noreferrer"
   );
 };
+const OnMouseMove = (layer_name) => {
+  var sensitivity = Math.random() * 0.5;
+  window.addEventListener("mousemove", (e) => {
+    var x = e.clientX;
+    var y = e.clientY;
+
+    const layer = document.querySelector(layer_name);
+
+    if (layer) {
+      layer.style.transform =
+        "translate(" +
+        (x / 100) * sensitivity +
+        "px," +
+        (y / 100) * sensitivity +
+        "px)";
+    }
+  });
+};
+
 export default HomePage;

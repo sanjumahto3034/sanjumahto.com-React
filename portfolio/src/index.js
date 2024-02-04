@@ -26,7 +26,6 @@ const routePages = createBrowserRouter([
     element: <App />, //TODO: For Extra Test of Extra Spacing In Mobile UI...
     // element:<div><App/></div>,
   },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,0 +1,57 @@
+.framework_container {
+    width: 100vw;
+    background-color: var(--primary-color-second);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.framework_parent {
+    color: var(--text-color-primary);
+    width: 300px;
+    height: 250px;
+    background-color: var(--primary-color);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.framework_parent:hover {
+    background-color:var(--secondary-color);
+    transition: 0.3s;
+}
+
+.framework_icon {
+    width: 60px;
+    border-radius: 6px;
+}
+
+.framework_name {
+    margin-top: 24px;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+.framework_language {
+    margin-top: 4px;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.framework_description {
+    margin-top: 16px;
+    font-family: monospace;
+    font-size: 0.7rem;
+}
+
+@media (max-width:750px) {
+    .framework_container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}

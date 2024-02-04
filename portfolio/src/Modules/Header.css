@@ -1,5 +1,5 @@
 .header_main {
-    background-color: #0b0c14;
+    background-color: var(--primary-color);
     width: 100vw;
     height: 5vh;
     display: flex;
@@ -10,32 +10,105 @@
 }
 
 .char_name {
-    color: white;
     transition: 0.3s;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .char_name:hover {
-    color: #E30022;
+    color: var(--secondary-color);
     transition: 0.3s;
-    cursor: none;
 }
 
 .site_name {
-    font-family: Raleway-Bold;
+    /* font-family: Raleway-Bold; */
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 100px;
+    font-family: monospace;
+    color: var(--text-color-primary);
 }
+
+.site_name:hover {}
 
 .site_route_buttons {
     font-weight: 900;
-    color: white;
+    color: var(--text-color-primary);
     display: flex;
     gap: 50px;
     font-family: Raleway-Regular;
     margin-right: 100px;
 }
 
+.route_button {
+    display: inline-block;
+    /* padding: 10px 20px; */
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    font-family: monospace;
+    /* border-bottom: 2px; */
+}
+
+.route_button:hover {
+    transition: 0.3s;
+    border-bottom: 1px solidvar(--secondary-color);
+}
+
+.under_line {
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.route_button:hover+.under_line {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.route_button:hover+.custom_cursor {
+    width: 20px;
+    height: 20px;
+}
+
 .red_letter {
-    color: #E30022;
+    color: var(--secondary-color);
+}
+
+.dark_mode_toggle {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+
+
+.dark_mode {
+    color: #ffffff;
+    /* Dark mode color */
+}
+
+.light_mode {
+    color: #ffffff;
+    /* Light mode color */
+}
+
+
+.dark_mode_toggle.fade-out {
+    opacity: 0;
+}
+
+
+@media (max-width:780px) {
+    .site_route_buttons {
+        display: none;
+    }
+
+    .site_name {
+        width: 100vw;
+        text-align: center;
+        margin-left: 0;
+    }
 }
