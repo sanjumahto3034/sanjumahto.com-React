@@ -53,7 +53,8 @@
 
 .route_button:hover {
     transition: 0.3s;
-    border-bottom: 1px solidvar(--secondary-color);
+    /* border-bottom: 1px solid var(--secondary-color); */
+
 }
 
 .under_line {
@@ -102,6 +103,11 @@
 
 
 @media (max-width:780px) {
+    .header_main {
+        height: 3vh;
+        display: none;
+    }
+    
     .site_route_buttons {
         display: none;
     }

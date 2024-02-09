@@ -6,6 +6,7 @@ import WhereIWorked from "./Modules/WhereIWorked";
 import FrameworkUse from "./Modules/FrameworkUse";
 import TomImage from "./res/tom_image.png";
 import WebsiteLoader from "./Modules/WebsiteLoader";
+import Resume from "./Modules/Resume";
 
 function App() {
   const [IsPageLoaded, setPageLoadSuccess] = useState(false);
@@ -15,17 +16,28 @@ function App() {
     console.log("Page load success");
   };
 
+  // return (
+  //   <div className="App">
+  //     {!IsPageLoaded && (
+  //       <WebsiteLoader OnLoadSuccess={OnPageLoadSuccess}></WebsiteLoader>
+  //     )}
+
+  //     {IsPageLoaded && <CustomCursor></CustomCursor>}
+  //     {IsPageLoaded && <Header></Header>}
+  //     {IsPageLoaded && <HomePage></HomePage>}
+  //     {IsPageLoaded && <WhereIWorked></WhereIWorked>}
+  //     {IsPageLoaded && <FrameworkUse></FrameworkUse>}
+  //   </div>
+  // );
+
   return (
     <div className="App">
-      {!IsPageLoaded && (
-        <WebsiteLoader OnLoadSuccess={OnPageLoadSuccess}></WebsiteLoader>
-      )}
-
-      {IsPageLoaded && <CustomCursor></CustomCursor>}
-      {IsPageLoaded && <Header></Header>}
-      {IsPageLoaded && <HomePage></HomePage>}
-      {IsPageLoaded && <WhereIWorked></WhereIWorked>}
-      {IsPageLoaded && <FrameworkUse></FrameworkUse>}
+      <CustomCursor></CustomCursor>
+      <Header></Header>
+      <HomePage></HomePage>
+      <WhereIWorked></WhereIWorked>
+      <FrameworkUse></FrameworkUse>
+      {/* <Resume></Resume> */}
     </div>
   );
 }
@@ -89,17 +101,15 @@ const CustomCursor = () => {
         className="custom_cursor"
         style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
       ></div>
-      <img
-        src={TomImage}
-        alt={TomImage}
+      <div
         className="custom_cursor_chase"
         style={{
           left: `${cursorPosition.x}px`,
           top: `${cursorPosition.y}px`,
-          transform: `rotate(${angle}deg)`,
         }}
-      ></img>
+      ></div>
     </div>
   );
 };
+
 export default App;

@@ -4,7 +4,11 @@ import profile_image from "../res/profile.png";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { CgFacebook } from "react-icons/cg";
 import { PiGithubLogoFill } from "react-icons/pi";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function HomePage() {
+  useEffect(() => {}, []);
   var name = "Sanju Mahto";
   var description_1 = "I'm a Game Developer";
   var description_2 = "at Emizen Tech Pvt. Ltd";
@@ -19,13 +23,20 @@ function HomePage() {
   OnMouseMove(".profile_image");
   return (
     <div className="home_page_main">
+      <div
+        className="home_buttons_parent"
+        data-aos-delay="200"
+        data-aos="fade-in"
+        data-aos-duration="100"
+      >
+        <FaLinkedinIn className="home_button" onClick={OnClickLinkined} />
+        <CgFacebook className="home_button" onClick={OnClickFacebook} />
+        <PiGithubLogoFill className="home_button" onClick={OnClickGitHub} />
+      </div>
       <div className="home_page_left">
-        <div className="home_buttons_parent">
-          <FaLinkedinIn className="home_button" onClick={OnClickLinkined} />
-          <CgFacebook className="home_button" onClick={OnClickFacebook} />
-          <PiGithubLogoFill className="home_button" onClick={OnClickGitHub} />
+        <div className="home_page_description_h2_colored">
+          Hi, my name is <span className="continue_blink">_</span>
         </div>
-
         <div className="home_page_name">
           {characters.map((char, index) => (
             <span key={index} className="char_name">
@@ -33,23 +44,22 @@ function HomePage() {
             </span>
           ))}
         </div>
-        <div className="home_page_description">
-          {characters_description_1.map((char, index) => (
-            <span key={index} className="char_name">
-              {char}
-            </span>
-          ))}{" "}
+        <div className="home_page_description_h1">I am a Game Developer</div>
+
+        <div className="home_page_description_h2">
+          As a passionate game developer, I specialize in crafting immersive and
+          engaging gaming experiences. With expertise in game design,
+          programming, and graphics, I bring creativity and technical prowess to
+          every project. I thrive on pushing boundaries, leveraging cutting-edge
+          technologies to deliver captivating games that captivate audiences and
+          provide memorable entertainment.
         </div>
 
-        <div className="home_page_description">
-          {characters_description_2.map((char, index) => (
-            <span key={index} className="char_name">
-              {char}
-            </span>
-          ))}
+        <div className="contact_button_container">
+          <div className="contact_me_button">
+            Contact Me <span className="right_arrow_contact_us">&#8594;</span>
+          </div>
         </div>
-
-        <div className="contact_me_button">Contact Me</div>
       </div>
 
       <div className="home_page_right">

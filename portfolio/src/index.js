@@ -18,6 +18,15 @@ import "./res/fonts/Ubuntu/Ubuntu-Light.ttf";
 import "./res/fonts/Ubuntu/Ubuntu-Medium.ttf";
 import "./res/fonts/Ubuntu/Ubuntu-Regular.ttf";
 
+import "./res/fonts/RobotoMono/RobotoMono-Bold.ttf";
+import "./res/fonts/RobotoMono/RobotoMono-ExtraLight.ttf";
+import "./res/fonts/RobotoMono/RobotoMono-Light.ttf";
+import "./res/fonts/RobotoMono/RobotoMono-Medium.ttf";
+import "./res/fonts/RobotoMono/RobotoMono-Regular.ttf";
+import "./res/fonts/RobotoMono/RobotoMono-SemiBold.ttf";
+import "./res/fonts/RobotoMono/RobotoMono-Thin.ttf";
+
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const routePages = createBrowserRouter([

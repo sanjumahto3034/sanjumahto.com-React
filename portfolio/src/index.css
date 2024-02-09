@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
 @import url("./StaticColor.css");
 
 body {
@@ -13,6 +14,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
 .index-resume-div {
   /* width: 80vw; */
@@ -93,6 +95,39 @@ code {
   font-family: Ubuntu-Black;
   src: url(./res/fonts/Ubuntu/Ubuntu-Regular.ttf);
 }
+
+
+
+/* Roboto */
+@font-face {
+  font-family: RobotoMono-Black;
+  src: url(./res/fonts/RobotoMono/RobotoMono-Bold.ttf);
+}
+@font-face {
+  font-family: RobotoMono-Black;
+  src: url(./res/fonts/RobotoMono/RobotoMono-ExtraLight.ttf);
+}
+@font-face {
+  font-family: RobotoMono-Black;
+  src: url(./res/fonts/RobotoMono/RobotoMono-Light.ttf);
+}
+@font-face {
+  font-family: RobotoMono-Black;
+  src: url(./res/fonts/RobotoMono/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoMono-Black;
+  src: url(./res/fonts/RobotoMono/RobotoMono-Regular.ttf);
+}
+@font-face {
+  font-family: RobotoMono-Black;
+  src: url(./res/fonts/RobotoMono/RobotoMono-SemiBold.ttf);
+}
+@font-face {
+  font-family: RobotoMono-Black;
+  src: url(./res/fonts/RobotoMono/RobotoMono-Thin.ttf);
+}
+
 
 .index-center-align {
   display: flex;

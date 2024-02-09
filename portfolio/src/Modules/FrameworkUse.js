@@ -58,7 +58,7 @@ function FrameworkUse() {
           ></img>
           <div className="framework_name">{framework.name}</div>
           <div className="framework_language">
-            Language Support : {framework.language}
+            Language Support : <span>{framework.language}</span>
           </div>
           <div className="framework_description">{framework.description}</div>
         </div>
