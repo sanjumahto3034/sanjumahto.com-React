@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* min-width: 450px; */
 }
 
 code {
@@ -103,26 +104,32 @@ code {
   font-family: RobotoMono-Black;
   src: url(./res/fonts/RobotoMono/RobotoMono-Bold.ttf);
 }
+
 @font-face {
   font-family: RobotoMono-Black;
   src: url(./res/fonts/RobotoMono/RobotoMono-ExtraLight.ttf);
 }
+
 @font-face {
   font-family: RobotoMono-Black;
   src: url(./res/fonts/RobotoMono/RobotoMono-Light.ttf);
 }
+
 @font-face {
   font-family: RobotoMono-Black;
   src: url(./res/fonts/RobotoMono/RobotoMono-Medium.ttf);
 }
+
 @font-face {
   font-family: RobotoMono-Black;
   src: url(./res/fonts/RobotoMono/RobotoMono-Regular.ttf);
 }
+
 @font-face {
   font-family: RobotoMono-Black;
   src: url(./res/fonts/RobotoMono/RobotoMono-SemiBold.ttf);
 }
+
 @font-face {
   font-family: RobotoMono-Black;
   src: url(./res/fonts/RobotoMono/RobotoMono-Thin.ttf);

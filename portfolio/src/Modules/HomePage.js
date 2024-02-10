@@ -8,45 +8,84 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function HomePage() {
-  useEffect(() => {}, []);
-  var name = "Sanju Mahto";
-  var description_1 = "I'm a Game Developer";
-  var description_2 = "at Emizen Tech Pvt. Ltd";
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-  var characters = name.split("");
-  var characters_description_1 = description_1.split("");
-  var characters_description_2 = description_2.split("");
+  const myNameIs = "Hi, my name is ";
+  const name = "Sanju Mahto";
+  const description_1 = "I'm a Game Developer";
+  const description_2 = "at Emizen Tech Pvt. Ltd";
+
+  const characters = name.split("");
+  const myNameIsMap = myNameIs.split("");
+  const characters_description_1 = description_1.split("");
+  const characters_description_2 = description_2.split("");
 
   OnMouseMove(".profile_bg_layer_2");
   OnMouseMove(".profile_bg_layer_3");
   OnMouseMove(".profile_bg_layer_4");
   OnMouseMove(".profile_image");
+  var m_timer = 0;
+  const GetTimeIncrease200 = () => {
+    m_timer += 200;
+    console.log("timer : " + m_timer);
+    return m_timer;
+  };
+  const GetTimeIncrease100 = () => {
+    m_timer += 100;
+    return m_timer;
+  };
   return (
     <div className="home_page_main">
-      <div
-        className="home_buttons_parent"
-        data-aos-delay="200"
-        data-aos="fade-in"
-        data-aos-duration="100"
-      >
-        <FaLinkedinIn className="home_button" onClick={OnClickLinkined} />
-        <CgFacebook className="home_button" onClick={OnClickFacebook} />
-        <PiGithubLogoFill className="home_button" onClick={OnClickGitHub} />
-      </div>
+      {/* Left Container */}
       <div className="home_page_left">
-        <div className="home_page_description_h2_colored">
-          Hi, my name is <span className="continue_blink">_</span>
+        <div
+          className="home_page_description_h2_colored"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          {myNameIsMap.map((char, index) => (
+            <span key={index} className="char_name">
+              {char}
+            </span>
+          ))}
+          <span
+            className="continue_blink"
+            data-aos-delay={20 * 200}
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            _
+          </span>
         </div>
-        <div className="home_page_name">
+        <div
+          className="home_page_name"
+          data-aos-delay={GetTimeIncrease200()}
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           {characters.map((char, index) => (
             <span key={index} className="char_name">
               {char}
             </span>
           ))}
         </div>
-        <div className="home_page_description_h1">I am a Game Developer</div>
+        <div
+          className="home_page_description_h1"
+          data-aos-delay={GetTimeIncrease200()}
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          I am a Game Developer
+        </div>
 
-        <div className="home_page_description_h2">
+        <div
+          className="home_page_description_h2"
+          data-aos-delay={GetTimeIncrease200()}
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           As a passionate game developer, I specialize in crafting immersive and
           engaging gaming experiences. With expertise in game design,
           programming, and graphics, I bring creativity and technical prowess to
@@ -56,22 +95,80 @@ function HomePage() {
         </div>
 
         <div className="contact_button_container">
-          <div className="contact_me_button">
+          <div
+            className="contact_me_button"
+            data-aos-delay={GetTimeIncrease200()}
+            data-aos="fade-right"
+            data-aos-duration="500"
+          >
             Contact Me <span className="right_arrow_contact_us">&#8594;</span>
+          </div>
+          <div className="home_buttons_parent">
+            <FaLinkedinIn
+              className="home_button"
+              onClick={OnClickLinkined}
+              data-aos-delay={GetTimeIncrease200()}
+              data-aos="fade-left"
+              data-aos-duration="500"
+            />
+            <CgFacebook
+              className="home_button"
+              onClick={OnClickFacebook}
+              data-aos-delay={GetTimeIncrease200()}
+              data-aos="fade-left"
+              data-aos-duration="500"
+            />
+            <PiGithubLogoFill
+              className="home_button"
+              onClick={OnClickGitHub}
+              data-aos-delay={GetTimeIncrease200()}
+              data-aos="fade-left"
+              data-aos-duration="500"
+            />
+            <div className="home_button_line"></div>
           </div>
         </div>
       </div>
 
-      <div className="home_page_right">
+      {/* Right Container */}
+      <div
+        className="home_page_right"
+        data-aos-delay="1000"
+        data-aos="fade-left"
+        data-aos-duration="500"
+      >
         <div className="profile_image_parent">
-          <div className="profile_bg_layer_1">
-            <div className="profile_bg_layer_2">
-              <div className="profile_bg_layer_3">
-                <div className="profile_bg_layer_4">
+          <div
+            className="profile_bg_layer_1"
+            data-aos-delay="1000"
+            data-aos="fade-in"
+            data-aos-duration="500"
+          >
+            <div
+              className="profile_bg_layer_2"
+              data-aos-delay="1200"
+              data-aos="fade-in"
+              data-aos-duration="500"
+            >
+              <div
+                className="profile_bg_layer_3"
+                data-aos-delay="1400"
+                data-aos="fade-in"
+                data-aos-duration="500"
+              >
+                <div
+                  className="profile_bg_layer_4"
+                  data-aos-delay="1600"
+                  data-aos="fade-in"
+                  data-aos-duration="500"
+                >
                   <img
                     className="profile_image"
                     src={profile_image}
                     alt="profile_pic"
+                    data-aos-delay="1800"
+                    data-aos="fade-in"
+                    data-aos-duration="500"
                   ></img>
                 </div>
               </div>

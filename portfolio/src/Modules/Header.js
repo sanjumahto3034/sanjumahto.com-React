@@ -3,7 +3,12 @@ import "./Header.css";
 import { MdDarkMode } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 import { MdOutlineColorLens } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Header() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   var name = "Sanju Mahto";
 
   var _home = "</home>";
@@ -11,10 +16,9 @@ function Header() {
   var _resume = "</resume>";
   var _contact_me = "</contact_me>";
   var _random_color = "</random_color>";
-
   return (
     <div className="header_main">
-      <div className="site_name">
+      <div className="site_name" data-aos="fade-down" data-aos-duration="500">
         {name.split("").map((char, index) => (
           <span key={index} className="char_name">
             {char}
@@ -23,7 +27,12 @@ function Header() {
       </div>
 
       <div className="site_route_buttons">
-        <div className="route_button">
+        <div
+          className="route_button"
+          data-aos-delay="200"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           {_home.split("").map((char, index) => (
             <span key={index} className="char_name">
               {char}
@@ -32,7 +41,12 @@ function Header() {
           <div className="under_line"></div>
         </div>
 
-        <div className="route_button">
+        <div
+          className="route_button"
+          data-aos-delay="400"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           {_about_me.split("").map((char, index) => (
             <span key={index} className="char_name">
               {char}
@@ -41,7 +55,12 @@ function Header() {
           <div className="under_line"></div>
         </div>
 
-        <div className="route_button">
+        <div
+          className="route_button"
+          data-aos-delay="600"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           {_resume.split("").map((char, index) => (
             <span key={index} className="char_name">
               {char}
@@ -50,7 +69,12 @@ function Header() {
           <div className="under_line"></div>
         </div>
 
-        <div className="route_button">
+        <div
+          className="route_button"
+          data-aos-delay="800"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           {_contact_me.split("").map((char, index) => (
             <span key={index} className="char_name">
               {char}
@@ -59,7 +83,13 @@ function Header() {
           <div className="under_line"></div>
         </div>
 
-        <div className="route_button" onClick={setRandomColors}>
+        <div
+          className="route_button"
+          onClick={setRandomColors}
+          data-aos-delay="1000"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           {_random_color.split("").map((char, index) => (
             <span key={index} className="char_name">
               {char}
@@ -69,7 +99,6 @@ function Header() {
         </div>
         {/* Dark Mode Toggle */}
         {/* <DarkModeToggle></DarkModeToggle> */}
-
       </div>
     </div>
   );
@@ -127,7 +156,6 @@ const EnableDarkMode = (enable) => {
   };
 
   const modeColors = enable ? colors.dark : colors.light;
-
 
   Object.entries(modeColors).forEach(([key, value]) => {
     document.documentElement.style.setProperty(key, value);

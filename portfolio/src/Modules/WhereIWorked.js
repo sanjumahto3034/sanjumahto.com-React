@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./WhereIWorked.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function WhereIWorked() {
   return (
     <div className="where_i_worked">
@@ -49,6 +50,9 @@ const WorkExperience_new = () => {
   );
 };
 const WorkExperience_old = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [selectedCompanyIndex, setSelectedCompanyIndex] = useState(2); // Default index for Emizen Tech Pvt. Ltd.
 
   const handleButtonClick = (index) => {
@@ -73,6 +77,9 @@ const WorkExperience_old = () => {
                 index === selectedCompanyIndex ? "selected" : ""
               }`}
               onClick={() => handleButtonClick(index)}
+              data-aos-delay={index * 100}
+              data-aos="fade-right"
+              data-aos-duration="500"
             >
               <div className="where_i_work_company_name">
                 {company.companyName}
@@ -86,7 +93,12 @@ const WorkExperience_old = () => {
         </div>
       </div>
 
-      <div className="where_i_worked_left">
+      <div
+        className="where_i_worked_left"
+        data-aos-delay="200"
+        data-aos="fade-right"
+        data-aos-duration="500"
+      >
         <div className="where_i_worked_left_company_name">
           {data[selectedCompanyIndex].companyName}
         </div>
@@ -126,7 +138,7 @@ var data = [
     companyDescription:
       "Teleperformance bridges the gap between brands and customers, weaving a global " +
       "network of customer experience experts. Leveraging technology and empathy, they " +
-      "deliver omnichannel support across languages and cultures, leaving lasting impressions in " +
+      "deliver support across languages and cultures, leaving lasting impressions in " +
       "a world of connections.",
   },
   {
