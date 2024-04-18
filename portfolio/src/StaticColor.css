@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0a192f;
-    --primary-color-second: #112240;;
+    --primary-color-second: #112240;
     --secondary-color: #64ffda;
     --secondary-color-offset: #64ffdb8a;
     --secondary-color-secondary-light: #8efff1;
@@ -10,4 +10,8 @@
     --text-color-primary: #ccd6f6;
     --text-color-primary-offset: #8892b0;
     --text-color-secondary: #ccd6f6;
+
+
+    --primary-font: Raleway-ExtraBold;
+    --secondary-font: 'Roboto Mono', monospace;
 }

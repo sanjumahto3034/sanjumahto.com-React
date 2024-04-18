@@ -32,12 +32,12 @@ function App() {
 
   return (
     <div className="App">
-      <CustomCursor></CustomCursor>
+      {/* <CustomCursor></CustomCursor> */}
       <Header></Header>
       <HomePage></HomePage>
       <WhereIWorked></WhereIWorked>
       <FrameworkUse></FrameworkUse>
-      {/* <Resume></Resume> */}
+      <Resume></Resume>
     </div>
   );
 }

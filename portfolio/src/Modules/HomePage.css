@@ -3,7 +3,6 @@
     width: 100vw;
     /* padding-left: 5vw; */
     /* padding-right: 5vw; */
-    background-color: var(--primary-color);
     height: 100vh;
     overflow: hidden;
     align-items: center;
@@ -65,7 +64,7 @@
 }
 
 .home_page_description_h1 {
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--secondary-font);
     font-weight: 100;
     color: var(--text-color-secondary);
     font-size: 2rem;
@@ -74,7 +73,7 @@
 .home_page_description_h2,
 .home_page_description_h2_colored {
     margin-top: 20px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--secondary-font);
     font-weight: 100;
     color: var(--text-color-primary-offset);
     font-size: 0.9rem;
@@ -100,7 +99,7 @@
     padding-right: 40px;
     text-align: center;
     outline: 1px solid var(--secondary-color);
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--secondary-font);
     font-weight: 400;
     transition: 0.3s;
 }

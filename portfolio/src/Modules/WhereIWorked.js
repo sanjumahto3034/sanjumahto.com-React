@@ -35,7 +35,7 @@ const WorkExperience_new = () => {
         </div>
         <div className="where_i_worked_right_buttons_parent">
           {data.map((company, index) => (
-            <div className="new_where_i_work_company_button">
+            <div className="new_where_i_work_company_button" key={index}>
               <div className="new_where_i_work_company_name">
                 {company.companyName}
               </div>
@@ -53,21 +53,20 @@ const WorkExperience_old = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   const [selectedCompanyIndex, setSelectedCompanyIndex] = useState(2); // Default index for Emizen Tech Pvt. Ltd.
 
   const handleButtonClick = (index) => {
-    const descriptionElement = document.querySelector(".where_i_worked_left");
-    if (descriptionElement) {
-      descriptionElement.classList.add("fade-out");
-      setTimeout(() => {
-        descriptionElement.classList.remove("fade-out");
-        setSelectedCompanyIndex(index);
-      }, 250);
-    }
+    setSelectedCompanyIndex(index);
   };
 
   return (
-    <div className="where_i_worked">
+    <div
+      className="where_i_worked"
+      data-aos-delay="0"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <div className="where_i_worked_right">
         <div className="where_i_worked_right_buttons_parent">
           {data.map((company, index) => (
@@ -77,16 +76,20 @@ const WorkExperience_old = () => {
                 index === selectedCompanyIndex ? "selected" : ""
               }`}
               onClick={() => handleButtonClick(index)}
-              data-aos-delay={index * 100}
-              data-aos="fade-right"
-              data-aos-duration="500"
             >
               <div className="where_i_work_company_name">
-                {company.companyName}
+                {company.companyName.split("").map((char, index) => (
+                  <span key={index} className="char_name">
+                    {char}
+                  </span>
+                ))}
               </div>
               <div className="where_i_work_company_duration">
-                {company.companyStartDate} To{" "}
-                {company.companyEndDate || "Currently Working"}
+                {company.companyStartDate.split("").map((char, index) => (
+                  <span key={index} className="char_name">
+                    {char}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
@@ -95,32 +98,47 @@ const WorkExperience_old = () => {
 
       <div
         className="where_i_worked_left"
-        data-aos-delay="200"
+        data-aos-delay="0"
         data-aos="fade-right"
         data-aos-duration="500"
       >
-        <div className="where_i_worked_left_company_name">
-          {data[selectedCompanyIndex].companyName}
-        </div>
-        <div className="where_i_worked_left_company_duration">
-          {data[selectedCompanyIndex].companyEndDate
-            ? data[selectedCompanyIndex].companyStartDate +
-              " To " +
-              data[selectedCompanyIndex].companyEndDate
-            : data[selectedCompanyIndex].companyStartDate + " - Working"}
-        </div>
-        <div className="where_i_worked_left_company_duration_in_year">
-          {/* Calculate and display duration in months or years */}
-          {/* You can implement a function to calculate the duration */}
-        </div>
-        <div className="where_i_worked_left_company_duration_in_description">
-          {data[selectedCompanyIndex].companyDescription}
-        </div>
+        <div className="where_i_worked_left_childs">
+          <div className="where_i_worked_left_company_name">
+            {data[selectedCompanyIndex].companyName
+              .split("")
+              .map((char, index) => (
+                <span key={index} className="char_name">
+                  {char}
+                </span>
+              ))}
+          </div>
+          <div className="where_i_worked_left_company_duration">
+            {data[selectedCompanyIndex].companyStartDate
+              .split("")
+              .map((char, index) => (
+                <span key={index} className="char_name">
+                  {char}
+                </span>
+              ))}
+          </div>
 
+          <div className="where_i_worked_left_company_duration_in_description">
+            {data[selectedCompanyIndex].companyDescription
+              .split("")
+              .map((char, index) => (
+                <span key={index} className="char_name">
+                  {char}
+                </span>
+              ))}
+          </div>
+        </div>
         {/* Key Skills */}
         <div className="key_work_parent">
           {data[selectedCompanyIndex].keyWork.map((work, index) => (
-            <div className="key_work_data">{work}</div>
+            <div className="key_work_data" key={index}>
+              {" "}
+              {work}
+            </div>
           ))}
         </div>
       </div>
@@ -132,7 +150,7 @@ export default WhereIWorked;
 var data = [
   {
     companyName: "Sag Infotech",
-    companyStartDate: "10-July-2021",
+    companyStartDate: "10-July-2021 To 15-Aug-2021",
     companyEndDate: "15-Aug-2021",
     keyWork: ["Marketing", "Troubleshooting", "Customer Support"],
     companyDescription:
@@ -143,9 +161,16 @@ var data = [
   },
   {
     companyName: "Aforeserver Pvt. Ltd.",
-    companyStartDate: "15-Sept-2021",
+    companyStartDate: "15-Sept-2021 To 19-June-2022",
     companyEndDate: "19-June-2022",
-    keyWork: ["Linux/Windows Admin", "Network", "Anti-Virus", "HardWard"],
+    keyWork: [
+      "Linux/Windows Admin",
+      "Network",
+      "Anti-Virus",
+      "Hardware",
+      "Software",
+      "Troubleshooting",
+    ],
     companyDescription:
       "Aforeserve is an IT service company providing AI and automation solutions " +
       "to enterprises. Founded in 2000, they boast over 800 clients and offer a variety " +
@@ -154,7 +179,7 @@ var data = [
   },
   {
     companyName: "Assert Infotech",
-    companyStartDate: "26-July-2022",
+    companyStartDate: "26-July-2022 To 3-June-2023",
     companyEndDate: "3-June-2023",
     keyWork: [
       "JS",
@@ -174,7 +199,7 @@ var data = [
   },
   {
     companyName: "Emizen Tech Pvt. Ltd.",
-    companyStartDate: "5-June-2023",
+    companyStartDate: "5-June-2023 - Working",
     companyEndDate: "",
     keyWork: ["C#", "JAVA", "Unity 3D", "Unity Ar", "Android Studio"],
     companyDescription:

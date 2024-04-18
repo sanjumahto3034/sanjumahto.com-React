@@ -19,258 +19,226 @@ function Resume() {
         data-aos-duration="0"
       >
         <div className="Resume-title-div">
-          <img
-            className="Resume-profile-picture"
-            src={profile_picture}
-            alt="ProfilePicture.png"
-            data-aos-delay="200"
-            data-aos="fade-up"
-            data-aos-duration="0"
-          ></img>
-          <div className="Resume-profile-Description-main">
-            <div
-              className="Resume-Description-Name"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Sanju Mahto
-            </div>
-            <div
-              className="Resume-Description-Post"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Front-End Game Programmer
-            </div>
-            <div
-              className="Resume-Description-About"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Hello, I'm Sanju. I'm a Game developer expert with{" "}
-              {calculateMonthsDifference("2022-06-25")} of experience in the
-              Game Development, and {calculateMonthsDifference("2020-01-01")}{" "}
-              personal experience in Unity 3D
-            </div>
-          </div>
+          <ResumeTitle></ResumeTitle>
         </div>
-
         <div className="Resume-div-divideLine"></div>
-
         <div className="Resume-div-second-container-main">
-          <div className="Resume-div-second-container-1">
-            {/* Contact Div Start */}
-            <div
-              className="Resume-div-second-container-title"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Contact Info
-              <div className="Resume-div-second-container-1-contact-div-contact-info">
-                <img
-                  className="Resume-div-second-container-1-contact-div-contact-info-icon"
-                  src={phone_image}
-                  alt="phone.png"
-                ></img>
-                <div className="Resume-div-second-container-1-contact-div-contact-info-detail">
-                  +91 63760 21481
-                </div>
-              </div>
-              <div className="Resume-div-second-container-1-contact-div-contact-info">
-                <img
-                  className="Resume-div-second-container-1-contact-div-contact-info-icon"
-                  src={email_image}
-                  alt="email.png"
-                ></img>
-                <div className="Resume-div-second-container-1-contact-div-contact-info-detail">
-                  sanjumahto3034@gmail.com
-                </div>
-              </div>
-              <div className="Resume-div-second-container-1-contact-div-contact-info">
-                <img
-                  className="Resume-div-second-container-1-contact-div-contact-info-icon"
-                  src={web_image}
-                  alt="phone.png"
-                ></img>
-                <div className="Resume-div-second-container-1-contact-div-contact-info-detail">
-                  sanjumahto.site
-                </div>
-              </div>
-            </div>
-            {/* Contact Div End */}
-
-            <div
-              className="Resume-div-second-container-title"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Education
-              <div className="Resume-div-details-title">10th</div>
-              <div className="Resume-div-details-description">2005-2018</div>
-              <div className="Resume-div-details-title">
-                Deploma In Computer Science
-              </div>
-              <div className="Resume-div-details-description">2018-2021</div>
-              <div className="Resume-div-details-title">
-                B.Tech In Computer Science
-              </div>
-              <div className="Resume-div-details-description">
-                2021-2024 (Present)
-              </div>
-            </div>
-
-            <div
-              className="Resume-div-second-container-title"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Interest
-              <div className="Resume-div-details-title">Gaming Enthusiast</div>
-              <div className="Resume-div-details-description"></div>
-              <div className="Resume-div-details-title">
-                Space Exploration Enthusiast
-              </div>
-              <div className="Resume-div-details-description"></div>
-            </div>
-
-            <div
-              className="Resume-div-second-container-title"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Skills
-              <div className="Resume-div-details-title">Fast Learner</div>
-              <div className="Resume-div-details-description">Intermediate</div>
-              <div className="Resume-div-details-title">Problem Solving</div>
-              <div className="Resume-div-details-description">Intermediate</div>
-              <div className="Resume-div-details-title">Code Analysis</div>
-              <div className="Resume-div-details-description">Intermediate</div>
-            </div>
-          </div>
-
-          {/* <div className="Resume-div-second-container-2"></div> */}
-
-          <div className="Resume-div-second-container-3">
-            <div
-              className="Resume-div-second-container-title"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Languages
-              <div className="Resume-div-details-title">JS/TS</div>
-              <div className="Resume-div-details-description">Intermediate</div>
-              <div className="Resume-div-details-title">C#</div>
-              <div className="Resume-div-details-description">Intermediate</div>
-              <div className="Resume-div-details-title">C++</div>
-              <div className="Resume-div-details-description">Beginner</div>
-              <div className="Resume-div-details-title">
-                JavaScript/TypeScript
-              </div>
-              <div className="Resume-div-details-description">Intermediate</div>
-            </div>
-
-            <div
-              className="Resume-div-second-container-title"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Game Engine
-              <div className="Resume-div-details-title">Unity 3D</div>
-              <div className="Resume-div-details-description">Intermediate</div>
-              <div className="Resume-div-details-title">Unreal Engine</div>
-              <div className="Resume-div-details-description">Beginner</div>
-              <div className="Resume-div-details-title">Cocos Creator</div>
-              <div className="Resume-div-details-description">Intermediate</div>
-              <div className="Resume-div-details-title">CocosX2D</div>
-              <div className="Resume-div-details-description">Intermediate</div>
-            </div>
-
-            <div
-              className="Resume-div-second-container-title"
-              data-aos-delay="200"
-              data-aos="fade-up"
-              data-aos-duration="0"
-            >
-              Work Experience
-              <div className="Resume-div-work-experience-content">
-                <div className="Resume-div-dot"></div>
-                <div>
-                  <div className="Resume-div-details-title">
-                    Internship Training In Core Java from Cad Desk
-                  </div>
-                  <div className="Resume-div-details-date">
-                    December-2020 To Jan-2021(2-Months)
-                  </div>
-                  <div className="Resume-div-details-description">
-                    Industrial training in Core Java from Cade Desk
-                  </div>
-                </div>
-              </div>
-              <div className="Resume-div-work-experience-content">
-                <div className="Resume-div-dot"></div>
-                <div>
-                  <div className="Resume-div-details-title">
-                    IT-Engineer At "Aforeserver Pvt. Ltd.
-                  </div>
-                  <div className="Resume-div-details-date">
-                    October-2021 To June-2022
-                  </div>
-                  <div className="Resume-div-details-description">
-                    Become a Software and Hardware troubleshooter, at a small
-                    Startup in Anywhere in IT industry, I 'm at a post of
-                    RE-Engineer
-                  </div>
-                </div>
-              </div>
-              <div className="Resume-div-work-experience-content">
-                <div className="Resume-div-dot"></div>
-                <div>
-                  <div className="Resume-div-details-title">
-                    Game Programmer At "Assert Infotech"
-                  </div>
-                  <div className="Resume-div-details-date">
-                    July-2022 To June-2023
-                  </div>
-                  <div className="Resume-div-details-description">
-                    Become a Elementary Programmer at a Assert Infotech Hours in
-                    Anywhere, I am using here Unity and Cocos engine to create
-                    Mobile, IOS, and Web Games.
-                  </div>
-                </div>
-              </div>
-              <div className="Resume-div-work-experience-content">
-                <div className="Resume-div-dot"></div>
-                <div>
-                  <div className="Resume-div-details-title">
-                    Game Developer At "EmizenTech Pvt. Ltd."
-                  </div>
-                  <div className="Resume-div-details-date">
-                    June-2023 To Present
-                  </div>
-                  <div className="Resume-div-details-description">
-                    Become a Senior Game Developer, Designer & Programmer, I am
-                    using here Unity3D engine to create Mobile, IOS, and Web
-                    Games.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ResumeLeftDiv></ResumeLeftDiv>
+          <ResumeRightDiv></ResumeRightDiv>
         </div>
       </div>
     </div>
   );
 }
 
+function ResumeTitle() {
+  return (
+    <div className="Resume-profile-Description-main">
+      <div
+        className="Resume-Description-Name"
+        data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="0"
+      >
+        Sanju Mahto
+      </div>
+      <div
+        className="Resume-Description-Post"
+        data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="0"
+      >
+        Front-End Game Programmer
+      </div>
+      <div
+        className="Resume-Description-About"
+        data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="0"
+      >
+        Hello, I'm Sanju. I'm a Game developer expert with{" "}
+        {calculateMonthsDifference("2021-07-15")} of experience in the Game
+        Development, and {calculateMonthsDifference(new Date().getDate)}{" "}
+        personal experience in Unity 3D
+      </div>
+    </div>
+  );
+}
+function ResumeLeftDiv() {
+  return (
+    <div className="Resume-div-second-container-1">
+      {/* Contact Div Start */}
+      <div
+        className="Resume-div-second-container-title"
+        data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="0"
+      >
+        Contact Info
+        <div className="Resume-div-second-container-1-contact-div-contact-info">
+          <img
+            className="Resume-div-second-container-1-contact-div-contact-info-icon"
+            src={phone_image}
+            alt="phone.png"
+          ></img>
+          <div className="Resume-div-second-container-1-contact-div-contact-info-detail">
+            +91 6376021481
+          </div>
+        </div>
+        <div className="Resume-div-second-container-1-contact-div-contact-info">
+          <img
+            className="Resume-div-second-container-1-contact-div-contact-info-icon"
+            src={email_image}
+            alt="email.png"
+          ></img>
+          <div className="Resume-div-second-container-1-contact-div-contact-info-detail">
+            sanjumahto3034@gmail.com
+          </div>
+        </div>
+        <div className="Resume-div-second-container-1-contact-div-contact-info">
+          <img
+            className="Resume-div-second-container-1-contact-div-contact-info-icon"
+            src={web_image}
+            alt="phone.png"
+          ></img>
+          <div className="Resume-div-second-container-1-contact-div-contact-info-detail">
+            sanjudev.site
+          </div>
+        </div>
+      </div>
+      {/* Contact Div End */}
+
+      <div
+        className="Resume-div-second-container-title"
+        data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="0"
+      >
+        {"</education>"}
+        <div className="Resume-div-details-title">10th</div>
+        <div className="Resume-div-details-description">2005-2018</div>
+        <div className="Resume-div-details-title">
+          Deploma In Computer Science
+        </div>
+        <div className="Resume-div-details-description">2018-2021</div>
+        <div className="Resume-div-details-title">
+          B.Tech In Computer Science
+        </div>
+        <div className="Resume-div-details-description">
+          2021-2024 (Present)
+        </div>
+      </div>
+
+      <div
+        className="Resume-div-second-container-title"
+        data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="0"
+      >
+        {"</Interest>"}
+        <div className="Resume-div-details-title">Gaming Enthusiast</div>
+        <div className="Resume-div-details-description"></div>
+        <div className="Resume-div-details-title">
+          Space Exploration Enthusiast
+        </div>
+        <div className="Resume-div-details-description"></div>
+      </div>
+
+      <div
+        className="Resume-div-second-container-title"
+        data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="0"
+      >
+        {"</Skills>"}
+        <div className="Resume-div-details-title">Fast Learner</div>
+        <div className="Resume-div-details-description">Intermediate</div>
+        <div className="Resume-div-details-title">Problem Solving</div>
+        <div className="Resume-div-details-description">Intermediate</div>
+        <div className="Resume-div-details-title">Code Analysis</div>
+        <div className="Resume-div-details-description">Intermediate</div>
+      </div>
+    </div>
+  );
+}
+
+function Languages({ title, data }) {
+  return (
+    <div
+      className="Resume-div-second-container-title"
+      data-aos-delay="200"
+      data-aos="fade-up"
+      data-aos-duration="0"
+    >
+      <div className="Resume-div-details-title-text">{title || "Title"}</div>
+      {data &&
+        data.map((value, index) => (
+          <div key={index}>
+            <div className="Resume-div-details-title">{value.key}</div>
+            <div className="Resume-div-details-description">{value.value}</div>
+          </div>
+        ))}
+    </div>
+  );
+}
+function WorkExperience({ title, data }) {
+  return (
+    <div
+      className="Resume-div-second-container-title"
+      data-aos-delay="200"
+      data-aos="fade-up"
+      data-aos-duration="0"
+    >
+      <div className="Resume-div-details-title-text">{title || "Title"}</div>
+      {data &&
+        data.map((value, index) => (
+          <div key={index}>
+            <div className="Resume-div-work-experience-content">
+              <div>
+                <div className="Resume-div-details-title">{value.key}</div>
+                <div className="Resume-div-details-date">{value.duration}</div>
+                <div className="Resume-div-details-description">
+                  {value.description}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+    </div>
+  );
+}
+function ResumeRightDiv() {
+  return (
+    <div className="Resume-div-second-container-3">
+      <div
+        className="Resume-div-second-container-title"
+        data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="0"
+      ></div>
+
+      <Languages title={"</languages>"} data={languages_data}></Languages>
+      <Languages title={"</game_engine>"} data={engine_data}></Languages>
+      <WorkExperience
+        title={"</work_experience>"}
+        data={work_experience_value}
+      ></WorkExperience>
+    </div>
+  );
+}
+function TodaysDate() {
+  // Create a new Date object
+  const today = new Date();
+
+  // Get the year, month, and day
+  const year = today.getFullYear();
+  const month = today.getMonth() + 1; // Months are zero-indexed, so add 1
+  const day = today.getDate();
+
+  // Format the date as YYYY-MM-DD
+  console.log(`${year}-${month}-${day}`);
+  return `${year}-${month}-${day}`;
+}
 function calculateMonthsDifference(startDate) {
   const currentDate = new Date();
   const start = new Date(startDate);
@@ -279,7 +247,7 @@ function calculateMonthsDifference(startDate) {
   const monthsDiff = currentDate.getMonth() - start.getMonth();
 
   var totalMonths = yearsDiff * 12 + monthsDiff;
-
+  return totalMonths + " months+";
   var year = 0;
   if (totalMonths > 12) {
     while (totalMonths > 12) {
@@ -311,3 +279,67 @@ function calculateMonthsDifferenceOld(startDate, currentDate) {
   return totalMonths + "months";
 }
 export default Resume;
+
+const languages_data = [
+  {
+    key: "JS/TS",
+    value: "Intermediate",
+  },
+  {
+    key: "C#",
+    value: "Intermediate",
+  },
+  {
+    key: "C++",
+    value: "Beginner",
+  },
+  {
+    key: "JAVA",
+    value: "Beginner",
+  },
+];
+
+const engine_data = [
+  {
+    key: "Unity 3D",
+    value: "Intermediate",
+  },
+  {
+    key: "Unreal Engine",
+    value: "Intermediate",
+  },
+  {
+    key: "Cocos Creator",
+    value: "Beginner",
+  },
+  {
+    key: "CocosX2D",
+    value: "Beginner",
+  },
+];
+
+const work_experience_value = [
+  {
+    key: "Internship Training In Core Java from Cad Desk",
+    duration: "December-2020 To Jan-2021(2-Months)",
+    description: "Industrial training in Core Java from Cade Desk",
+  },
+  {
+    key: "IT-Engineer At 'Aforeserver Pvt. Ltd.'",
+    duration: "October-2021 To June-2022",
+    description:
+      "Become a Software and Hardware troubleshooter, at a small Startup in Anywhere in IT industry, I 'm at a post of RE-Engineer",
+  },
+  {
+    key: "Game Programmer At 'Assert Infotech'",
+    duration: "July-2022 To June-2023",
+    description:
+      "Become a Elementary Programmer at a Assert Infotech Hours in Anywhere, I am using here Unity and Cocos engine to create Mobile, IOS, and Web Games.",
+  },
+  {
+    key: "Game Developer At 'EmizenTech Pvt. Ltd.'",
+    duration: "June-2023 To Present",
+    description:
+      "Become a Senior Game Developer, Designer & Programmer, I am using here Unity3D engine to create Mobile, IOS, and Web Games.",
+  },
+];

@@ -1,16 +1,14 @@
 .Resume-div-main-parent {
-    width: 100vw;
-    background-color: var(--primary-color);
+    width: 100%;
+    width: calc(100vw - 40px);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
+    background-color: var(--primary-color-second);
 }
 
 .Resume-div-main {
-    width: 90%;
-    outline: 1px solid rebeccapurple;
-    background-color: var(--primary-color-second);
-    margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,60 +19,58 @@
 
 .Resume-title-div {
     display: flex;
+    width: 100%;
     flex-direction: row;
+    align-items: start;
+    justify-content: left;
 }
 
-.Resume-profile-picture {
-    height: 200px;
-    width: 200px;
-    background-color: #ffad01;
-    border-radius: 8px;
-}
 
 .Resume-profile-Description-main {
-    padding-left: 5vw;
-    padding-right: 5vw;
     color: white;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 .Resume-Description-Name {
     font-size: 3rem;
-    font-family: Raleway-Bold;
+    font-family: var(--primary-font)
 }
 
 .Resume-Description-Post {
-    font-size: 1.3rem;
-    font-family: Raleway-SemiBold;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
     white-space: nowrap;
     color: #53cfd8;
 }
 
 .Resume-Description-About {
-    padding-top: 3vh;
-    font-family: Raleway-Regular;
-
+    padding-top: 5px;
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
 }
 
 .Resume-div-divideLine {
     width: 90vw;
     height: 0.5px;
     opacity: 0.3;
-    background-color: white;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
+.Resume-div-details-title-text {
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    white-space: nowrap;
+    color: #53cfd8;
+}
 
 .Resume-div-second-container-main {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .Resume-div-second-container-1 {
@@ -90,9 +86,10 @@
 }
 
 .Resume-div-second-container-title {
-    font-family: Raleway-Bold;
+    /* font-family: Raleway-Bold; */
+    font-family: var(--secondary-font);
     color: #53cfd8;
-    padding-top: 10vh;
+    padding-bottom: 40px;
 }
 
 .Resume-div-second-container-1-description {
@@ -100,7 +97,7 @@
 }
 
 .Resume-div-second-container-1-contact-div-contact-info {
-    padding-top: 3vh;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
 }
@@ -113,9 +110,10 @@
 .Resume-div-second-container-1-contact-div-contact-info-detail {
     padding-left: 0.5vw;
     color: white;
-    font-family: Ubuntu-Light;
+    font-family: var(--secondary-font);
     display: flex;
     align-items: center;
+    font-size: 0.8rem
 }
 
 .Resume-div-work-experience-content {
@@ -139,21 +137,24 @@
 .Resume-div-details-title {
     display: flex;
     flex-direction: row;
-    padding-top: 3vh;
+    padding-top: 10px;
     color: white;
-    font-family: Raleway-Bold;
+    font-size: 0.9rem;
+    font-family: var(--secondary-font);
 }
 
 .Resume-div-details-date {
-    padding-top: 0.8vh;
-    color: white;
-    font-family: Raleway-Medium;
+    padding-top: 1px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.573);
+    font-family: var(--secondary-font);
 }
 
 .Resume-div-details-description {
-    padding-top: 1vh;
-    color: white;
-    font-family: Raleway-Light;
+    padding-top: 1px;
+    color: rgba(255, 255, 255, 0.345);
+    font-family: var(--secondary-font);
+    font-size: 0.7rem;
     /* padding-right: 10vw; */
 }
 

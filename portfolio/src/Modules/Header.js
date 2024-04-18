@@ -8,6 +8,8 @@ import "aos/dist/aos.css";
 function Header() {
   useEffect(() => {
     AOS.init();
+    EnableDarkMode(true);
+    LoadColors();
   }, []);
   var name = "Sanju Mahto";
 
@@ -163,31 +165,35 @@ const EnableDarkMode = (enable) => {
 };
 
 function setRandomColors() {
-  // Function to generate a random color
   EnableDarkMode(true);
   const getRandomColor = () =>
     `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
-  document.documentElement.style.setProperty(
-    "--secondary-color",
-    getRandomColor()
-  );
-  document.documentElement.style.setProperty(
-    "--secondary-color-secondary-light",
-    getRandomColor()
-  );
-  document.documentElement.style.setProperty(
-    "--secondary-color-secondary-dark",
-    getRandomColor()
-  );
-  document.documentElement.style.setProperty(
-    "--secondary-color-secondary-extra-dark",
-    getRandomColor()
-  );
-  document.documentElement.style.setProperty(
-    "--secondary-color-secondary-double-extra-dark",
-    getRandomColor()
-  );
+  colorsArr.forEach((n) => {
+    const color = getRandomColor();
+    localStorage.setItem(n, color);
+    document.documentElement.style.setProperty(n, color);
+  });
 }
-
+function LoadColors() {
+  colorsArr.forEach((n) => {
+    const color = localStorage.getItem(n, "");
+    if (color) {
+      document.documentElement.style.setProperty(n, color);
+    }
+  });
+}
 export default Header;
+const colorsArr = [
+  // "--primary-color",
+  // "--primary-color-second",
+  "--secondary-color",
+  "--secondary-color-offset",
+  "--secondary-color-secondary-light",
+  "--secondary-color-secondary-dark",
+  "--secondary-color-secondary-extra-dark",
+  "--secondary-color-secondary-double-extra-dark",
+  "--text-color-primary",
+  "--text-color-primary-offset",
+  "--text-color-secondary",
+];

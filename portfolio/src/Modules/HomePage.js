@@ -19,8 +19,6 @@ function HomePage() {
 
   const characters = name.split("");
   const myNameIsMap = myNameIs.split("");
-  const characters_description_1 = description_1.split("");
-  const characters_description_2 = description_2.split("");
 
   OnMouseMove(".profile_bg_layer_2");
   OnMouseMove(".profile_bg_layer_3");
@@ -29,7 +27,6 @@ function HomePage() {
   var m_timer = 0;
   const GetTimeIncrease200 = () => {
     m_timer += 200;
-    console.log("timer : " + m_timer);
     return m_timer;
   };
   const GetTimeIncrease100 = () => {
@@ -40,11 +37,7 @@ function HomePage() {
     <div className="home_page_main">
       {/* Left Container */}
       <div className="home_page_left">
-        <div
-          className="home_page_description_h2_colored"
-          data-aos="fade-up"
-          data-aos-duration="500"
-        >
+        <div className="home_page_description_h2_colored">
           {myNameIsMap.map((char, index) => (
             <span key={index} className="char_name">
               {char}
@@ -59,14 +52,19 @@ function HomePage() {
             _
           </span>
         </div>
-        <div
-          className="home_page_name"
-          data-aos-delay={GetTimeIncrease200()}
-          data-aos="fade-up"
-          data-aos-duration="500"
-        >
+        <div className="home_page_name">
           {characters.map((char, index) => (
-            <span key={index} className="char_name">
+            <span
+              key={index}
+              className="char_name"
+              data-aos-delay={getRandomInt(10000, 15000) + ""}
+              data-aos={
+                animationDirections[
+                  getRandomInt(0, animationDirections.length - 1)
+                ]
+              }
+              data-aos-duration={getRandomInt(10000, 15000) + ""}
+            >
               {char}
             </span>
           ))}
@@ -219,5 +217,11 @@ const OnMouseMove = (layer_name) => {
     }
   });
 };
+
+function getRandomInt(min, max) {
+  const value = Math.floor(Math.random() * (max - min + 1)) + min;
+  return value;
+}
+const animationDirections = ["fade-left", "fade-right", "fade-up", "fade-down"];
 
 export default HomePage;

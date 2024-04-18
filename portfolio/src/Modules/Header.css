@@ -1,5 +1,4 @@
 .header_main {
-    background-color: var(--primary-color);
     width: 100vw;
     height: 5vh;
     display: flex;
@@ -53,6 +52,7 @@
 
 .route_button:hover {
     transition: 0.3s;
+    cursor: pointer;
     /* border-bottom: 1px solid var(--secondary-color); */
 
 }
