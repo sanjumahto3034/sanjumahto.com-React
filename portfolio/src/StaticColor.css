@@ -7,10 +7,10 @@
     --secondary-color-secondary-dark: #3fc7ba;
     --secondary-color-secondary-extra-dark: #64ffda;
     --secondary-color-secondary-double-extra-dark: #64ffda;
-    --text-color-primary: #ccd6f6;
-    --text-color-primary-offset: #8892b0;
-    --text-color-secondary: #ccd6f6;
 
+    --text-color-primary: #ffffff;
+    --text-color-primary-offset: rgba(0, 255, 255, 0.705);
+    --text-color-secondary: #64ffda;
 
     --primary-font: Raleway-ExtraBold;
     --secondary-font: 'Roboto Mono', monospace;

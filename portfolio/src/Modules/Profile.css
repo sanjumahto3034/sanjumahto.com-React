@@ -1,0 +1,29 @@
+.profile_parent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--primary-color-second);
+    border-radius: 12px;
+}
+
+.profile_title {
+    font-size: 2rem;
+    color: var(--text-color-primary);
+    font-family: var(--primary-font);
+}
+
+.profile_description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    color: var(--text-color-secondary);
+    font-family: var(--secondary-font);
+}
+
+.profile_other_hobby {
+    font-size: 0.8rem;
+    color: var(--text-color-secondary);
+    font-family: var(--secondary-font);
+}

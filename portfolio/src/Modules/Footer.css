@@ -4,16 +4,17 @@
     font-family: var(--secondary-font);
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .footer_parent:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .footer_parent,
@@ -26,4 +27,16 @@
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: underline;
+}
+
+@media (max-width:600px) {
+    .footer_parent {
+        display: flex;
+    }
+
+    .footer_parent,
+    .portfolio_source_code {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
 }

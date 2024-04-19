@@ -25,7 +25,8 @@ function Footer() {
       value: "https://v5.sanjudev.site",
     },
   ];
-  const portfolio_code = "Github";
+  const portfolio_code = "";
+  const fontSize = { fontSize: "0.8rem" };
   return (
     <div
       className="footer_parent"
@@ -36,15 +37,16 @@ function Footer() {
         });
       }}
     >
-      {footer_text.split("").map((char, index) => (
-        <span key={index} className="char_name">
-          {char}
-        </span>
-      ))}
-
+      <div>
+        {footer_text.split("").map((char, index) => (
+          <span key={index} className="char_name" style={fontSize}>
+            {char}
+          </span>
+        ))}
+      </div>
       <div className="portfolio_source_code">
         {portfolio_code.split("").map((char, index) => (
-          <span key={index} className="char_name">
+          <span key={index} className="char_name" style={fontSize}>
             {char}
           </span>
         ))}
@@ -52,13 +54,14 @@ function Footer() {
 
       {older_version.map((value, index) => (
         <div
+          key={index}
           className="portfolio_old_version"
           onClick={() => {
             window.open(value.value);
           }}
         >
           {value.key.split("").map((char, __index) => (
-            <span key={__index} className="char_name">
+            <span key={__index} className="char_name" style={fontSize}>
               {char}
             </span>
           ))}

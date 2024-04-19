@@ -9,6 +9,7 @@ import WebsiteLoader from "./Modules/WebsiteLoader";
 import Resume from "./Modules/Resume";
 import Projects from "./Modules/Projects";
 import Footer from "./Modules/Footer";
+import Profile from "./Modules/Profile";
 
 function App() {
   const [IsPageLoaded, setPageLoadSuccess] = useState(false);
@@ -37,6 +38,7 @@ function App() {
       {/* <CustomCursor></CustomCursor> */}
       <Header></Header>
       <HomePage></HomePage>
+      {/* <Profile></Profile> */}
       <WhereIWorked></WhereIWorked>
       <FrameworkUse></FrameworkUse>
       <Projects></Projects>
@@ -45,7 +47,6 @@ function App() {
     </div>
   );
 }
-
 function setRandomColors() {
   // Function to generate a random color
   const getRandomColor = () =>

@@ -15,32 +15,38 @@ function Header() {
 
   const route_button = [
     {
-      button_name: "</home>",
-      action_on_button: null,
+      button_name: "</projects_list>",
+      action_on_button: () => {
+        scrollToDiv(".projects_structure");
+      },
     },
     {
       button_name: "</work_experience>",
-      action_on_button: OnClickAboutMe,
+      action_on_button: () => {
+        scrollToDiv(".where_i_worked");
+      },
     },
     {
       button_name: "</framework>",
-      action_on_button: OnClickFrameworkUse,
+      action_on_button: () => {
+        scrollToDiv(".framework_container");
+      },
     },
     {
       button_name: "</resume>",
       action_on_button: null,
     },
-    {
-      button_name: "</random_color>",
-      action_on_button: setRandomColors,
-    },
-    {
-      button_name: "</default_colors>",
-      action_on_button: ()=>{
-          localStorage.clear();
-          EnableDarkMode(true);
-      },
-    },
+    // {
+    //   button_name: "</random_color>",
+    //   action_on_button: setRandomColors,
+    // },
+    // {
+    //   button_name: "</default_colors>",
+    //   action_on_button: () => {
+    //     localStorage.clear();
+    //     EnableDarkMode(true);
+    //   },
+    // },
   ];
 
   return (
@@ -56,6 +62,7 @@ function Header() {
       <div className="site_route_buttons">
         {route_button.map((value, index) => (
           <div
+            key={index}
             onClick={value.action_on_button}
             className="route_button"
             data-aos-delay="400"
@@ -102,7 +109,6 @@ const DarkModeToggle = () => {
   );
 };
 const EnableDarkMode = (enable) => {
-
   const colors = {
     light: {
       "--primary-color": "#0b0c14",
@@ -128,10 +134,9 @@ const EnableDarkMode = (enable) => {
     },
   };
 
-  const modeColors = enable ? colors.dark : colors.light;
-
+  let modeColors = enable ? colors.dark : colors.light;
   Object.entries(modeColors).forEach(([key, value]) => {
-    document.documentElement.style.setProperty(key, value);
+    // document.documentElement.style.setProperty(key, value);
   });
 };
 
@@ -143,35 +148,21 @@ function setRandomColors() {
   colorsArr.forEach((n) => {
     const color = getRandomColor();
     localStorage.setItem(n, color);
-    document.documentElement.style.setProperty(n, color);
+    // document.documentElement.style.setProperty(n, color);
   });
 }
 function LoadColors() {
   colorsArr.forEach((n) => {
     const color = localStorage.getItem(n, "");
     if (color) {
-      document.documentElement.style.setProperty(n, color);
+      // document.documentElement.style.setProperty(n, color);
     }
   });
 }
 
-function OnClickAboutMe() {
-  const targetElement = document.querySelector(".where_i_worked");
-  console.log("Clicked");
+function scrollToDiv(div_name) {
+  const targetElement = document.querySelector(div_name);
   if (targetElement) {
-    console.log("fsdf");
-
-    targetElement.scrollIntoView({
-      behavior: "smooth",
-    });
-  }
-}
-function OnClickFrameworkUse() {
-  const targetElement = document.querySelector(".framework_container");
-  console.log("Clicked");
-  if (targetElement) {
-    console.log("fsdf");
-
     targetElement.scrollIntoView({
       behavior: "smooth",
     });

@@ -1,15 +1,19 @@
 .framework_container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .framework_parent {
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: var(--text-color-primary);
-    width: 300px;
+    width: 17%;
+    min-width: 250px;
     height: 300px;
     background-color: var(--primary-color-second);
     padding-left: 50px;
@@ -21,21 +25,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* outline: 1px solid var(--secondary-color); */
-    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    /* transition: 0.3s; */
     transform: scale(1)
 }
 
-.framework_parent:hover {
-    background-color: var(--secondary-color);
-    transition: 0.3s;
-    color: var(--primary-color);
-}
+
 
 .framework_icon {
     width: 60px;
-    height: 60px;
     border-radius: 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .framework_name {
@@ -62,27 +63,49 @@
     color: var(--text-color-primary-offset);
 }
 
+.framework_parent:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
 
+.framework_parent:hover .framework_description {
+    color: var(--primary-color);
+}
 
-@media (max-width:750px) {
+.framework_parent:hover .framework_language {
+    color: var(--primary-color);
+}
+
+@media (max-width:900px) {
     .framework_container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .framework_parent {
+
+        width: calc(100% - 100px);
         flex-direction: column;
         gap: 50px;
     }
 }
 
-@media (max-width:400px) {
-    .framework_container {
-        flex-direction: column;
-        gap: 50px;
+@media (max-width:500px) {
+    .framework_parent {
+        height: auto;
     }
 
-    .framework_parent {
-        width: 80vw;
-        height: 340px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .framework_name {
+        margin-top: 0px;
+    }
+
+    .framework_description {
+        margin-top: 0px;
+        height: auto;
+    }
+
+    .framework_language {
+        margin-top: 0px;
+        height: auto;
     }
 }

@@ -1,6 +1,5 @@
 .header_main {
-    width: 100vw;
-    height: 5vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,53 +7,33 @@
     padding-bottom: 20px;
 }
 
-.char_name {
-    transition: 0.3s;
-    -webkit-user-select: none;
-    user-select: none;
-}
 
-.char_name:hover {
-    color: var(--secondary-color);
-    transition: 0.3s;
-}
 
 .site_name {
-    /* font-family: Raleway-Bold; */
     font-weight: 900;
     font-size: 2rem;
-    margin-left: 100px;
     font-family: monospace;
     color: var(--text-color-primary);
 }
 
-.site_name:hover {}
 
 .site_route_buttons {
-    font-weight: 900;
+    font-weight: lighter;
     color: var(--text-color-primary);
     display: flex;
-    gap: 50px;
-    font-family: Raleway-Regular;
-    margin-right: 100px;
+    gap: 20px;
 }
 
 .route_button {
-    display: inline-block;
-    /* padding: 10px 20px; */
+    font-size: 0.8rem;
     text-align: center;
-    text-decoration: none;
-    border: 2px solid transparent;
-    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    font-family: monospace;
-    /* border-bottom: 2px; */
+    font-family: var(--secondary-font);
+    color: var(--text-color-secondary);
 }
 
 .route_button:hover {
     transition: 0.3s;
-    cursor: pointer;
-    /* border-bottom: 1px solid var(--secondary-color); */
-
+    /* cursor: pointer; */
 }
 
 .under_line {
@@ -107,7 +86,7 @@
         height: 3vh;
         display: none;
     }
-    
+
     .site_route_buttons {
         display: none;
     }
