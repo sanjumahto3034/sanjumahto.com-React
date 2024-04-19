@@ -26,14 +26,17 @@ import "./res/fonts/RobotoMono/RobotoMono-Regular.ttf";
 import "./res/fonts/RobotoMono/RobotoMono-SemiBold.ttf";
 import "./res/fonts/RobotoMono/RobotoMono-Thin.ttf";
 
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Resume from "./Modules/Resume";
 
 const routePages = createBrowserRouter([
   {
     path: "/",
     element: <App />, //TODO: For Extra Test of Extra Spacing In Mobile UI...
-    // element:<div><App/></div>,
+  },
+  {
+    path: "/resume",
+    element: <Resume></Resume>,
   },
 ]);
 

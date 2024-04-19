@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import { game_image } from "../res/horizon_wallpaper.jpg";
+import { game_image_2 } from "../res/game_page.jpg";
 import { download_icon } from "../res/download.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,7 +18,20 @@ const temp_Data = {
     "Environment Design",
   ],
 };
-const data = [temp_Data, temp_Data, temp_Data, temp_Data, temp_Data];
+const temp_Data_2 = {
+  project_title: "Horizon Forbidden West",
+  project_description:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  project_image: game_image_2,
+  project_video: null,
+  project_key_point: [
+    "Unreal Engine",
+    "C++",
+    "Ray Tracing",
+    "Environment Design",
+  ],
+};
+const data = [temp_Data, temp_Data_2, temp_Data, temp_Data_2, temp_Data];
 function Projects() {
   useEffect(() => {
     AOS.init();
@@ -59,7 +73,10 @@ function ProjectContent({
       data-aos-duration="500"
     >
       <div className="projects_content">
-        <div className="project_image">
+        <div
+          className="project_image"
+        //   style={{ backgroundImage: `url(${game_image})` }}
+        >
           <div className="project_black_layer">
             <div className="project_content_data">
               <div

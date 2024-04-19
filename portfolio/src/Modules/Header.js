@@ -13,11 +13,36 @@ function Header() {
   }, []);
   var name = "Sanju Mahto";
 
-  var _home = "</home>";
-  var _about_me = "</about_me>";
-  var _resume = "</resume>";
-  var _contact_me = "</contact_me>";
-  var _random_color = "</random_color>";
+  const route_button = [
+    {
+      button_name: "</home>",
+      action_on_button: null,
+    },
+    {
+      button_name: "</work_experience>",
+      action_on_button: OnClickAboutMe,
+    },
+    {
+      button_name: "</framework>",
+      action_on_button: OnClickFrameworkUse,
+    },
+    {
+      button_name: "</resume>",
+      action_on_button: null,
+    },
+    {
+      button_name: "</random_color>",
+      action_on_button: setRandomColors,
+    },
+    {
+      button_name: "</default_colors>",
+      action_on_button: ()=>{
+          localStorage.clear();
+          EnableDarkMode(true);
+      },
+    },
+  ];
+
   return (
     <div className="header_main">
       <div className="site_name" data-aos="fade-down" data-aos-duration="500">
@@ -29,76 +54,23 @@ function Header() {
       </div>
 
       <div className="site_route_buttons">
-        <div
-          className="route_button"
-          data-aos-delay="200"
-          data-aos="fade-left"
-          data-aos-duration="500"
-        >
-          {_home.split("").map((char, index) => (
-            <span key={index} className="char_name">
-              {char}
-            </span>
-          ))}
-          <div className="under_line"></div>
-        </div>
+        {route_button.map((value, index) => (
+          <div
+            onClick={value.action_on_button}
+            className="route_button"
+            data-aos-delay="400"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
+            {value.button_name.split("").map((char, index) => (
+              <span key={index} className="char_name">
+                {char}
+              </span>
+            ))}
+            <div className="under_line"></div>
+          </div>
+        ))}
 
-        <div
-          className="route_button"
-          data-aos-delay="400"
-          data-aos="fade-left"
-          data-aos-duration="500"
-        >
-          {_about_me.split("").map((char, index) => (
-            <span key={index} className="char_name">
-              {char}
-            </span>
-          ))}
-          <div className="under_line"></div>
-        </div>
-
-        <div
-          className="route_button"
-          data-aos-delay="600"
-          data-aos="fade-left"
-          data-aos-duration="500"
-        >
-          {_resume.split("").map((char, index) => (
-            <span key={index} className="char_name">
-              {char}
-            </span>
-          ))}
-          <div className="under_line"></div>
-        </div>
-
-        <div
-          className="route_button"
-          data-aos-delay="800"
-          data-aos="fade-left"
-          data-aos-duration="500"
-        >
-          {_contact_me.split("").map((char, index) => (
-            <span key={index} className="char_name">
-              {char}
-            </span>
-          ))}
-          <div className="under_line"></div>
-        </div>
-
-        <div
-          className="route_button"
-          onClick={setRandomColors}
-          data-aos-delay="1000"
-          data-aos="fade-left"
-          data-aos-duration="500"
-        >
-          {_random_color.split("").map((char, index) => (
-            <span key={index} className="char_name">
-              {char}
-            </span>
-          ))}
-          <div className="under_line"></div>
-        </div>
         {/* Dark Mode Toggle */}
         {/* <DarkModeToggle></DarkModeToggle> */}
       </div>
@@ -130,7 +102,6 @@ const DarkModeToggle = () => {
   );
 };
 const EnableDarkMode = (enable) => {
-  console.log("enable: " + enable);
 
   const colors = {
     light: {
@@ -183,6 +154,30 @@ function LoadColors() {
     }
   });
 }
+
+function OnClickAboutMe() {
+  const targetElement = document.querySelector(".where_i_worked");
+  console.log("Clicked");
+  if (targetElement) {
+    console.log("fsdf");
+
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+}
+function OnClickFrameworkUse() {
+  const targetElement = document.querySelector(".framework_container");
+  console.log("Clicked");
+  if (targetElement) {
+    console.log("fsdf");
+
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+}
+
 export default Header;
 const colorsArr = [
   // "--primary-color",
