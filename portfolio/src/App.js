@@ -7,6 +7,8 @@ import FrameworkUse from "./Modules/FrameworkUse";
 import TomImage from "./res/tom_image.png";
 import WebsiteLoader from "./Modules/WebsiteLoader";
 import Resume from "./Modules/Resume";
+import Projects from "./Modules/Projects";
+import Footer from "./Modules/Footer";
 
 function App() {
   const [IsPageLoaded, setPageLoadSuccess] = useState(false);
@@ -37,7 +39,9 @@ function App() {
       <HomePage></HomePage>
       <WhereIWorked></WhereIWorked>
       <FrameworkUse></FrameworkUse>
-      <Resume></Resume>
+      <Projects></Projects>
+      <Footer></Footer>
+      {/* <Resume></Resume> */}
     </div>
   );
 }

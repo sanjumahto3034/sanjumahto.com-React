@@ -1,0 +1,198 @@
+.projects_parent {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.projects_structure {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: start;
+}
+
+.projects_content {
+    width: 75%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project_image {
+    width: 100%;
+    height: 100%;
+    background-image: url(../res/horizon_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.4s;
+    transform: scale(1);
+}
+
+.project_image:hover {
+    transition: 0.4s;
+    transform: scale(1.01);
+}
+
+.project_black_layer {
+    width: calc(100% - 40px);
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: inherit;
+    background: linear-gradient(336deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 100%);
+    transition: background 0.4s;
+}
+
+.project_black_layer:hover {
+    transition: background 0.4s;
+    background: linear-gradient(336deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.project_content_data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    transition: 0.4s;
+    transform: translateY(300px);
+}
+
+.project_title {
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    color: var(--text-color-secondary);
+    transition: 0.4s;
+}
+
+.project_description {
+    font-family: var(--secondary-font);
+    color: var(--text-color-primary);
+}
+
+.project_project_links {
+    margin-top: 80px;
+    font-family: var(--secondary-font);
+    color: var(--text-color-primary);
+    background-color: var(--secondary-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.4s;
+}
+
+.project_project_links:hover {
+    background-color: var(--secondary-color-secondary-light);
+    transition: 0.4s;
+}
+
+.project_key_point {
+    margin-top: 15px;
+    color: var(--text-color-primary);
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.project_key_point_div {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: var(--primary-color);
+    margin-right: 12px;
+    border-radius: 40px;
+    transition: 0.4s;
+}
+
+.project_key_point_div:hover {
+    transition: 0.4s;
+    background-color: var(--secondary-color);
+}
+
+.projects_content:hover .project_content_data {
+    transition: 0.4s;
+    transform: translateY(0px);
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1500px) {
+    .projects_content {
+        width: 100%;
+    }
+
+    .project_content_data {
+        transform: translateY(0px);
+        cursor: pointer;
+    }
+
+    .project_project_links {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:650px) {
+    .project_title {
+        font-size: 2rem;
+    }
+
+    .project_description {
+        font-size: 0.9rem;
+    }
+
+    .project_project_links {
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+    .project_key_point {
+        display: flex;
+        flex-wrap: wrap;
+        color: var(--text-color-primary);
+        font-size: 0.8rem;
+        text-wrap: nowrap;
+    }
+
+}
+
+@media (max-width:400px) {
+    .project_title {
+        font-size: 1rem;
+    }
+
+    .project_description {
+        font-size: 0.7rem;
+    }
+
+    .project_project_links {
+        font-size: 0.9rem;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .project_key_point {
+        display: flex;
+        flex-wrap: wrap;
+        color: var(--text-color-primary);
+        font-size: 0.8rem;
+        text-wrap: nowrap;
+    }
+
+}

@@ -16,7 +16,13 @@ function HomePage() {
   const name = "Sanju Mahto";
   const description_1 = "I'm a Game Developer";
   const description_2 = "at Emizen Tech Pvt. Ltd";
-
+  const myDescription =
+    "As a passionate game developer, I specialize in crafting immersive and " +
+    "engaging gaming experiences. With expertise in game design," +
+    "programming, and graphics, I bring creativity and technical prowess to " +
+    "every project. I thrive on pushing boundaries, leveraging cutting-edge " +
+    "technologies to deliver captivating games that captivate audiences and " +
+    "provide memorable entertainment.";
   const characters = name.split("");
   const myNameIsMap = myNameIs.split("");
 
@@ -84,12 +90,11 @@ function HomePage() {
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          As a passionate game developer, I specialize in crafting immersive and
-          engaging gaming experiences. With expertise in game design,
-          programming, and graphics, I bring creativity and technical prowess to
-          every project. I thrive on pushing boundaries, leveraging cutting-edge
-          technologies to deliver captivating games that captivate audiences and
-          provide memorable entertainment.
+          {myDescription.split("").map((char, index) => (
+            <span key={index} className="char_name">
+              {char}
+            </span>
+          ))}
         </div>
 
         <div className="contact_button_container">
@@ -179,25 +184,13 @@ function HomePage() {
 }
 
 const OnClickFacebook = () => {
-  window.open(
-    "https://www.facebook.com/sanjumahto3034",
-    "_blank",
-    "noopener,noreferrer"
-  );
+  window.open("https://www.facebook.com/sanjumahto3034");
 };
 const OnClickLinkined = () => {
-  window.open(
-    "https://www.linkedin.com/in/sanjumahto30340/",
-    "_blank",
-    "noopener,noreferrer"
-  );
+  window.open("https://www.linkedin.com/in/sanjumahto30340/");
 };
 const OnClickGitHub = () => {
-  window.open(
-    "https://github.com/sanjumahto3034",
-    "_blank",
-    "noopener,noreferrer"
-  );
+  window.open("https://github.com/sanjumahto3034");
 };
 const OnMouseMove = (layer_name) => {
   var sensitivity = Math.random() * 0.5;

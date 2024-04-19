@@ -1,0 +1,29 @@
+.footer_parent {
+    width: 100vw;
+    text-align: center;
+    font-family: var(--secondary-font);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_parent:hover {
+    cursor: pointer;
+}
+
+.footer_parent,
+.portfolio_source_code {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.portfolio_old_version {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: underline;
+}

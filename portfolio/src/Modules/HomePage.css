@@ -46,9 +46,12 @@
 }
 
 
-
+.contact_me_button:hover{
+    cursor: pointer;
+}
 
 .home_button:hover {
+    cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.3s ease;
     border-color: var(--primary-color);
