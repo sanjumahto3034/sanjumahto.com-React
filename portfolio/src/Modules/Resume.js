@@ -12,12 +12,7 @@ function Resume() {
 
   return (
     <div className="Resume-div-main-parent">
-      <div
-        className="Resume-div-main"
-        data-aos-delay="200"
-        data-aos="fade-in"
-        data-aos-duration="0"
-      >
+      <div className="Resume-div-main">
         <div className="Resume-title-div">
           <ResumeTitle></ResumeTitle>
         </div>
@@ -34,22 +29,8 @@ function Resume() {
 function ResumeTitle() {
   return (
     <div className="Resume-profile-Description-main">
-      <div
-        className="Resume-Description-Name"
-        data-aos-delay="200"
-        data-aos="fade-up"
-        data-aos-duration="0"
-      >
-        Sanju Mahto
-      </div>
-      <div
-        className="Resume-Description-Post"
-        data-aos-delay="200"
-        data-aos="fade-up"
-        data-aos-duration="0"
-      >
-        Front-End Game Programmer
-      </div>
+      <div className="Resume-Description-Name">Sanju Mahto</div>
+      <div className="Resume-Description-Post">Front-End Game Programmer</div>
       <div
         className="Resume-Description-About"
         data-aos-delay="200"
@@ -68,12 +49,7 @@ function ResumeLeftDiv() {
   return (
     <div className="Resume-div-second-container-1">
       {/* Contact Div Start */}
-      <div
-        className="Resume-div-second-container-title"
-        data-aos-delay="200"
-        data-aos="fade-up"
-        data-aos-duration="0"
-      >
+      <div className="Resume-div-second-container-title">
         Contact Info
         <div className="Resume-div-second-container-1-contact-div-contact-info">
           <img
@@ -108,12 +84,7 @@ function ResumeLeftDiv() {
       </div>
       {/* Contact Div End */}
 
-      <div
-        className="Resume-div-second-container-title"
-        data-aos-delay="200"
-        data-aos="fade-up"
-        data-aos-duration="0"
-      >
+      <div className="Resume-div-second-container-title">
         {"</education>"}
         <div className="Resume-div-details-title">10th</div>
         <div className="Resume-div-details-description">2005-2018</div>
@@ -129,12 +100,7 @@ function ResumeLeftDiv() {
         </div>
       </div>
 
-      <div
-        className="Resume-div-second-container-title"
-        data-aos-delay="200"
-        data-aos="fade-up"
-        data-aos-duration="0"
-      >
+      <div className="Resume-div-second-container-title">
         {"</Interest>"}
         <div className="Resume-div-details-title">Gaming Enthusiast</div>
         <div className="Resume-div-details-description"></div>
@@ -144,12 +110,7 @@ function ResumeLeftDiv() {
         <div className="Resume-div-details-description"></div>
       </div>
 
-      <div
-        className="Resume-div-second-container-title"
-        data-aos-delay="200"
-        data-aos="fade-up"
-        data-aos-duration="0"
-      >
+      <div className="Resume-div-second-container-title">
         {"</Skills>"}
         <div className="Resume-div-details-title">Fast Learner</div>
         <div className="Resume-div-details-description">Intermediate</div>
@@ -164,12 +125,7 @@ function ResumeLeftDiv() {
 
 function Languages({ title, data }) {
   return (
-    <div
-      className="Resume-div-second-container-title"
-      data-aos-delay="200"
-      data-aos="fade-up"
-      data-aos-duration="0"
-    >
+    <div className="Resume-div-second-container-title">
       <div className="Resume-div-details-title-text">{title || "Title"}</div>
       {data &&
         data.map((value, index) => (
@@ -183,12 +139,7 @@ function Languages({ title, data }) {
 }
 function WorkExperience({ title, data }) {
   return (
-    <div
-      className="Resume-div-second-container-title"
-      data-aos-delay="200"
-      data-aos="fade-up"
-      data-aos-duration="0"
-    >
+    <div className="Resume-div-second-container-title">
       <div className="Resume-div-details-title-text">{title || "Title"}</div>
       {data &&
         data.map((value, index) => (

@@ -1,6 +1,5 @@
 .Resume-div-main-parent {
     width: 100%;
-    width: calc(100vw - 40px);
     display: flex;
     align-items: center;
     justify-content: center;
