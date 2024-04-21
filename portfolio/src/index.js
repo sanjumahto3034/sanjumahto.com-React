@@ -28,6 +28,7 @@ import "./res/fonts/RobotoMono/RobotoMono-Thin.ttf";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Resume from "./Modules/Resume";
+import FlipCardPrivacyPolicy from "./Modules/Apps/FlipCard/FlipCardPrivacyPolicy";
 
 const routePages = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const routePages = createBrowserRouter([
   {
     path: "/resume",
     element: <Resume></Resume>,
+  },
+  {
+    path: "/games/flip-card/privacy-policy",
+    element: <FlipCardPrivacyPolicy></FlipCardPrivacyPolicy>,
   },
 ]);
 
