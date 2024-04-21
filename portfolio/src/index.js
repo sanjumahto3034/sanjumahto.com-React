@@ -30,6 +30,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Resume from "./Modules/Resume";
 import FlipCardPrivacyPolicy from "./Modules/Apps/FlipCard/FlipCardPrivacyPolicy";
 import HindiHorrorStory from "./Modules/Apps/Hindi Horror Story/HindiHorrorStory";
+import SanjuCV from "./Modules/SanjuCV";
 
 const routePages = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const routePages = createBrowserRouter([
   {
     path: "/resume",
     element: <Resume></Resume>,
+  },
+  {
+    path: "/cv",
+    element: <SanjuCV></SanjuCV>,
   },
   {
     path: "/games/flip-card/privacy-policy",

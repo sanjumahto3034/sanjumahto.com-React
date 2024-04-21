@@ -187,7 +187,7 @@ const OnClickFacebook = () => {
   window.open("https://www.facebook.com/sanjumahto3034");
 };
 const OnClickLinkined = () => {
-  window.open("https://www.linkedin.com/in/sanjumahto30340/");
+  window.open("https://www.linkedin.com/in/sanjumahto3034/");
 };
 const OnClickGitHub = () => {
   window.open("https://github.com/sanjumahto3034");

@@ -171,7 +171,7 @@
 .projects_content:hover .project_content_data {
     transition: 0.4s;
     transform: translateY(0px);
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 
@@ -183,7 +183,7 @@
 
     .project_content_data {
         transform: translateY(0px);
-        /* cursor: pointer; */
+        cursor: pointer;
     }
 
     .project_project_links {
