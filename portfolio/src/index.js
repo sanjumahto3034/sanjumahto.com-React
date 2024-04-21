@@ -29,6 +29,7 @@ import "./res/fonts/RobotoMono/RobotoMono-Thin.ttf";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Resume from "./Modules/Resume";
 import FlipCardPrivacyPolicy from "./Modules/Apps/FlipCard/FlipCardPrivacyPolicy";
+import HindiHorrorStory from "./Modules/Apps/Hindi Horror Story/HindiHorrorStory";
 
 const routePages = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const routePages = createBrowserRouter([
   {
     path: "/games/flip-card/privacy-policy",
     element: <FlipCardPrivacyPolicy></FlipCardPrivacyPolicy>,
+  },
+  {
+    path: "/apps/hindi-horror-story/privacy-policy",
+    element: <HindiHorrorStory></HindiHorrorStory>,
   },
 ]);
 
