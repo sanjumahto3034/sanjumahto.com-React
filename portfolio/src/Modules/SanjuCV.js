@@ -181,11 +181,6 @@ const data = {
     "I am an experienced game developer with expertise in Unity 3D and augmented reality (AR) development. With over 3 years of professional development experience and 5 years of self-learning Unity Engine, I specialize in creating immersive gaming and AR experiences. My passion for games based on jungle or old culture themes inspires my innovative and creative approach to projects.",
   other_contact: [
     {
-      image: web_image,
-      value: "https://sanjudev.site",
-      actionOnClick: () => {},
-    },
-    {
       image: phone_image,
       value: "+91 6376 0214 81",
       actionOnClick: () => {},
@@ -193,6 +188,21 @@ const data = {
     {
       image: email_image,
       value: "sanjumahto3034@gmail.com",
+      actionOnClick: () => {},
+    },
+    {
+      image: web_image,
+      value: "sanjumahto3034",
+      actionOnClick: () => {},
+    },
+    {
+      image: web_image,
+      value: "@sanjumahto3034",
+      actionOnClick: () => {},
+    },
+    {
+      image: web_image,
+      value: "https://sanjudev.site",
       actionOnClick: () => {},
     },
   ],

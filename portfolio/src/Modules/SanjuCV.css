@@ -40,12 +40,6 @@
         justify-content: space-between;
     }
 
-    @media (max-width:800px) {
-        .sanju_cv_title_parent {
-            flex-direction: column;
-        }
-    }
-
     .sanju_cv_title {
         font-family: var(--primary-font);
         font-size: 3rem;
@@ -58,6 +52,8 @@
         width: 80%;
     }
 
+
+
     .sanju_cv_other_content_parent {
         display: flex;
         align-items: center;
@@ -68,6 +64,27 @@
         width: 24px;
         height: 24px;
         padding: 10px;
+    }
+
+    @media (max-width:800px) {
+        .sanju_cv_container {
+            margin: 0;
+        }
+
+        .sanju_cv_title_parent {
+            flex-direction: column;
+        }
+
+        .sanju_cv_description {
+            width: 100%;
+        }
+
+        .sanju_cv_other_content_icon {
+            width: 24px;
+            height: 24px;
+            padding: 10px;
+            padding-left: 0;
+        }
     }
 
     .sanju_cv_other_content_value {
@@ -137,7 +154,8 @@
     .sanju_cv_project_worked_div_title {
         font-family: var(--primary-font);
     }
-    .sanju_cv_project_worked_div_description{
+
+    .sanju_cv_project_worked_div_description {
         padding-top: 10px;
         padding-bottom: 10px;
     }
