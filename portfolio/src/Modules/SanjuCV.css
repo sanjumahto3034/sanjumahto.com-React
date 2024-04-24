@@ -47,9 +47,10 @@
 
     .sanju_cv_description {
         font-family: var(--secondary-font);
-        font-weight: lighter;
-        font-size: 0.8rem;
+        font-weight: 100;
+        font-size: 0.9rem;
         width: 80%;
+
     }
 
 
@@ -64,6 +65,11 @@
         width: 24px;
         height: 24px;
         padding: 10px;
+    }
+
+    .sanju_cv_other_content_value {
+        font-family: var(--secondary-font);
+        font-size: 0.9rem;
     }
 
     @media (max-width:800px) {
@@ -85,16 +91,22 @@
             padding: 10px;
             padding-left: 0;
         }
+
+        .sanju_cv_other_contact_div {
+            padding-top: 40px;
+        }
+
+        .sanju_cv_other_content_value {
+            font-family: var(--secondary-font);
+            font-size: 0.8rem;
+        }
+
     }
 
-    .sanju_cv_other_content_value {
-        font-family: var(--secondary-font);
-        font-size: 0.9rem;
-    }
+
 
     .sanju_cv_draw_line {
         margin-top: 35px;
-        margin-bottom: 35px;
         width: 100%;
         height: 0.8px;
         background-color: #ffffff82;
@@ -102,7 +114,7 @@
 
     .sanju_cv_data_div_parent {
         width: 100%;
-        padding-bottom: 50px;
+        padding-top: 50px;
     }
 
     .sanju_cv_data_div {
@@ -113,7 +125,10 @@
     }
 
     /* Professional Experience */
-
+    .sanju_cv_highlight_text {
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
 
     .sanju_cv_professional_experience_company_details {
         margin-top: 20px;
@@ -125,7 +140,8 @@
     .sanju_cv_professional_experience_company_duration,
     .sanju_cv_professional_experience_company_key_points {
         font-family: var(--secondary-font);
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        font-weight: 100;
         color: var(--text-color-primary);
         padding-top: 2.5px;
         padding-bottom: 2.5px;
@@ -143,18 +159,20 @@
     }
 
     /* Project Created */
-    .sanju_cv_project_worked_div {
-        font-family: var(--secondary-font);
-        font-size: 0.8rem;
-        color: var(--text-color-primary);
-        padding-top: 2.5px;
-        padding-bottom: 2.5px;
-    }
-
     .sanju_cv_project_worked_div_title {
         font-family: var(--primary-font);
     }
 
+    .sanju_cv_project_worked_div {
+        font-family: var(--secondary-font);
+        font-size: 0.8rem;
+        color: var(--text-color-primary);
+        font-weight: lighter;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+  
     .sanju_cv_project_worked_div_description {
         padding-top: 10px;
         padding-bottom: 10px;

@@ -43,15 +43,15 @@ function ProfessionalExperience({ companyDetails }) {
             {value.company_name}
           </div>
           <div className="sanju_cv_professional_experience_company_location">
-            <b>Location - </b>
+            <b className="sanju_cv_highlight_text">Location - </b>
             {value.company_location}
           </div>
           <div className="sanju_cv_professional_experience_company_designation">
-            <b>Designation - </b>
+            <b className="sanju_cv_highlight_text">Designation - </b>
             {value.company_designation}
           </div>
           <div className="sanju_cv_professional_experience_company_duration">
-            <b>Duration - </b>
+            <b className="sanju_cv_highlight_text">Duration - </b>
             {value.company_duration}
           </div>
           <div className="sanju_cv_professional_experience_company_key_points">
