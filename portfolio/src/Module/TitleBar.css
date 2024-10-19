@@ -1,0 +1,44 @@
+.title_bar {
+    width: 100vw;
+    height: 6vh;
+    border-bottom: 1px solid #ffffff0d;
+}
+
+.title_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.title_name,
+.contact_me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff0d;
+    border-left: 1px solid #ffffff0d;
+    height: 100%;
+    width: 150px;
+}
+
+.title_page {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.title_button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff0d;
+    border-left: 1px solid #ffffff0d;
+    width: 100px;
+}

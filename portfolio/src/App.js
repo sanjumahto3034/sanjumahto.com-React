@@ -1,29 +1,29 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import HeaderDiv from "./Header";
-import HomeTitle from "./HomeTitle";
-import Introductiondiv from "./Introductiondiv";
-import Footer from "./Footer";
-
-import TitleDiv from "./TitleDiv";
-import HomePageDiv from "./HomePageDiv";
-import WhatIDo from "./WhatIDo";
-
-import WhoIWorkWith from "./WhoIWorkWith";
-import Resume from "./Resume/Resume";
-import StaticColorBackground from "./StaticColorBackground";
-import EngineLogo from "./EngineLogo";
-
+import TitleBar from "./Module/TitleBar";
+import Projects from "./Module/Projects";
+import About from "./Module/About";
+import Hello from "./Module/Hello";
+import Resume from "./Module/Resume";
 
 function App() {
+  const [ui_state, setUiState] = useState(0);
+  function GetState(__index) {
+    const arr = [Hello, About, Projects, Resume];
+    return arr[__index];
+  }
+
+  const RenderState = GetState(ui_state);
+
   return (
     <div className="App">
-      <StaticColorBackground/>
-      <TitleDiv />
-      <HomePageDiv />
-      <WhoIWorkWith />
-      <Resume />
-      <Footer />
+      <TitleBar
+        onClickHello={() => setUiState(0)}
+        onClickAbout={() => setUiState(1)}
+        onClickProjects={() => setUiState(2)}
+        onClickResume={() => setUiState(3)}
+      ></TitleBar>
+      <RenderState></RenderState>
     </div>
   );
 }

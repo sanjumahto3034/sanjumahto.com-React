@@ -2,12 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Resume from "./Resume/Resume";
-import TitleDiv from "./TitleDiv";
-import NewsPage from "./NewsPage/NewsHome";
-import DemoPage from "./DemoPage/DemoPage";
-import LetsTalk from "./LetsTalkPage/LetsTalk";
-import AllGames from "./AllGamesPage/AllGames";
 
 import reportWebVitals from "./reportWebVitals";
 import "./res/fonts/Raleway/static/Raleway-Thin.ttf";
@@ -25,54 +19,22 @@ import "./res/fonts/Ubuntu/Ubuntu-Medium.ttf";
 import "./res/fonts/Ubuntu/Ubuntu-Regular.ttf";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SideBar from "./SideBarPage/SideBar";
 
 const routePages = createBrowserRouter([
   {
     path: "/",
     element: <App />, //TODO: For Extra Test of Extra Spacing In Mobile UI...
-    // element:<div><App/></div>,
   },
-  {
-    path: "resume",
-    element: (
-      <div className="index-center-align">
-        <TitleDiv />
-        <Resume />
-      </div>
-    ),
-  },
-  {
-    path: "title",
-    element: <TitleDiv />,
-  },
-  {
-    path: "news",
-    element: <NewsPage />,
-  },
-  {
-    path: "demo",
-    element: <LetsTalk />,
-  },
-  {
-    path: "talk",
-    element: (
-      <div className="index-center-align">
-        <TitleDiv />
-        <LetsTalk />
-      </div>
-    ),
-  },
-  {
-    path: "/games",
-    // element:<div className='index-resume-div'><TitleDiv/><AllGames/></div>
-    element: (
-      <div className="index-center-align">
-        <TitleDiv />
-        <AllGames />
-      </div>
-    ),
-  },
+  // {
+  //   path: "resume",
+  //   element: (
+  //     <div className="index-center-align">
+  //       <TitleDiv />
+  //       <Resume />
+  //     </div>
+  //   ),
+  // },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
