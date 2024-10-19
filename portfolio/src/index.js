@@ -31,6 +31,7 @@ import Resume from "./Modules/Resume";
 import FlipCardPrivacyPolicy from "./Modules/Apps/FlipCard/FlipCardPrivacyPolicy";
 import HindiHorrorStory from "./Modules/Apps/Hindi Horror Story/HindiHorrorStory";
 import SanjuCV from "./Modules/SanjuCV";
+import ProjectTwoZeroFourEight from "./Modules/Apps/Project2048/ProjectTwoZeroFourEight";
 
 const routePages = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const routePages = createBrowserRouter([
   {
     path: "/apps/hindi-horror-story/privacy-policy",
     element: <HindiHorrorStory></HindiHorrorStory>,
+  },
+  {
+    path: "/apps/2048/privacy-policy",
+    element: <ProjectTwoZeroFourEight></ProjectTwoZeroFourEight>,
   },
 ]);
 

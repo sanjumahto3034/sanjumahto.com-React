@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6b9126accac749fa5a5d",
+    "revision": "b2c8d44396856a88b6fb",
     "url": "/static/css/main.e82d191c.chunk.css"
   },
   {
-    "revision": "6b9126accac749fa5a5d",
-    "url": "/static/js/main.067e3075.chunk.js"
+    "revision": "b2c8d44396856a88b6fb",
+    "url": "/static/js/main.b859bd25.chunk.js"
   },
   {
     "revision": "8ee3375cf54bdda16c5e",
@@ -60,16 +60,12 @@ self.__precacheManifest = [
     "url": "/static/media/ludo_game.4b4eed74.jpg"
   },
   {
-    "revision": "896a60219f6157eab096825a0c9348a8",
-    "url": "/static/media/Ubuntu-Bold.896a6021.ttf"
-  },
-  {
-    "revision": "d3c3b35e6d478ed149f02fad880dd359",
-    "url": "/static/media/Ubuntu-Medium.d3c3b35e.ttf"
-  },
-  {
     "revision": "90190d91283189e340b2a44fe560f2cd",
     "url": "/static/media/RobotoMono-Bold.90190d91.ttf"
+  },
+  {
+    "revision": "896a60219f6157eab096825a0c9348a8",
+    "url": "/static/media/Ubuntu-Bold.896a6021.ttf"
   },
   {
     "revision": "642c61c3093f360ebfe8c96dce691e21",
@@ -78,10 +74,6 @@ self.__precacheManifest = [
   {
     "revision": "c9d68f61bf89fde6a24da697bc45d6f9",
     "url": "/static/media/Ubuntu-Light.c9d68f61.ttf"
-  },
-  {
-    "revision": "c9166464b1db95fc3cdf9b50fc7f98e2",
-    "url": "/static/media/RobotoMono-Light.c9166464.ttf"
   },
   {
     "revision": "0eaa3f458fb2611ca44b021db3db09a8",
@@ -96,6 +88,26 @@ self.__precacheManifest = [
     "url": "/static/media/RobotoMono-SemiBold.eabbacb6.ttf"
   },
   {
+    "revision": "db8e7354e2585143a4f7ef6f71bfe0ca",
+    "url": "/static/media/Raleway-Thin.db8e7354.ttf"
+  },
+  {
+    "revision": "84ea7c5c9d2fa40c070ccb901046117d",
+    "url": "/static/media/Ubuntu-Regular.84ea7c5c.ttf"
+  },
+  {
+    "revision": "d3c3b35e6d478ed149f02fad880dd359",
+    "url": "/static/media/Ubuntu-Medium.d3c3b35e.ttf"
+  },
+  {
+    "revision": "c9166464b1db95fc3cdf9b50fc7f98e2",
+    "url": "/static/media/RobotoMono-Light.c9166464.ttf"
+  },
+  {
+    "revision": "ed645c2b20d22612c4985bc4e4b4a7ff",
+    "url": "/static/media/Raleway-Light.ed645c2b.ttf"
+  },
+  {
     "revision": "564755b4222c6321216f1e764c9204f9",
     "url": "/static/media/RobotoMono-Thin.564755b4.ttf"
   },
@@ -104,32 +116,20 @@ self.__precacheManifest = [
     "url": "/static/media/Raleway-ExtraLight.550ad10f.ttf"
   },
   {
-    "revision": "db8e7354e2585143a4f7ef6f71bfe0ca",
-    "url": "/static/media/Raleway-Thin.db8e7354.ttf"
-  },
-  {
     "revision": "20d41940068e45b114d32b48d684ef39",
     "url": "/static/media/Raleway-Regular.20d41940.ttf"
-  },
-  {
-    "revision": "84ea7c5c9d2fa40c070ccb901046117d",
-    "url": "/static/media/Ubuntu-Regular.84ea7c5c.ttf"
-  },
-  {
-    "revision": "ed645c2b20d22612c4985bc4e4b4a7ff",
-    "url": "/static/media/Raleway-Light.ed645c2b.ttf"
   },
   {
     "revision": "b952c3c81ba34b54c66c748ea1e828a7",
     "url": "/static/media/Raleway-Medium.b952c3c8.ttf"
   },
   {
-    "revision": "88079335418f389bfb2d86bc4f1ced64",
-    "url": "/static/media/Raleway-Bold.88079335.ttf"
-  },
-  {
     "revision": "87641f9900d717d6bfbf108b8755868e",
     "url": "/static/media/Raleway-SemiBold.87641f99.ttf"
+  },
+  {
+    "revision": "88079335418f389bfb2d86bc4f1ced64",
+    "url": "/static/media/Raleway-Bold.88079335.ttf"
   },
   {
     "revision": "27f7ef17de3691b5cdb9f1ee1ee5cc6a",
@@ -152,7 +152,7 @@ self.__precacheManifest = [
     "url": "/static/media/game_page.b4ac5567.jpg"
   },
   {
-    "revision": "42bdfec859d959107b469ce03641f553",
+    "revision": "9df8b5485154586b0810906d5dc5aead",
     "url": "/index.html"
   }
 ];
