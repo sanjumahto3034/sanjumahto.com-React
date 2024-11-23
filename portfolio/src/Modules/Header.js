@@ -11,7 +11,7 @@ function Header() {
     EnableDarkMode(true);
     LoadColors();
   }, []);
-  var name = "Sanju Mahto";
+  var name = "Portfolio";
 
   const route_button = [
     {

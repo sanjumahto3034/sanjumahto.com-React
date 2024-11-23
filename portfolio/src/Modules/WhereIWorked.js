@@ -5,50 +5,23 @@ import "aos/dist/aos.css";
 function WhereIWorked() {
   return (
     <div className="where_i_worked">
-      <WorkExperience_old></WorkExperience_old>
-      {/* <WorkExperience_new></WorkExperience_new> */}
+      {/* <WorkExperience_old></WorkExperience_old> */}
+      <WorkExperience_new></WorkExperience_new>
     </div>
   );
 }
+
 const WorkExperience_new = () => {
-  const [selectedCompanyIndex, setSelectedCompanyIndex] = useState(2); // Default index for Emizen Tech Pvt. Ltd.
-
-  const handleButtonClick = (index) => {
-    const descriptionElement = document.querySelector(".where_i_worked_left");
-    if (descriptionElement) {
-      descriptionElement.classList.add("fade-out");
-      setTimeout(() => {
-        descriptionElement.classList.remove("fade-out");
-        setSelectedCompanyIndex(index);
-      }, 250);
-    }
-  };
-
   return (
-    <div className="where_i_worked">
-      <div className="where_i_worked_right">
-        <div className="where_i_worked_right_profession_experience">
-          Professional
-        </div>
-        <div className="where_i_worked_right_profession_experience">
-          Experience
-        </div>
-        <div className="where_i_worked_right_buttons_parent">
-          {data.map((company, index) => (
-            <div className="new_where_i_work_company_button" key={index}>
-              <div className="new_where_i_work_company_name">
-                {company.companyName}
-              </div>
-              <div className="new_where_i_work_company_duration">
-                {company.companyStartDate} - {company.companyEndDate}
-              </div>
-            </div>
-          ))}
-        </div>
+    <div className="work_exp_new_body">
+      <div className="work_exp_header_container">
+        <div className="work_exp_header">Where I’ve Worked</div>
+        <div className="work_exp_header_line"></div>
       </div>
     </div>
   );
 };
+
 const WorkExperience_old = () => {
   useEffect(() => {
     AOS.init();

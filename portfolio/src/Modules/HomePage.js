@@ -17,14 +17,12 @@ function HomePage() {
   const description_1 = "I'm a Game Developer";
   const description_2 = "at Emizen Tech Pvt. Ltd";
   const myDescription =
-    "As a passionate game developer, I specialize in crafting immersive and " +
-    "engaging gaming experiences. With expertise in game design," +
-    "programming, and graphics, I bring creativity and technical prowess to " +
-    "every project. I thrive on pushing boundaries, leveraging cutting-edge " +
-    "technologies to deliver captivating games that captivate audiences and " +
-    "provide memorable entertainment.";
+    "I am an AR/VR and Game Developer, currently focused on" +
+    "creating innovative Interior Design apps and immersive 3D" +
+    "games at";
   const characters = name.split("");
   const myNameIsMap = myNameIs.split("");
+  const description_1_map = description_1.split("");
 
   OnMouseMove(".profile_bg_layer_2");
   OnMouseMove(".profile_bg_layer_3");
@@ -81,7 +79,11 @@ function HomePage() {
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          I am a Game Developer
+          {description_1_map.map((char, index) => (
+            <span key={index} className="char_name">
+              {char}
+            </span>
+          ))}
         </div>
 
         <div
@@ -94,7 +96,14 @@ function HomePage() {
             <span key={index} className="char_name">
               {char}
             </span>
-          ))}
+          ))}{" "}
+          <a
+            href="https://www.emizentech.com/"
+            className="current_company_hyperlink"
+            target="_blank"
+          >
+            Emizen Tech Pvt. Ltd.
+          </a>
         </div>
 
         <div className="contact_button_container">
@@ -104,7 +113,7 @@ function HomePage() {
             data-aos="fade-right"
             data-aos-duration="500"
           >
-            Contact Me <span className="right_arrow_contact_us">&#8594;</span>
+            Say Hello <span className="right_arrow_contact_us">&#8594;</span>
           </div>
           <div className="home_buttons_parent">
             <FaLinkedinIn

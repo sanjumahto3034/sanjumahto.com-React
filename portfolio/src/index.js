@@ -32,6 +32,7 @@ import FlipCardPrivacyPolicy from "./Modules/Apps/FlipCard/FlipCardPrivacyPolicy
 import HindiHorrorStory from "./Modules/Apps/Hindi Horror Story/HindiHorrorStory";
 import SanjuCV from "./Modules/SanjuCV";
 import ProjectTwoZeroFourEight from "./Modules/Apps/Project2048/ProjectTwoZeroFourEight";
+import PageNotFound from "./Modules/PageNotFound";
 
 const routePages = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const routePages = createBrowserRouter([
   {
     path: "/apps/2048/privacy-policy",
     element: <ProjectTwoZeroFourEight></ProjectTwoZeroFourEight>,
+  },
+  {
+    path: "*",
+    element: <PageNotFound></PageNotFound>,
   },
 ]);
 

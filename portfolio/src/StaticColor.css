@@ -11,8 +11,12 @@
     --text-color-primary: #ffffff;
     --text-color-primary-offset: rgba(0, 255, 255, 0.705);
     --text-color-secondary: #64ffda;
+    --text-color-offset: #8892b0;
+
 
     --primary-font: Raleway-ExtraBold;
     --secondary-font: 'Roboto Mono', monospace;
 
+
+    --hover-color: #E30022;
 }

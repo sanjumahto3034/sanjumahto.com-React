@@ -5,13 +5,15 @@
   width: 90vw;
   padding-left: 5vw;
   padding-right: 5vw;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   /* padding-bottom: 50px; */
 }
 
 
 body {
   overflow-x: hidden;
+  background-color: var(--primary-color);
+  /* background-color: #000000; */
   /* cursor: none; */
 }
 
@@ -50,7 +52,7 @@ body {
 }
 
 .char_name:hover {
-  color: #E30022;
+  color: var(--hover-color);
   transition: 0.3s;
 }
 
