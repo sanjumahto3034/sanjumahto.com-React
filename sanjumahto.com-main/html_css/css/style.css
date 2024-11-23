@@ -1,0 +1,1396 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+/* font-family: 'Poppins', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap");
+/* font-family: 'Mukta', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@100&display=swap");
+/* font-family: 'Lato', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap");
+/* font-family: 'Work Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,100&family=Work+Sans:wght@900&display=swap");
+/* font-family: 'Montserrat Alternates', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap");
+/* font-family: 'Yanone Kaffeesatz', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&display=swap");
+/* font-family: 'Yaldevi', sans-serif; */
+body{
+  margin: auto;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.App-logo {
+  width: 50px;
+  height: 50px;
+  color: black;
+  /* border: 1px solid black; */
+  margin-right: 5vw;
+}
+
+.header-class {
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  /* border-color: 2px solid black; */
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*
+  justify-content: center;  */
+  /* font-size: calc(10px + 2vmin); */
+}
+
+.about_us {
+  /* overflow: auto; */
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1vw;
+  /* font-family: 'Poppins', sans-serif;*/
+  font-family: "Roboto", sans-serif;
+  /* width: 500px; */
+}
+
+.about_us:hover {
+  border-bottom: 2px solid #5837d0;
+}
+
+.header_email {
+  margin-left: 45vw;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .about_us {
+    font-size: 0px;
+  }
+
+  .header_email {
+    font-size: 0px;
+  }
+}
+
+/*  ----------- Title Container ----------  */
+
+.firstContainer {
+	background: linear-gradient(-45deg, #97DECE, #A555EC, #62B6B7, #F3CCFF);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+  .firstContainer {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0) 0px 20px 25px -18px,
+      rgba(0, 0, 0, 0) 0px 10px 10px -5px;
+    height: 100vh;
+  }
+}
+.title-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 18vh;
+  margin-left: 40px;
+}
+
+.title_name {
+  /* margin-top: 15vh; */
+  /* width:70vw; */
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Work Sans", sans-serif;
+  padding-bottom: 0;
+  line-height: 75px;
+}
+
+.title_discription {
+  /* text-shadow: 1px 1px red; */
+
+  margin-top: 2vh;
+  width: 29vw;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin-bottom: 5vh;
+  font-size: 0.9rem;
+}
+
+.title_store {
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: #f49d1a;
+  color: white;
+  /* border: 1px solid #e30022; */
+  font-size: 1.5rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+  padding-bottom: 5px;
+  font-family: "Mukta", sans-serif;
+  /* box-shadow: 2px 2px #00000020; */
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  box-shadow: rgb(185, 192, 81) 7px 20px 30px -11px;
+  transition: 0.3s;
+}
+
+.title_store:hover {
+  background-color: #e30022;
+  /* border: 1px solid #F49D1A; */
+  box-shadow: rgb(191, 52, 82) 7px 20px 30px -11px;
+}
+
+.laptop_png {
+  width: 30vw;
+  height: 30vw;
+  margin-left: 20vw;
+}
+
+@media screen and (max-width: 500px) {
+  .laptop_png {
+    width: 0;
+    height: 0;
+  }
+
+  .title_store {
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .title_name {
+    /* width: 32vw; */
+    font-size: 3rem;
+    line-height: 45px;
+  }
+
+  .title_discription {
+    margin-top: 2vh;
+    width: 70vw;
+    margin-bottom: 4vh;
+    font-size: 0.85rem;
+  }
+}
+
+/* --------------- Second Container("Engine Dis") ------------- */
+.second-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 7vh;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin-bottom: 10%;
+  height: 80vh;
+}
+
+.second-conterner-internal-flex-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_engine-div {
+  margin-left: 5vw;
+  margin-top: 10vh;
+  /* background-color: orange; */
+  width: 30vw;
+  height: 30vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* - Unity */
+.about-unity {
+  margin-top: 20px;
+  width: 30vw;
+  height: 15vh;
+  background-color: #f49d1a20;
+  border-radius: 120px;
+  box-shadow: #f49d1a50 0px 48px 100px 0px;
+  display: flex;
+  flex-direction: row;
+  transition: 0.3s;
+}
+.about-unity:hover{
+  box-shadow: #f49d1a70 0px 48px 100px 0px;
+}
+
+.unity-profile-circle {
+  margin-top: 2.5vh;
+  margin-left: 1.5vw;
+  width: 5vw;
+  height: 5vw;
+  background-color: #f49d1a70;
+  border-radius: 50%;
+}
+
+.unity-logo-profile {
+  opacity: 0.7;
+  margin-left: 0.7vw;
+  margin-top: 1.8vh;
+  height: 6.5vh;
+}
+
+.unity-engine-part {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.unity-engine-title {
+  font-size: 2rem;
+  font-family: "Yaldevi", sans-serif;
+  color: #f49d1a90;
+  /* margin-bottom: 5vh; */
+}
+
+.unity-engine-discription {
+  margin-top: 1vh;
+  font-size: 1rem;
+  opacity: 0.7;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .about-unity {
+    width: 80vw;
+    height: 100vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    box-shadow: #f49d1a50 0px 20px 30px -10px;
+  }
+
+  .unity-profile-circle {
+    margin-top: 0vh;
+    margin-left: 1.5vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .unity-logo-profile {
+    margin-left: 3vw;
+    margin-top: 1.5vh;
+    height: 4vh;
+  }
+
+  .unity-engine-part {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-top: 1vh;
+  }
+
+  .unity-engine-title {
+    font-size: 1.5rem;
+    margin-top: -1vh;
+  }
+
+  .unity-engine-discription {
+    margin-top: 1vh;
+    font-size: 0.8rem;
+  }
+}
+
+/* - Cocos */
+.about-cocos {
+  margin-top: 5vh;
+  width: 30vw;
+  height: 15vh;
+  background-color: #0d4c9220;
+  border-radius: 120px;
+  box-shadow: #0d4c9250 0px 48px 100px 0px;
+  display: flex;
+  transition: 0.3s;
+}
+.about-cocos:hover{
+  box-shadow: #0d4c9270 0px 48px 100px 0px;
+}
+
+.cocos-profile-circle {
+  margin-top: 2.5vh;
+  margin-left: 1.5vw;
+  width: 5vw;
+  height: 5vw;
+  background-color: #0d4c9270;
+  border-radius: 50%;
+}
+
+.cocos-logo-profile {
+  opacity: 0.7;
+  margin-left: 0.2vw;
+  margin-top: 1.5vh;
+  height: 9vh;
+}
+
+.cocos-engine-part {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.cocos-engine-title {
+  font-size: 2rem;
+  font-family: "Yaldevi", sans-serif;
+  color: #0d4c9290;
+  /* margin-bottom: 5vh; */
+}
+
+.cocos-engine-discription {
+  margin-top: 1vh;
+  font-size: 1rem;
+  opacity: 0.7;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .about-cocos {
+    width: 80vw;
+    height: 30vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    box-shadow: #0d4c9250 0px 20px 30px -10px;
+  }
+
+  .cocos-profile-circle {
+    margin-top: 0vh;
+    margin-left: 1.5vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .cocos-logo-profile {
+    margin-left: 3vw;
+    margin-top: 1.5vh;
+    height: 4vh;
+  }
+
+  .cocos-engine-part {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-top: 1vh;
+  }
+
+  .cocos-engine-title {
+    font-size: 1.5rem;
+    margin-top: -1vh;
+  }
+
+  .cocos-engine-discription {
+    margin-top: 1vh;
+    font-size: 0.8rem;
+  }
+}
+
+/* - Unreal */
+.about-unreal {
+  margin-top: 5vh;
+  width: 30vw;
+  height: 15vh;
+  background-color: #e80f8820;
+  border-radius: 120px;
+  box-shadow: #e80f8850 0px 48px 100px 0px;
+  display: flex;
+  transition: 0.3s;
+}
+.about-unreal:hover{
+  box-shadow: #e80f8870 0px 48px 100px 0px;
+}
+.unreal-profile-circle {
+  margin-top: 2.5vh;
+  margin-left: 1.5vw;
+  width: 5vw;
+  height: 5vw;
+  background-color: #e80f8870;
+  border-radius: 50%;
+}
+
+.unreal-logo-profile {
+  opacity: 0.7;
+  margin-left: 0.8vw;
+  margin-top: 1.6vh;
+  height: 7vh;
+}
+
+.unreal-engine-part {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.unreal-engine-title {
+  font-size: 2rem;
+  font-family: "Yaldevi", sans-serif;
+  color: #e80f8890;
+  /* margin-bottom: 5vh; */
+}
+
+.unreal-engine-discription {
+  margin-top: 1vh;
+  font-size: 1rem;
+  opacity: 0.7;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .about-unreal {
+    width: 80vw;
+    height: 30vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    box-shadow: #e80f8850 0px 20px 30px -10px;
+  }
+
+  .unreal-profile-circle {
+    margin-top: 0vh;
+    margin-left: 1.5vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .unreal-logo-profile {
+    margin-left: 3vw;
+    margin-top: 1.5vh;
+    height: 4vh;
+  }
+
+  .unreal-engine-part {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-top: 1vh;
+  }
+
+  .unreal-engine-title {
+    font-size: 1.5rem;
+    margin-top: -1vh;
+  }
+
+  .unreal-engine-discription {
+    margin-top: 1vh;
+    font-size: 0.8rem;
+  }
+}
+
+.about_self-div {
+  margin-left: 13vw;
+  margin-top: 10vh;
+  /* background-color: red; */
+  width: 30vw;
+  height: 30vw;
+}
+
+/* About Div */
+.about-title-div {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 5rem;
+  opacity: 0.6;
+}
+
+.discription-about-1 {
+  margin-left: 1.2vw;
+  opacity: 0.9;
+  margin-top: 2vh;
+  line-height: 3vh;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.project-div {
+  margin-top: 5vh;
+  margin-left: 1vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-complete-number {
+  font-size: 4rem;
+  opacity: 0.8;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.project-complete-status {
+  opacity: 0.8;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.project-incomplete-div {
+  margin-left: 18vw;
+}
+
+.project-incomplete-number {
+  opacity: 0.8;
+  font-size: 4rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.project-incomplete-status {
+  opacity: 0.8;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .about_engine-div {
+    margin-left: 4vw;
+  }
+
+
+  .second-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0vw;
+    margin-right: 5vw;
+    margin-top: 7vh;
+    margin-bottom: 100vh;
+    height: 10vh;
+    box-shadow: rgba(17, 12, 46, 0) 0px 48px 100px 0px;
+
+  }
+
+  .second-conterner-internal-flex-div {
+    display: flex;
+    /* margin-top: 1vh; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about_self-div {
+    margin-left: 5vw;
+    margin-top: 30vh;
+    width: 90vw;
+    height: 30vw;
+  }
+
+  .about-title-div {
+    margin-top: 5vh;
+    font-size: 3rem;
+    opacity: 0.6;
+  }
+
+  .discription-about-1 {
+    margin-left: 0vw;
+    opacity: 0.9;
+    margin-top: 2vh;
+    line-height: 3vh;
+  }
+
+  .project-div {
+    margin-top: 5vh;
+    margin-left: 1vw;
+  }
+  
+  .project-complete-number {
+    font-size: 2rem;
+    opacity: 0.8;
+  }
+  
+  .project-complete-status {
+    opacity: 0.8;
+  }
+  
+  .project-incomplete-div {
+    margin-left: 50vw;
+
+  }
+  
+  .project-incomplete-number {
+    opacity: 0.8;
+    font-size: 2rem;
+  }
+
+  .project-incomplete-status {
+    opacity: 0.8;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+*{
+  box-sizing: border-box;
+  padding :0;
+  margin: 0;
+}
+@media (max-width:576px) {
+  .top_screen_btn_container{
+    width: 0%;
+  }
+  .top_screen_btn_text{
+    color: #FFF;
+    margin: 0%;
+    font-size: 0%;
+  }
+  .title_main{
+    width: 100%;
+    height: 100%; 
+    display: grid;
+    background-color: #b2f7ff;
+    /* background-image: url(about_us.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    /* background-image: linear-gradient(147deg, #000000e5 0%, #1b0308de 74%), url(wallpaper1.jpg); */
+} 
+}
+@media(min-width:576px){
+  .top_screen_btn_container{
+    width:32%;
+    display: flex;
+    flex-direction: row-reverse;
+   
+  }
+  .top_screen_btn_text{
+    margin-right: 25px;
+    margin-top: 0px;
+  }
+  .top_screen_btn_text:hover{
+    
+    color:rgba(0, 0, 0, 0.452);
+    margin-top: 0px;
+    
+  }
+
+  .top_screen_btn_text:hover .underline{
+    width: 100%;
+  }
+  .title_main{
+    width: 100%;
+    height: 100%; 
+    display: grid;
+    background-color: #b2f7ff;
+    background-image: url(about_us.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    /* background-image: linear-gradient(147deg, #000000e5 0%, #1b0308de 74%), url(wallpaper1.jpg); */
+} 
+  
+}
+
+
+
+ 
+.redText{
+  color: #FF0000;
+}
+
+
+.title_bar{
+  margin-top: 15px;
+  align-items:flex-start; 
+  display: flex;
+  float: right;
+}
+
+.underline{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF0000;
+  overflow: hidden;
+  width: 0;
+  height: 10%;
+  transition: .5s ease;
+}
+
+
+.logo{
+  margin-left: 2%;
+  cursor: pointer;
+  color: black;
+}
+
+/* -----------------------------------------------------------------------*/
+@media (max-width:576px) {
+
+}
+@media(min-width:576px){
+
+}
+@media (max-width:576px) {
+  .hi_div{
+    font-family: 'League Spartan', sans-serif;
+    color: #FF1E00;
+    font-size: 5rem;
+    position:relative;
+    transition: 0.3s ease-out;
+  }
+}
+@media(min-width:576px){
+  .hi_div{
+    margin-top: 10%;
+    font-family: 'League Spartan', sans-serif;
+    color: #FF1E00;
+    font-size: 5rem;
+    position:relative;
+    transition: 0.3s ease-out;
+  }
+}
+
+.title_contaner{
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hi_div:hover{
+  cursor:crosshair;
+  font-family: 'League Spartan', sans-serif;
+  color: #FF1E00;
+  font-size: 6rem;
+  position:relative;
+  transition: 0.3s ease-out;
+} 
+ .person_name{
+    font-family: 'League Spartan', sans-serif;
+    color: #231955;
+    font-size: 5rem;
+    position:relative;
+    transition: 0.3s ease-out;
+  }
+  .person_name:hover{
+    cursor:crosshair;
+    font-family: 'League Spartan', sans-serif;
+    color: #23195580;
+    font-size: 6rem;
+    position:relative;
+    transition: 0.3s ease-out;
+  }  
+ 
+
+.slogan_name{
+  font-style: italic;
+    color: #231955;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.about_me_btn{ 
+  cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #42032C;
+    position: relative;
+    border-bottom: 1px  solid white; 
+    border-top: 1px  solid white; 
+    width: 135px;
+    float: left;
+    white-space: nowrap;
+    word-spacing: 5px;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.about_me_btn:hover{ 
+  cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    border-left: 1px solid white; 
+    border-right: 1px solid white; 
+    border-bottom: 0px  solid white; 
+    border-top: 0px  solid white; 
+    width: 135px;
+    float: left;
+    white-space: nowrap;
+    word-spacing: 10px;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.arrow_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.word{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid #411530;
+  border-right: 1px solid #411530;
+  margin: auto;
+  text-align: center;
+  color: #100720;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+.word:hover{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  color: #ffffffac;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  border-radius: 1%;
+  transition: 0.3s;
+}
+
+.line{
+  margin: auto;
+  text-align: center;
+    bottom:0;
+    width: 1px;
+    height: 20px;
+    color: #231955;  
+}
+/* ------------------------------ Second Container ----------------------------------*/
+.second_container{
+  background-color: #E8F9FD;
+  /* margin-top: 1000px; */
+}
+.my_projects{
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  color:#c97b59;  
+}
+
+.my_projects_slogan{
+  color:#b19386;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+
+.main_container{
+  padding:2%; 
+  margin-top: 50vw; 
+  margin: auto;
+  overflow: hidden;
+}
+
+.test_container{
+  border-radius: 10px;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 20%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-image:linear-gradient(120deg, #000000da 50%, #000000f5 74%),url('infinityrun.png');  
+  width: 70vw;
+  height: 37vw;
+  display: flex;
+}
+.test_container_rev{
+  border-radius: 10px;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 10%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-image:linear-gradient(120deg, #000000da 50%, #000000f5 74%),url('infinityrun.png');  
+  width: 70vw;
+  height: 37vw;
+  display: flex;
+}
+.insider{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.insider:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  transition: 0.3s;
+}
+.container_body{
+  width: 100%;
+  height: 100%;
+}
+.text_contant{
+  margin-top: 10%;
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  font-size: 11vw;
+  color: white;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+.text_slogan{
+  white-space: nowrap;
+  text-align: center;
+  font-size:3vw;
+  color: white;
+  font-family: 'Arimo', sans-serif;
+  transition: 0.3s ease;
+}
+.test_container:hover .text_contant{
+  margin-top: 30%;
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  font-size: 6vw;
+  color: white;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+.test_container:hover .text_slogan{
+    white-space: nowrap;
+    text-align: center;
+    font-size:2vw;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    transition: 0.3s ease;
+  
+}
+.test_container:hover .slide_content{
+  width: 40%;
+  overflow: hidden;
+}
+
+.test_container_rev:hover .text_contant{
+  margin-top: 30%;
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  font-size: 6vw;
+  color: white;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+.test_container_rev:hover .text_slogan{
+    white-space: nowrap;
+    text-align: center;
+    font-size:2vw;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    transition: 0.3s ease;
+  
+}
+.test_container_rev:hover .slide_content{
+  width: 40%;
+  overflow: hidden;
+}
+.slide_content{
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg,   #2d3436 0%, #000000 74%);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.game_name{
+  margin-top: 40%;
+  font-size: 3vw;
+  font-family: 'League Spartan', sans-serif;
+  color: white;
+  text-align: center;
+  white-space:nowrap;
+}
+.about_game{
+  font-size: 2.4vw;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
+  transition: .3s;
+  margin-bottom: 30%;
+}
+
+.second_container_btn{ 
+    margin-top: 9%;
+    cursor: pointer;
+    font-size: 2vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px  solid white; 
+    border-top: 1px  solid white; 
+    float: right;
+    white-space: nowrap;
+    word-spacing: 5px;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.second_container_btn:hover{ 
+     cursor: pointer;
+     margin-top: 9%;
+    cursor: pointer;
+    font-size: 2vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 0px  solid white; 
+    border-top: 0px  solid white; 
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    float: right;
+    white-space: nowrap;
+    word-spacing: 5px;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.second_container_btn_text{
+  text-align: center;
+}
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++++ footer ++++++++++++++++++++++++++++++++*/
+
+.footer_background{
+  margin-top: 10%;
+  background-color:#E30022;
+  padding-bottom: 1.5%;
+  
+}
+.footer_title{
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1vw;
+}
+.end_screen_btn{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 20%;
+  justify-content: center;
+  align-items: center;
+}
+.end_screen_btn_text:hover .underline{
+  width: 100%;
+}
+.end_screen_btn_text{
+  
+  font-size: 1vw;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+.end_screen_btn_text:hover{
+  color:rgba(255, 255, 255, 0.452);
+  margin-top: 20px;
+  
+}
+.end_screen_btn_text:hover .underline{
+  width: 100%;
+}
+
+@media (max-width:576px) {
+  .footer_background{
+    background-color:#E30022;
+    padding-bottom: 50px;
+    
+  }
+  .footer_title{
+    padding-top: 10%;
+    text-align: center;
+    color: white;
+    font-size: 2.5vw;
+  }
+  .end_screen_btn{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+  }
+  .end_screen_btn_text{
+    font-size: 2vw;
+    margin-right: 25px;
+    margin-top: 20px;
+  }
+  .end_screen_btn_text:hover .underline{
+    width: 100%;
+  }
+  
+  .end_screen_btn_text:hover{
+    color:rgba(255, 255, 255, 0.452);
+    margin-top: 20px;
+    
+  }
+  .end_screen_btn_text:hover .underline{
+    width: 100%;
+  }
+  .underline{
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 10%;
+    transition: .5s ease;
+  }
+}
+
+/*-------third container--------*/
+@media (min-width:576px) {
+ 
+  .end_screen_contaner{
+    display: flex;
+    margin-top: 5%;
+  }
+  .right_end_screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60%;
+  }
+  .companyName_endScreen{
+  color: #00000075;
+  /* margin-left: 3%; */
+  font-size: 2vw;
+  font-family: 'League Spartan', sans-serif;
+}
+.contactUs_text{
+  color: #00000075;
+  /* margin-left: 3%; */
+  font-size: 2vw;
+  font-family: 'League Spartan', sans-serif;
+}
+.company_slogan{
+  margin-top: 1%;
+  font-size: 1vw;
+  /* margin-left: 4%; */
+  font-family: 'Montserrat', sans-serif;
+}
+.company_slogan2{
+  font-size: 1vw;
+  /* margin-left: 1%; */
+  font-family: 'Montserrat', sans-serif;
+}
+.contactUs_btn {
+  margin-top: 2%;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.1vw;
+  outline: 0;
+  padding:10% 50% 10% 50%;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: 0.3s ease-in-out;
+}
+
+.contactUs_btn:hover,
+.contactUs_btn:active {
+  transition: 0.1s ease-in-out;
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.contactUs_btn:active {
+  transition: 0.1s ease-in-out;
+  opacity: .5;
+}
+
+}
+
+@media (max-width:576px) {
+  .end_screen_contaner{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .right_end_screen{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 60%; */
+  }
+  .companyName_endScreen{
+    margin-top: 10%;
+    color: #00000075;
+    /* margin-left: 3%; */
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'League Spartan', sans-serif;
+  
+  }
+  .company_slogan{
+    text-align: center;
+    margin-top: 1%;
+    font-size: 3vw;
+    /* margin-left: 4%; */
+    font-family: 'Montserrat', sans-serif;
+  }
+  .company_slogan2{
+    text-align: center;
+    font-size: 3vw;
+    /* margin-left: 1%; */
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contactUs_text{
+    
+    color: #000000b9;
+    text-align: center;
+    /* margin-left: 3%; */
+    font-size: 5vw;
+    font-family: 'League Spartan', sans-serif;
+  }
+
+  .contactUs_btn {
+    margin-top: 2%;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 4vw;
+    outline: 0;
+    padding:8% 50% 8% 50%;
+    text-align: center;
+    /* text-rendering: geometricprecision; */
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    /* vertical-align: middle; */
+    transition: 0.3s ease-in-out;
+  }
+  
+  .contactUs_btn:hover,
+  .contactUs_btn:active {
+    transition: 0.1s ease-in-out;
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+  }
+  
+  .contactUs_btn:active {
+    transition: 0.1s ease-in-out;
+    opacity: .5;
+  }
+  
+
+}
+.left_end_screen{
+  margin-left: 7%;
+
+  /* outline: 1px solid black; */
+}
+
+
+
